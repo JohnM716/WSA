@@ -2,7 +2,9 @@
 @plugin "daisyui" {
   themes: black --default;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Registrar la fuente local */
 @font-face {
   font-family: 'Montserrat';

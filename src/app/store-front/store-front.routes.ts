@@ -5,10 +5,6 @@ import { ProductPageComponent } from "./pages/product-page/product-page.componen
 import { NotFoundPageComponent } from "./pages/not-found-page/not-found-page.component";
 
 
-
-
-
-
 export const storeFrontRoutes: Routes = [
   {
     path: '',

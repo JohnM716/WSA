@@ -1,71 +1,78 @@
-<div class="navbar bg-base-100 shadow-sm">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg
-        aria-label="Menu"
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor">
-        <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M4 6h16M4 12h8m-8 6h16" />
-        </svg>
+<!-- NAVBAR FIJO GLOBAL -->
+<header class="fixed top-0 left-0 w-full z-50 bg-base-200/90 backdrop-blur-md border-b border-white/10 shadow-[0_4px_20px_rgba(255,255,255,0.1)]">
+  <div class="max-lg:collapse w-full">
+    <input id="navbar-1-toggle" class="peer hidden" type="checkbox" />
+    <label for="navbar-1-toggle" class="fixed inset-0 hidden max-lg:peer-checked:block"></label>
+
+    <div class="collapse-title navbar container mx-auto px-4">
+      <div class="navbar-start">
+        <label for="navbar-1-toggle" class="btn btn-ghost lg:hidden">
+          <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+        <a href="#" class="btn btn-ghost text-xl">
+          <img src="assets/logos/LogoBlancoNegro.png" alt="WSA Logo" class="h-8 w-auto">
+        </a>
       </div>
-      <ul
-        tabindex="-1"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li>
-          <a routerLink="/product" class="btn btn-ghost" routerLinkActive="text-indigo-600">
-             Servicios
-            </a>
-        </li>
 
-        <li>
-          <a routerLink="/product" class="btn btn-ghost" routerLinkActive="text-indigo-600">
-             Nosotros
-            </a>
-        </li>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li>
+            <details>
+              <summary>Servicios</summary>
+              <ul class="p-2 bg-base-100 w-40 z-1">
+                <li>
+                  <button routerLink="/">
+                    Automatización
+                  </button>
+                </li>
+                <li>
+                  <button routerLink="/">
+                    Tratamiento de Agua
+                  </button>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="#nosotros" class="font-normal">Nosotros</a>
+          </li>
+          <li>
+            <a href="#contacto" class="font-normal">Contacto</a>
+          </li>
+        </ul>
+      </div>
 
+      <div class="navbar-end">
+        <input type="text" placeholder="Search" class="input w-64 lg:w-auto" />
+      </div>
+    </div>
+
+    <div class="collapse-content lg:hidden z-1">
+      <ul class="menu">
         <li>
-          <a routerLink="/product" class="btn btn-ghost" routerLinkActive="text-indigo-600">
-             Contacto
-            </a>
+          <button>Servicios</button>
+          <ul>
+            <li>
+              <button routerLink="/" routerLinkActive="text-indigo-600">
+                Automatización
+              </button>
+            </li>
+            <li>
+              <button routerLink="/" routerLinkActive="text-indigo-600">
+                Tratamiento de Agua
+              </button>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#nosotros">Nosotros</a>
+        </li>
+        <li>
+          <a href="#contacto">Contacto</a>
         </li>
       </ul>
     </div>
-    <a routerLink="/" class="btn btn-ghost text-xl">
-      <img src="assets/logos/WSALOGOAzul.png" alt="WSA Logo" class="h-8 w-auto">
-    </a>
-    <!-- <a routerLink="/" class="btn btn-ghost text-xl">
-      WS<span class="text-indigo-600">A</span></a> -->
   </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li>
-          <a routerLink="/product" class="btn btn-ghost" routerLinkActive="text-indigo-600">
-             Servicios
-            </a>
-        </li>
-
-        <li>
-          <a routerLink="/product" class="btn btn-ghost" routerLinkActive="text-indigo-600">
-             Nosotros
-            </a>
-        </li>
-
-        <li>
-          <a routerLink="/product" class="btn btn-ghost" routerLinkActive="text-indigo-600">
-             Contacto
-            </a>
-        </li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-    <a class="btn">Button</a>
-  </div>
-</div>
+</header>

@@ -6,4 +6,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './home-page.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,
 })
-export class HomePageComponent {}
+export class HomePageComponent {
+
+
+}

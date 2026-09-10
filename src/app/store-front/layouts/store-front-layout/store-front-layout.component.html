@@ -1,6 +1,11 @@
-<!-- NAVBAR -->
- <front-navbar></front-navbar>
+<div class="min-h-screen flex flex-col justify-between">
+  <!-- NAVBAR -->
+   <front-navbar></front-navbar>
 
-<section class="container mx-auto">
+  <main class="grow flex flex-col justify-center container mx-auto px-4 pt-20 pb-8">
   <router-outlet></router-outlet>
-</section>
+</main>
+
+  <!-- FOOTER -->
+   <front-footer></front-footer>
+</div>
