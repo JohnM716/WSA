@@ -108,3 +108,39 @@ html {
   background: #0a66c2;
   color: #fff;
 }
+
+
+/* LOGO Animación */
+.knob {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animación al recargar */
+@keyframes slide-to-left {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-14px); }
+}
+
+@keyframes slide-to-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(14px); }
+}
+
+.knob-right {
+  animation: slide-to-left 1.2s ease-in-out 1;
+}
+
+.knob-mid {
+  animation: slide-to-right 1.2s ease-in-out 1;
+}
+
+/* hover o active */
+.group:hover .knob-right,
+.group:active .knob-right {
+  transform: translateX(-14px);
+}
+
+.group:hover .knob-mid,
+.group:active .knob-mid {
+  transform: translateX(14px);
+}
