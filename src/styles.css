@@ -97,7 +97,7 @@ html {
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: #e4405f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aebe6 90%);
   color: #fff;
 }
 
@@ -106,6 +106,14 @@ html {
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
   background: #0a66c2;
+  color: #fff;
+}
+
+/* Facebook */
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #3b5998;
   color: #fff;
 }
 

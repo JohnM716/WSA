@@ -1,7 +1,13 @@
 <!-- NAVBAR -->
-<header class="fixed top-0 left-0 w-full z-50 bg-base-200/90 backdrop-blur-md border-b border-white/10 shadow-[0_4px_20px_rgba(255,255,255,0.1)]">
+<header
+  class="fixed top-0 left-0 w-full z-50 bg-base-200/90 backdrop-blur-md border-b transition-colors duration-300 shadow-[0_4px_20px_rgba(255,255,255,0.1)]"
+  [class.border-[#ff8d28]]="router.url.includes('/automatizacion')"
+  [class.border-[#0088ff]]="router.url.includes('/tratamientoAgua')"
+  [class.border-white/10]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')">
+
   <div class="max-lg:collapse w-full">
-    <input id="navbar-1-toggle" class="peer hidden" type="checkbox" />
+    <!-- Referencia #mobileMenuToggle para desmarcar desde TypeScript -->
+    <input #mobileMenuToggle id="navbar-1-toggle" class="peer hidden" type="checkbox" />
     <label for="navbar-1-toggle" class="fixed inset-0 hidden max-lg:peer-checked:block"></label>
 
     <div class="collapse-title navbar container mx-auto px-4">
@@ -12,21 +18,34 @@
           </svg>
         </label>
 
-        <!-- LOGO Animado-->
-        <a href="#" class="btn btn-ghost px-2 flex items-center gap-2 group">
-          <img src="assets/logos/LogoBlancoNegro.png" alt="WSA Logo" class="h-8 w-auto">
-          <!-- Sliders Animados (SVG) -->
-          <svg class="h-8 w-auto text-white" viewBox="0 0 60 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- LOGO Animado -->
+        <a routerLink="/" (click)="goHomeAndScrollTop()" class="btn btn-ghost px-2 flex items-center gap-2 group cursor-pointer">
+          <!-- Imagen dinámica -->
+          <img
+            [src]="router.url.includes('/automatizacion')
+              ? 'assets/logos/LogoNaranjaBlanco.png'
+              : router.url.includes('/tratamientoAgua')
+                ? 'assets/logos/LogoAzulBlanco.png'
+                : 'assets/logos/LogoBlancoNegro.png'"
+            alt="WSA Logo"
+            class="h-8 w-auto transition-all duration-300">
+
+          <!-- Sliders Animados -->
+          <svg
+            class="h-8 w-auto transition-colors duration-300"
+            [class.text-[#ff8d28]]="router.url.includes('/automatizacion')"
+            [class.text-[#0088ff]]="router.url.includes('/tratamientoAgua')"
+            [class.text-white]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
+            viewBox="0 0 60 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <g class="sliders-icon" transform="translate(4, 5)">
-              <!-- Línea 1 (Arriba) - Círculo a la Derecha -->
               <line x1="2" y1="8" x2="48" y2="8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
               <circle class="knob knob-right" cx="38" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2.5" />
 
-              <!-- Línea 2 (Medio) - Círculo en la Mitad -->
               <line x1="2" y1="20" x2="48" y2="20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
               <circle class="knob knob-mid" cx="25" cy="20" r="4" fill="none" stroke="currentColor" stroke-width="2.5" />
 
-              <!-- Línea 3 (Abajo) - Círculo a la Derecha -->
               <line x1="2" y1="32" x2="48" y2="32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
               <circle class="knob knob-right" cx="38" cy="32" r="4" fill="none" stroke="currentColor" stroke-width="2.5" />
             </g>
@@ -37,21 +56,29 @@
       <div class="navbar-end hidden lg:flex">
         <ul class="menu menu-horizontal px-1 items-center gap-1">
           <li class="relative">
-            <details class="group">
-              <summary class="relative font-medium text-base-content/90 hover:text-white transition-colors duration-300 group">
+            <!-- Agregada referencia #servicesDetails -->
+            <details #servicesDetails class="group">
+              <summary class="relative font-medium text-base-content/90 hover:text-white transition-colors duration-300 group cursor-pointer">
                 Servicios
-                <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-linear-to-r from-orange-500 to-blue-600 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-open:w-full"></span>
+                <span
+                  class="absolute bottom-0 left-1/2 w-0 h-0.5 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-open:w-full"
+                  [class.bg-[#ff8d28]]="router.url.includes('/automatizacion')"
+                  [class.bg-[#0088ff]]="router.url.includes('/tratamientoAgua')"
+                  [class.bg-gradient-to-r]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
+                  [class.from-orange-500]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
+                  [class.to-blue-600]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')">
+                </span>
               </summary>
               <ul class="p-2 bg-base-100/95 backdrop-blur-md w-52 z-10 shadow-xl border border-white/10 rounded-xl mt-2">
                 <li>
-                  <button routerLink="/" class="relative overflow-hidden w-full px-4 py-2 text-left font-medium transition-all duration-300 hover:translate-x-1 hover:text-orange-400 group">
-                    <span class="absolute left-0 top-0 h-full w-0.75 bg-orange-500 transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
+                  <button routerLink="/automatizacion" (click)="goHomeAndScrollTop(); closeMenu(servicesDetails)" class="relative overflow-hidden w-full px-4 py-2 text-left font-medium transition-all duration-300 hover:translate-x-1 hover:text-[#ff8d28] group cursor-pointer">
+                    <span class="absolute left-0 top-0 h-full w-0.75 bg-[#ff8d28] transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
                     Automatización
                   </button>
                 </li>
                 <li>
-                  <button routerLink="/" class="relative overflow-hidden w-full px-4 py-2 text-left font-medium transition-all duration-300 hover:translate-x-1 hover:text-blue-400 group">
-                    <span class="absolute left-0 top-0 h-full w-0.75 bg-blue-600 transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
+                  <button routerLink="/tratamientoAgua" (click)="goHomeAndScrollTop(); closeMenu(servicesDetails)" class="relative overflow-hidden w-full px-4 py-2 text-left font-medium transition-all duration-300 hover:translate-x-1 hover:text-[#0088ff] group cursor-pointer">
+                    <span class="absolute left-0 top-0 h-full w-0.75 bg-[#0088ff] transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
                     Tratamiento de Agua
                   </button>
                 </li>
@@ -59,21 +86,36 @@
             </details>
           </li>
           <li class="relative">
-            <a href="#nosotros" class="relative font-medium text-base-content/90 hover:text-white transition-colors duration-300 group">
+            <button (click)="goToSection('nosotros')" class="relative font-medium text-base-content/90 hover:text-white transition-colors duration-300 group cursor-pointer">
               Nosotros
-              <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-linear-to-r from-orange-500 to-blue-600 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-active:w-full"></span>
-            </a>
-          </li>
-          <li class="relative">
-            <a href="#contacto" class="relative font-medium text-base-content/90 hover:text-white transition-colors duration-300 group">
-              Contacto
-              <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-linear-to-r from-orange-500 to-blue-600 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-active:w-full"></span>
-            </a>
+              <span
+                class="absolute bottom-0 left-1/2 w-0 h-0.5 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-active:w-full"
+                [class.bg-[#ff8d28]]="router.url.includes('/automatizacion')"
+                [class.bg-[#0088ff]]="router.url.includes('/tratamientoAgua')"
+                [class.bg-gradient-to-r]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
+                [class.from-orange-500]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
+                [class.to-blue-600]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')">
+              </span>
+            </button>
           </li>
 
+          <li class="relative">
+            <button (click)="goToSection('contacto')" class="relative font-medium text-base-content/90 hover:text-white transition-colors duration-300 group cursor-pointer">
+              Contacto
+              <span
+                class="absolute bottom-0 left-1/2 w-0 h-0.5 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-active:w-full"
+                [class.bg-[#ff8d28]]="router.url.includes('/automatizacion')"
+                [class.bg-[#0088ff]]="router.url.includes('/tratamientoAgua')"
+                [class.bg-gradient-to-r]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
+                [class.from-orange-500]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
+                [class.to-blue-600]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')">
+              </span>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
+
     <!-- MENÚ MOBILE -->
     <div class="collapse-content lg:hidden z-1">
       <ul class="menu bg-base-100/95 backdrop-blur-md rounded-xl p-4 border border-white/10 gap-2">
@@ -81,22 +123,22 @@
           <span class="font-bold text-base-content/70">Servicios</span>
           <ul class="pl-2 border-l border-white/10 mt-1 gap-1">
             <li>
-              <button routerLink="/" class="hover:text-orange-400 transition-colors py-2">
+              <button routerLink="/automatizacion" (click)="goHomeAndScrollTop(); closeMenu()" class="hover:text-[#ff8d28] transition-colors py-2 text-left w-full cursor-pointer">
                 Automatización
               </button>
             </li>
             <li>
-              <button routerLink="/" class="hover:text-blue-400 transition-colors py-2">
+              <button routerLink="/tratamientoAgua" (click)="goHomeAndScrollTop(); closeMenu()" class="hover:text-[#0088ff] transition-colors py-2 text-left w-full cursor-pointer">
                 Tratamiento de Agua
               </button>
             </li>
           </ul>
         </li>
         <li>
-          <a href="#nosotros" class="font-medium hover:text-white transition-colors">Nosotros</a>
+          <button (click)="goToSection('nosotros')" class="font-medium hover:text-white transition-colors text-left w-full cursor-pointer">Nosotros</button>
         </li>
         <li>
-          <a href="#contacto" class="font-medium hover:text-white transition-colors">Contacto</a>
+          <button (click)="goToSection('contacto')" class="font-medium hover:text-white transition-colors text-left w-full cursor-pointer">Contacto</button>
         </li>
       </ul>
     </div>

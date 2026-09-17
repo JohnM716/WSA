@@ -7,15 +7,15 @@
                 group-hover/container:opacity-40 hover:opacity-100 hover:scale-[1.02]">
       <figure class="px-8 pt-8">
         <img
-          src="assets/logos/LogoNaranjaBlanco.png"
+          src="assets/logos/LogoNaranjaBlancoCompleto.png"
           alt="WSA Logo Naranja"
           class="rounded-xl h-52 object-contain transition-transform duration-500 group-hover/card:scale-105" />
       </figure>
       <div class="card-body items-center text-center p-6">
         <h2 class="card-title text-2xl font-bold">Automatización</h2>
         <p>Ingeniería que optimiza procesos, mejora la eficiencia energética y transforma la operación mediante automatización y control inteligente.</p>
-        <div class="card-actions mt-4 aura text-orange-600 bg-primary-content">
-          <button class="btn btn-primary px-8">ENTRAR</button>
+        <div class="card-actions mt-4 aura aura-dual text-orange-600 bg-primary-content">
+          <button routerLink="/automatizacion" class="btn btn-primary px-8">ENTRAR</button>
         </div>
       </div>
     </div>
@@ -25,15 +25,15 @@
                 group-hover/container:opacity-40 hover:opacity-100 hover:scale-[1.02]">
       <figure class="px-8 pt-8">
         <img
-          src="assets/logos/LogoAzulBlanco.png"
+          src="assets/logos/LogoAzulBlancoCompleto.png"
           alt="WSA Logo Azul"
           class="rounded-xl h-52 object-contain transition-transform duration-500 group-hover/card:scale-105" />
       </figure>
       <div class="card-body items-center text-center p-6">
         <h2 class="card-title text-2xl font-bold">Tratamiento de Agua</h2>
         <p>Diseñamos y fabricamos soluciones inteligentes para tratar, recuperar y aprovechar el agua con máxima eficiencia.</p>
-        <div class="card-actions mt-4 aura text-blue-700 bg-primary-content">
-          <button class="btn btn-primary px-8">ENTRAR</button>
+        <div class="card-actions mt-4 aura aura-dual text-blue-700 bg-primary-content">
+          <button routerLink="/tratamientoAgua" class="btn btn-primary px-8">ENTRAR</button>
         </div>
       </div>
     </div>
@@ -57,14 +57,14 @@
       <h3 class="text-2xl font-bold text-base-content">
         Ingeniería, Tecnología y Automatización de Procesos
       </h3>
-      <p class="text-base-content/80 leading-relaxed">
+      <p class="text-base text-base-content/80 leading-relaxed text-justify">
         En <span class="font-bold text-base-content">Water Systems Automation (WSA)</span> somos una empresa de ingeniería y tecnología que escucha, entiende y construye soluciones. Integramos conocimiento, innovación y experiencia para ayudar a nuestros clientes a trabajar de una manera más eficiente, confiable y sostenible.
       </p>
 
       <!-- Propuesta de Valor -->
       <div class="p-4 rounded-xl bg-base-200 border-l-4 border-blue-600 text-left">
         <h4 class="text-sm font-semibold uppercase text-blue-500 tracking-wider">Propuesta de Valor</h4>
-        <p class="text-sm text-base-content/90 mt-1 italic">
+        <p class="text-base text-base-content/90 mt-1 italic text-justify">
           "Integramos conocimiento, tecnología y experiencia para acompañar cada proyecto de principio a fin, buscando soluciones prácticas, eficientes y pensadas para las necesidades reales de cada cliente."
         </p>
       </div>
@@ -92,10 +92,10 @@
           class="w-full max-w-md h-auto object-contain py-4"
         />
         <div class="mt-4 text-center">
-          <p class="text-xs uppercase tracking-widest text-base-content/60 font-semibold">
+          <p class="text-base uppercase tracking-widest text-base-content/60 font-semibold">
             Objetivo General
           </p>
-          <p class="text-sm text-base-content/80 mt-1">
+          <p class="text-base text-base-content/80 mt-1">
             Hacer que la ingeniería y la tecnología sean herramientas sencillas y confiables para mejorar la manera en que las organizaciones trabajan, producen y utilizan sus recursos.
           </p>
         </div>
@@ -105,47 +105,64 @@
 
   <!-- Tarjetas Estratégicas: Misión, Visión, Propósito -->
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-    <!-- Misión -->
-    <div class="bg-base-200 p-6 rounded-xl border border-white/5 hover:border-orange-500/40 transition duration-300 space-y-3">
-      <div class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center text-orange-500 font-bold text-xl">
-        M
+
+    <!-- Misión (Naranja) -->
+    <div class="bg-base-200 border border-white/5 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 cursor-pointer group relative overflow-hidden shadow-[0_0_15px_rgba(255,141,40,0.15)] hover:shadow-[0_0_25px_rgba(255,141,40,0.35)] hover:border-[#ff8d28]/50">
+      <div class="space-y-3">
+        <!-- Icono Animado -->
+        <div class="w-10 h-10 rounded-full rounded-tl-none bg-[#ff8d28] flex items-center justify-center text-gray-950 font-bold text-xl group-hover:-translate-y-1 group-hover:shadow-lg group-hover:shadow-[#ff8d28]/40 transition-all duration-300">
+          M
+        </div>
+        <h4 class="text-xl font-bold text-white">Misión</h4>
+        <p class="text-sm md:text-base text-base-content/80 leading-relaxed text-justify">
+          Desarrollar y brindar soluciones integrales de ingeniería, tecnología y gestión para transformar procesos y atender las necesidades de nuestros clientes con eficiencia, innovación y confiabilidad.
+        </p>
+        <p class="text-sm md:text-base text-base-content/60 leading-relaxed text-justify">
+          Integramos conocimiento especializado, tecnología y experiencia para diseñar, ejecutar y optimizar proyectos que generen valor sostenible, mejoren el desempeño operativo y contribuyan al cuidado del entorno.
+        </p>
       </div>
-      <h4 class="text-xl font-bold text-base-content">Misión</h4>
-      <p class="text-sm text-base-content/80 leading-relaxed">
-        Desarrollar y brindar soluciones integrales de ingeniería, tecnología y gestión para transformar procesos y atender las necesidades de nuestros clientes con eficiencia, innovación y confiabilidad.
-      </p>
-      <p class="text-sm text-base-content/60 leading-relaxed">
-        Integramos conocimiento especializado, tecnología y experiencia para diseñar, ejecutar y optimizar proyectos que generen valor sostenible, mejoren el desempeño operativo y contribuyan al cuidado del entorno.
-      </p>
+      <!-- Barra Resplandeciente Inferior Naranja -->
+      <div class="h-2 w-full bg-linear-to-r from-[#ff8d28] to-amber-500 group-hover:blur-md blur-xl m-auto rounded transition-all absolute bottom-0 left-0 opacity-0 group-hover:opacity-100"></div>
     </div>
 
-    <!-- Visión -->
-    <div class="bg-base-200 p-6 rounded-xl border border-white/5 hover:border-blue-500/40 transition duration-300 space-y-3">
-      <div class="w-10 h-10 rounded-lg bg-blue-600/10 flex items-center justify-center text-blue-500 font-bold text-xl">
-        V
+    <!-- Visión (Azul) -->
+    <div class="bg-base-200 border border-white/5 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 cursor-pointer group relative overflow-hidden shadow-[0_0_15px_rgba(59,130,246,0.15)] hover:shadow-[0_0_25px_rgba(59,130,246,0.35)] hover:border-blue-500/50">
+      <div class="space-y-3">
+        <!-- Icono Animado Azul -->
+        <div class="w-10 h-10 rounded-full rounded-tl-none bg-blue-500 flex items-center justify-center text-gray-950 font-bold text-xl group-hover:-translate-y-1 group-hover:shadow-lg group-hover:shadow-blue-500/40 transition-all duration-300">
+          V
+        </div>
+        <h4 class="text-xl font-bold text-white">Visión</h4>
+        <p class="text-sm md:text-base text-base-content/80 leading-relaxed text-justify">
+          Ser una empresa referente en soluciones de ingeniería, automatización, tecnología, tratamiento de agua y gestión eficiente de procesos, reconocida por convertir desafíos técnicos en oportunidades de crecimiento e innovación.
+        </p>
+        <p class="text-sm md:text-base text-base-content/60 leading-relaxed text-justify">
+          Buscamos consolidar relaciones de largo plazo proyectándonos como un socio estratégico capaz de acompañar cada proyecto desde su concepción hasta su puesta en marcha, operación y evolución.
+        </p>
       </div>
-      <h4 class="text-xl font-bold text-base-content">Visión</h4>
-      <p class="text-sm text-base-content/80 leading-relaxed">
-        Ser una empresa referente en soluciones de ingeniería, automatización, tecnología, tratamiento de agua y gestión eficiente de procesos, reconocida por convertir desafíos técnicos en oportunidades de crecimiento e innovación.
-      </p>
-      <p class="text-sm text-base-content/60 leading-relaxed">
-        Buscamos consolidar relaciones de largo plazo proyectándonos como un socio estratégico capaz de acompañar cada proyecto desde su concepción hasta su puesta en marcha, operación y evolución.
-      </p>
+      <!-- Barra Resplandeciente Inferior Azul -->
+      <div class="h-2 w-full bg-linear-to-r from-blue-600 to-cyan-400 group-hover:blur-md blur-xl m-auto rounded transition-all absolute bottom-0 left-0 opacity-0 group-hover:opacity-100"></div>
     </div>
 
-    <!-- Propósito -->
-    <div class="bg-base-200 p-6 rounded-xl border border-white/5 hover:border-orange-500/40 transition duration-300 space-y-3">
-      <div class="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center text-orange-500 font-bold text-xl">
-        P
+    <!-- Propósito (Naranja) -->
+    <div class="bg-base-200 border border-white/5 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 cursor-pointer group relative overflow-hidden shadow-[0_0_15px_rgba(255,141,40,0.15)] hover:shadow-[0_0_25px_rgba(255,141,40,0.35)] hover:border-[#ff8d28]/50">
+      <div class="space-y-3">
+        <!-- Icono Animado -->
+        <div class="w-10 h-10 rounded-full rounded-tl-none bg-[#ff8d28] flex items-center justify-center text-gray-950 font-bold text-xl group-hover:-translate-y-1 group-hover:shadow-lg group-hover:shadow-[#ff8d28]/40 transition-all duration-300">
+          P
+        </div>
+        <h4 class="text-xl font-bold text-white">Propósito</h4>
+        <p class="text-sm md:text-base text-base-content/80 leading-relaxed text-justify">
+          Diseñar, desarrollar e implementar soluciones integrales que permitan a nuestros clientes optimizar sus procesos en el tratamiento de aguas y otros sectores, mejorar su productividad y avanzar hacia operaciones sostenibles.
+        </p>
+        <p class="text-sm md:text-base text-base-content/60 leading-relaxed text-justify">
+          Integrando servicios de consultoría, diseño, fabricación, automatización, suministro, instalación, mantenimiento y soporte especializado adaptado a cada sector.
+        </p>
       </div>
-      <h4 class="text-xl font-bold text-base-content">Propósito</h4>
-      <p class="text-sm text-base-content/80 leading-relaxed">
-        Diseñar, desarrollar e implementar soluciones integrales que permitan a nuestros clientes optimizar sus procesos en el tratamiento de aguas y otros sectores, mejorar su productividad y avanzar hacia operaciones sostenibles.
-      </p>
-      <p class="text-sm text-base-content/60 leading-relaxed">
-        Integrando servicios de consultoría, diseño, fabricación, automatización, suministro, instalación, mantenimiento y soporte especializado adaptado a cada sector.
-      </p>
+      <!-- Barra Resplandeciente Inferior Naranja -->
+      <div class="h-2 w-full bg-linear-to-r from-[#ff8d28] to-amber-500 group-hover:blur-md blur-xl m-auto rounded transition-all absolute bottom-0 left-0 opacity-0 group-hover:opacity-100"></div>
     </div>
+
   </div>
 </section>
 <!-- CONTACTO -->
@@ -163,19 +180,28 @@
       <h3 class="text-2xl font-bold text-base-content">
         ¿Tienes un proyecto en mente? Hablemos.
       </h3>
-      <p class="text-base-content/80 leading-relaxed">
+      <p class="text-base text-base-content/80 leading-relaxed text-justify">
         Eleifend mauris tempor accumsan dignissim vestibulum habitasse sociosqu metus ac litora, quis cubilia consequat rutrum platea eros lectus pharetra.
       </p>
 
       <div class="relative group mt-6">
         <div class="absolute -inset-1 bg-linear-to-r from-orange-500 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+        <div class="relative bg-base-100 rounded-2xl border border-base-300 shadow-xl overflow-hidden">
+          <img
+            src="assets/logos/wsaimg.png"
+            alt="WSA Contacto"
+            class="w-full h-full object-cover rounded-2xl block" />
+        </div>
+      </div>
+      <!-- <div class="relative group mt-6">
+        <div class="absolute -inset-1 bg-linear-to-r from-orange-500 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
         <div class="relative bg-base-100 p-6 rounded-2xl border border-base-300 shadow-xl flex items-center justify-center">
           <img
-            src="assets/logos/LogoBlancoNegroCompleto.png"
+            src="assets/logos/wsaimg.png"
             alt="WSA Contacto"
             class="w-full max-w-sm h-auto object-contain py-4" />
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Formulario -->
