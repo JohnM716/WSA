@@ -1,14 +1,14 @@
 <section class="py-16 px-4 md:px-8 max-w-7xl mx-auto">
 
-  <!-- Encabezado -->
-  <div class="text-center max-w-3xl mx-auto mb-12">
-    <span class="text-xs font-bold tracking-widest text-[#ff8d28] uppercase border-b border-[#ff8d28] pb-1">
+  <!-- Encabezado (Texto sin justificar) -->
+  <div class="text-center max-w-6xl mx-auto mb-12 px-4">
+    <span class="text-xs md:text-sm font-bold tracking-widest text-[#ff8d28] uppercase border-b border-[#ff8d28] pb-1">
       PORTAFOLIO DE SERVICIOS
     </span>
-    <h1 class="text-3xl md:text-5xl font-extrabold text-white mt-4 leading-tight">
+    <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mt-6 leading-tight">
       Ingeniería que une <span class="text-[#ff8d28]">proceso y control</span> bajo un mismo techo
     </h1>
-    <p class="text-base-content/80 text-base md:text-lg mt-4 text-balance">
+    <p class="text-base-content/80 text-base md:text-xl mt-6 max-w-5xl mx-auto leading-relaxed">
       Diseñamos, fabricamos, integramos y ponemos en marcha soluciones end-to-end para la automatización industrial y el tratamiento de aguas — desde el tablero eléctrico hasta la analítica de datos en la nube.
     </p>
   </div>
@@ -18,12 +18,11 @@
   <!-- 1. Automatización y Control -->
   <div class="bg-base-200 border border-white/5 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 group relative overflow-hidden shadow-[0_0_15px_rgba(255,141,40,0.15)] hover:shadow-[0_0_25px_rgba(255,141,40,0.35)] hover:border-[#ff8d28]/50">
     <div>
-      <!-- Icono Animado -->
       <div class="w-10 h-10 rounded-full rounded-tl-none bg-[#ff8d28] flex items-center justify-center mb-4 text-gray-950 group-hover:-translate-y-1 group-hover:shadow-lg group-hover:shadow-[#ff8d28]/40 transition-all duration-300">
         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
       </div>
       <h3 class="text-xl font-bold text-white mb-2">Automatización y Control</h3>
-      <p class="text-sm text-base-content/70 leading-relaxed mb-4">
+      <p class="text-sm text-base-content/70 leading-relaxed mb-4 text-justify">
         Diseño e integración de arquitecturas de control para procesos industriales y sistemas de tratamiento de agua. Implementamos soluciones PLC, SCADA/HMI y DCS con comunicación OPC-UA, programación de lazos PID, gestión de alarmas ISA-18.2 y puesta en marcha supervisada.
       </p>
     </div>
@@ -48,7 +47,6 @@
         CONOCER MÁS &rarr;
       </button>
     </div>
-    <!-- Barra Resplandeciente Inferior -->
     <div class="h-2 w-full bg-linear-to-r from-[#ff8d28] to-amber-500 group-hover:blur-md blur-xl m-auto rounded transition-all absolute bottom-0 left-0 opacity-0 group-hover:opacity-100"></div>
   </div>
 
@@ -59,7 +57,7 @@
         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h4m-4 0V11m0 0h4m-4 0H9m0 0V5"/></svg>
       </div>
       <h3 class="text-xl font-bold text-white mb-2">Smart Manufacturing</h3>
-      <p class="text-sm text-base-content/70 leading-relaxed mb-4">
+      <p class="text-sm text-base-content/70 leading-relaxed mb-4 text-justify">
         Digitalización de líneas productivas con OEE en tiempo real, control estadístico de procesos (SPC) y conectividad de planta hacia sistemas MES y ERP empresariales.
       </p>
     </div>
@@ -84,7 +82,7 @@
         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 001-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
       </div>
       <h3 class="text-xl font-bold text-white mb-2">Soluciones Industria 4.0 y 5.0</h3>
-      <p class="text-sm text-base-content/70 leading-relaxed mb-4">
+      <p class="text-sm text-base-content/70 leading-relaxed mb-4 text-justify">
         Modelos predictivos para mantenimiento y calidad, analítica de datos avanzada potenciada con AI agentic, soluciones IIoT con historiadores en la nube y dashboards de KPIs.
       </p>
     </div>
@@ -98,7 +96,7 @@
         <span class="text-[10px] px-2 py-0.5 rounded bg-[#ff8d28]/10 text-[#ff8d28] border border-[#ff8d28]/20 font-semibold">AI AGENTIC</span>
         <span class="text-[10px] px-2 py-0.5 rounded bg-[#ff8d28]/10 text-[#ff8d28] border border-[#ff8d28]/20 font-semibold">GEMELO DIGITAL</span>
       </div>
-      <button (click)="goToSection('contacto')"  class="text-xs font-bold text-[#ff8d28] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1 cursor-pointer">
+      <button (click)="goToSection('contacto')" class="text-xs font-bold text-[#ff8d28] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1 cursor-pointer">
         CONOCER MÁS &rarr;
       </button>
     </div>
@@ -112,7 +110,7 @@
         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
       </div>
       <h3 class="text-xl font-bold text-white mb-2">Montajes Eléctricos</h3>
-      <p class="text-sm text-base-content/70 leading-relaxed mb-4">
+      <p class="text-sm text-base-content/70 leading-relaxed mb-4 text-justify">
         Suministro, diseño y fabricación de tableros de control y distribución bajo norma IEC/NTC. Instalación y puesta en marcha en sitio por técnicos certificados.
       </p>
     </div>
@@ -124,7 +122,7 @@
         <span class="text-[10px] px-2 py-0.5 rounded bg-[#ff8d28]/10 text-[#ff8d28] border border-[#ff8d28]/20 font-semibold">INSTALACIÓN</span>
         <span class="text-[10px] px-2 py-0.5 rounded bg-[#ff8d28]/10 text-[#ff8d28] border border-[#ff8d28]/20 font-semibold">IEC / NTC</span>
       </div>
-      <button (click)="goToSection('contacto')"  class="text-xs font-bold text-[#ff8d28] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1 cursor-pointer">
+      <button (click)="goToSection('contacto')" class="text-xs font-bold text-[#ff8d28] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1 cursor-pointer">
         CONOCER MÁS &rarr;
       </button>
     </div>
@@ -138,7 +136,7 @@
         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
       </div>
       <h3 class="text-xl font-bold text-white mb-2">Eficiencia Energética</h3>
-      <p class="text-sm text-base-content/70 leading-relaxed mb-4">
+      <p class="text-sm text-base-content/70 leading-relaxed mb-4 text-justify">
         Reducción del consumo mediante integración fotovoltaica, variadores de frecuencia y monitoreo inteligente del sistema eléctrico en tiempo real.
       </p>
     </div>
@@ -149,7 +147,7 @@
         <span class="text-[10px] px-2 py-0.5 rounded bg-[#ff8d28]/10 text-[#ff8d28] border border-[#ff8d28]/20 font-semibold">OPTIMIZACIÓN</span>
         <span class="text-[10px] px-2 py-0.5 rounded bg-[#ff8d28]/10 text-[#ff8d28] border border-[#ff8d28]/20 font-semibold">MONITOREO</span>
       </div>
-      <button (click)="goToSection('contacto')"  class="text-xs font-bold text-[#ff8d28] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1 cursor-pointer">
+      <button (click)="goToSection('contacto')" class="text-xs font-bold text-[#ff8d28] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1 cursor-pointer">
         CONOCER MÁS &rarr;
       </button>
     </div>
@@ -163,7 +161,7 @@
         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
       </div>
       <h3 class="text-xl font-bold text-white mb-2">Redes de Comunicación</h3>
-      <p class="text-sm text-base-content/70 leading-relaxed mb-4">
+      <p class="text-sm text-base-content/70 leading-relaxed mb-4 text-justify">
         Diseño e implementación de arquitecturas de red IT/OT: Profinet, Ethernet/IP, Modbus TCP, MQTT y segmentación para entornos industriales.
       </p>
     </div>
@@ -175,7 +173,7 @@
         <span class="text-[10px] px-2 py-0.5 rounded bg-[#ff8d28]/10 text-[#ff8d28] border border-[#ff8d28]/20 font-semibold">MQTT</span>
         <span class="text-[10px] px-2 py-0.5 rounded bg-[#ff8d28]/10 text-[#ff8d28] border border-[#ff8d28]/20 font-semibold">IT/OT</span>
       </div>
-      <button (click)="goToSection('contacto')"  class="text-xs font-bold text-[#ff8d28] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1 cursor-pointer">
+      <button (click)="goToSection('contacto')" class="text-xs font-bold text-[#ff8d28] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1 cursor-pointer">
         CONOCER MÁS &rarr;
       </button>
     </div>
@@ -189,7 +187,7 @@
         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 18a8 8 0 118-8 8 8 0 01-8 8z"/></svg>
       </div>
       <h3 class="text-xl font-bold text-white mb-2">Transformación Digital</h3>
-      <p class="text-sm text-base-content/70 leading-relaxed mb-4">
+      <p class="text-sm text-base-content/70 leading-relaxed mb-4 text-justify">
         Integración de agentes de IA en flujos operativos: conexión de sistemas legados con plataformas modernas para automatizar decisiones y orquestar procesos.
       </p>
     </div>
@@ -199,7 +197,7 @@
         <span class="text-[10px] px-2 py-0.5 rounded bg-[#ff8d28]/10 text-[#ff8d28] border border-[#ff8d28]/20 font-semibold">NODE-RED</span>
         <span class="text-[10px] px-2 py-0.5 rounded bg-[#ff8d28]/10 text-[#ff8d28] border border-[#ff8d28]/20 font-semibold">APIS REST</span>
       </div>
-      <button (click)="goToSection('contacto')"  class="text-xs font-bold text-[#ff8d28] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1 cursor-pointer">
+      <button (click)="goToSection('contacto')" class="text-xs font-bold text-[#ff8d28] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1 cursor-pointer">
         CONOCER MÁS &rarr;
       </button>
     </div>
@@ -213,7 +211,7 @@
         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
       </div>
       <h3 class="text-xl font-bold text-white mb-2">Instrumentación Industrial</h3>
-      <p class="text-sm text-base-content/70 leading-relaxed mb-4">
+      <p class="text-sm text-base-content/70 leading-relaxed mb-4 text-justify">
         Selección, suministro, calibración e integración de instrumentos de proceso para medición de las variables críticas del sistema.
       </p>
     </div>

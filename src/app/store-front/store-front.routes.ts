@@ -5,6 +5,7 @@ import { ProductPageComponent } from "./pages/product-page/product-page.componen
 import { NotFoundPageComponent } from "./pages/not-found-page/not-found-page.component";
 import { AutomatizacionPageComponent } from "./pages/automatizacion-page/automatizacion-page.component";
 import { TratamientoAguaPageComponent } from "./pages/tratamiento-Agua-page/tratamiento-Agua-page.component";
+import { PrivacidadPageComponent } from "./pages/privacidad-page/privacidad-page.component";
 
 
 export const storeFrontRoutes: Routes = [
@@ -23,6 +24,10 @@ export const storeFrontRoutes: Routes = [
       {
         path: 'tratamientoAgua',
         component: TratamientoAguaPageComponent,
+      },
+      {
+        path: 'privacidad',
+        component: PrivacidadPageComponent,
       },
       {
         path: 'product/:idSlug',

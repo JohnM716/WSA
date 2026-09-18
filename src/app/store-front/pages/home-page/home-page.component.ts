@@ -9,6 +9,10 @@ import { RouterLink } from '@angular/router';
 })
 export class HomePageComponent {
 
+  public goHomeAndScrollTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   async enviarFormulario(event: Event) {
     event.preventDefault();
     const form = event.target as HTMLFormElement;
