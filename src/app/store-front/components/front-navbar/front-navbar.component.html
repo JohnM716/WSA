@@ -2,8 +2,10 @@
 <header
   class="fixed top-0 left-0 w-full z-50 bg-base-200/90 backdrop-blur-md border-b transition-colors duration-300 shadow-[0_4px_20px_rgba(255,255,255,0.1)]"
   [class.border-[#ff8d28]]="router.url.includes('/automatizacion')"
-  [class.border-[#0088ff]]="router.url.includes('/tratamientoAgua')"
-  [class.border-white/10]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')">
+  [class.border-[#0088ff]]="router.url.includes('/tratamientoAgua')
+  || router.url.includes('/productos')"
+  [class.border-white/10]="!router.url.includes('/automatizacion')
+  && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')">
 
   <div class="max-lg:collapse w-full">
     <!-- Referencia #mobileMenuToggle para desmarcar desde TypeScript -->
@@ -24,7 +26,7 @@
           <img
             [src]="router.url.includes('/automatizacion')
               ? 'assets/logos/LogoNaranjaBlanco.png'
-              : router.url.includes('/tratamientoAgua')
+              : (router.url.includes('/tratamientoAgua') || router.url.includes('/productos'))
                 ? 'assets/logos/LogoAzulBlanco.png'
                 : 'assets/logos/LogoBlancoNegro.png'"
             alt="WSA Logo"
@@ -34,8 +36,10 @@
           <svg
             class="h-8 w-auto transition-colors duration-300"
             [class.text-[#ff8d28]]="router.url.includes('/automatizacion')"
-            [class.text-[#0088ff]]="router.url.includes('/tratamientoAgua')"
-            [class.text-white]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
+            [class.text-[#0088ff]]="router.url.includes('/tratamientoAgua')
+            || router.url.includes('/productos')"
+            [class.text-white]="!router.url.includes('/automatizacion')
+            && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')"
             viewBox="0 0 60 50"
             fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -55,6 +59,19 @@
 
       <div class="navbar-end hidden lg:flex">
         <ul class="menu menu-horizontal px-1 items-center gap-1">
+
+          <!-- PRODUCTOS (Solo visible si está en Tratamiento de Agua o en Productos) -->
+          @if (router.url.includes('/tratamientoAgua') || router.url.includes('/productos')) {
+            <li class="relative">
+              <button routerLink="/productos" (click)="closeMenu()" class="relative font-medium text-base-content/90 hover:text-white transition-colors duration-300 group cursor-pointer">
+                Productos
+                <span
+                  class="absolute bottom-0 left-1/2 w-0 h-0.5 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-active:w-full bg-[#0088ff]">
+                </span>
+              </button>
+            </li>
+          }
+
           <li class="relative">
             <!-- Agregada referencia #servicesDetails -->
             <details #servicesDetails class="group">
@@ -63,10 +80,10 @@
                 <span
                   class="absolute bottom-0 left-1/2 w-0 h-0.5 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-open:w-full"
                   [class.bg-[#ff8d28]]="router.url.includes('/automatizacion')"
-                  [class.bg-[#0088ff]]="router.url.includes('/tratamientoAgua')"
-                  [class.bg-gradient-to-r]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
-                  [class.from-orange-500]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
-                  [class.to-blue-600]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')">
+                  [class.bg-[#0088ff]]="router.url.includes('/tratamientoAgua') || router.url.includes('/productos')"
+                  [class.bg-gradient-to-r]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')"
+                  [class.from-orange-500]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')"
+                  [class.to-blue-600]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')">
                 </span>
               </summary>
               <ul class="p-2 bg-base-100/95 backdrop-blur-md w-52 z-10 shadow-xl border border-white/10 rounded-xl mt-2">
@@ -91,10 +108,10 @@
               <span
                 class="absolute bottom-0 left-1/2 w-0 h-0.5 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-active:w-full"
                 [class.bg-[#ff8d28]]="router.url.includes('/automatizacion')"
-                [class.bg-[#0088ff]]="router.url.includes('/tratamientoAgua')"
-                [class.bg-gradient-to-r]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
-                [class.from-orange-500]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
-                [class.to-blue-600]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')">
+                [class.bg-[#0088ff]]="router.url.includes('/tratamientoAgua') || router.url.includes('/productos')"
+                [class.bg-gradient-to-r]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')"
+                [class.from-orange-500]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')"
+                [class.to-blue-600]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')">
               </span>
             </button>
           </li>
@@ -105,10 +122,10 @@
               <span
                 class="absolute bottom-0 left-1/2 w-0 h-0.5 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-active:w-full"
                 [class.bg-[#ff8d28]]="router.url.includes('/automatizacion')"
-                [class.bg-[#0088ff]]="router.url.includes('/tratamientoAgua')"
-                [class.bg-gradient-to-r]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
-                [class.from-orange-500]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')"
-                [class.to-blue-600]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua')">
+                [class.bg-[#0088ff]]="router.url.includes('/tratamientoAgua') || router.url.includes('/productos')"
+                [class.bg-gradient-to-r]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')"
+                [class.from-orange-500]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')"
+                [class.to-blue-600]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')">
               </span>
             </button>
           </li>
@@ -119,6 +136,16 @@
     <!-- MENÚ MOBILE -->
     <div class="collapse-content lg:hidden z-1">
       <ul class="menu bg-base-100/95 backdrop-blur-md rounded-xl p-4 border border-white/10 gap-2">
+
+        <!-- PRODUCTOS MOBILE (Solo visible si está en Tratamiento de Agua o en Productos) -->
+        @if (router.url.includes('/tratamientoAgua') || router.url.includes('/productos')) {
+          <li>
+            <button routerLink="/productos" (click)="closeMenu()" class="font-medium hover:text-[#0088ff] transition-colors text-left w-full cursor-pointer">
+              Productos
+            </button>
+          </li>
+        }
+
         <li>
           <span class="font-bold text-base-content/70">Servicios</span>
           <ul class="pl-2 border-l border-white/10 mt-1 gap-1">

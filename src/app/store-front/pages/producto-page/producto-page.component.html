@@ -1,0 +1,76 @@
+<section id="productos" class="container mx-auto px-4 pt-10 pb-16">
+  <!-- Encabezado de Productos -->
+  <div class="text-center mb-8">
+    <h1 class="text-3xl md:text-5xl font-extrabold uppercase tracking-wider text-base-content">
+      EQUIPOS PARA EL HOGAR
+    </h1>
+    <div class="w-24 h-1 bg-[#0088ff] mx-auto mt-4 rounded-full"></div>
+    <p class="mt-4 text-lg italic font-medium text-blue-400">
+      "Equipos y componentes especializados para el tratamiento y gestión eficiente del agua."
+    </p>
+  </div>
+
+  <!-- Grid de Tarjetas iterado dinámicamente -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto justify-items-center">
+
+    @for (producto of productos; track producto.titulo) {
+      <div class="perspective-1000 w-full max-w-sm">
+        <a
+          [href]="getWhatsAppUrl(producto)"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group relative w-full h-115 bg-base-100 rounded-3xl p-6 flex flex-col justify-between overflow-hidden transition-all duration-600 ease-[cubic-bezier(0.23,1,0.32,1)] shadow-xl border border-white/10 hover:border-blue-500/50 hover:[transform:rotateY(10deg)_rotateX(10deg)_translateZ(10px)] hover:shadow-[0_30px_60px_rgba(0,136,255,0.25)] cursor-pointer"
+        >
+          <!-- EFECTO LÍQUIDO / BRIGHT GLOW -->
+          <div class="absolute -top-20 left-0 w-80 h-52 bg-[#0088ff] rounded-full filter blur-[80px] opacity-0 transition-all duration-700 ease-in-out group-hover:opacity-60 group-hover:translate-y-8 group-hover:-translate-x-5 group-hover:rotate-[-20deg] group-hover:scale-125 pointer-events-none"></div>
+
+          <!-- EFECTO SHINE -->
+          <div class="absolute inset-0 bg-linear-to-r from-transparent via-white/15 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shine pointer-events-none"></div>
+
+          <!-- CONTENIDO PRINCIPAL -->
+          <div class="relative z-10 flex flex-col h-full justify-between pointer-events-none">
+
+            <!-- Badge (Si existe) -->
+            @if (producto.badge) {
+              <div class="absolute top-2 right-2 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md transform scale-75 opacity-0 transition-all duration-500 delay-100 group-hover:scale-100 group-hover:opacity-100 z-20">
+                {{ producto.badge }}
+              </div>
+            }
+
+            <!-- Contenedor Imagen Grande -->
+            <div class="w-full h-56 rounded-2xl overflow-hidden shadow-md relative transition-transform duration-600 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:-translate-y-2 group-hover:scale-105 bg-base-200">
+              <img
+                [src]="producto.imagen"
+                [alt]="producto.titulo"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Textos -->
+            <div class="flex flex-col gap-2 mt-4">
+              <h3 class="text-xl font-bold text-base-content transition-colors duration-400 group-hover:text-[#0088ff]">
+                {{ producto.titulo }}
+              </h3>
+              <p class="text-sm text-base-content/70 transition-opacity duration-400 group-hover:text-base-content">
+                {{ producto.descripcion }}
+              </p>
+            </div>
+
+            <!-- Footer / Acción -->
+            <div class="flex items-center justify-between mt-auto pt-4 border-t border-white/10">
+              <span class="text-sm font-bold text-base-content transition-colors duration-400 group-hover:text-[#0088ff]">
+                Cotizar / Hablar con un asesor
+              </span>
+              <div class="w-10 h-10 bg-[#0088ff] text-white rounded-full flex items-center justify-center transition-all duration-400 transform scale-90 group-hover:scale-100 group-hover:shadow-[0_0_0_5px_rgba(0,136,255,0.3)]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-300 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+        </a>
+      </div>
+    }
+  </div>
+</section>

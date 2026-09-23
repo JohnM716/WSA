@@ -12,7 +12,6 @@
       Todas las personas que suministren datos personales a <strong class="font-semibold text-white">WATER SYSTEM AUTOMATION SAS</strong>, podrán conocerla, actualizarla, rectificarla, suprimirla o revocar la autorización previamente otorgada.
     </p>
 
-    <!-- Recuadro con estilo bg-base-200 y borde azul -->
     <div class="p-6 rounded-xl bg-base-200 border-l-4 border-blue-600 text-left my-6 w-full">
       <h4 class="text-sm font-semibold uppercase text-blue-500 tracking-wider">
         Responsable del Tratamiento de Datos Personales
@@ -44,55 +43,40 @@
   </div>
 
   <div class="mt-8 flex justify-start">
-    <a
-      href="assets/pdf/HABEAS_DATA _WSA.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95"
-    >
+    <div class="relative inline-flex items-center justify-center gap-4 group">
       <div
-        class="absolute inset-0 bg-linear-to-r from-[#0088ff] via-50% from-50% to-orange-500 rounded-full transition-all duration-300 group-hover:scale-110"
+        class="absolute inset-0 duration-1000 opacity-60 transition-all bg-linear-to-r from-[#0088ff] to-orange-500 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"
       ></div>
 
-      <div
-        class="absolute inset-0 rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300 bg-white blur-xl"
-      ></div>
+      <!-- Botón principal -->
+      <a
+        role="button"
+        class="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+        title="Descargar Política de Datos"
+        href="assets/pdf/HABEAS_DATA _WSA.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span>Descargar Política PDF</span>
 
-      <div class="absolute inset-0 overflow-hidden rounded-full">
-        <div class="glitter-container">
-          <div class="glitter"></div>
-          <div class="glitter"></div>
-          <div class="glitter"></div>
-        </div>
-      </div>
-
-      <div
-        class="absolute inset-0 rounded-full border-2 border-white opacity-20 group-hover:opacity-40 group-hover:scale-105 transition-all duration-300"
-      ></div>
-
-      <div class="absolute inset-0 rounded-full overflow-hidden">
-        <div class="wave"></div>
-      </div>
-
-      <span class="relative z-10 flex items-center gap-2">
-        <span class="tracking-wider">Descargar Política (PDF)</span>
         <svg
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+          aria-hidden="true"
+          viewBox="0 0 10 10"
+          height="12"
+          width="12"
           fill="none"
-          class="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-1"
+          class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2"
         >
           <path
-            d="M13 7l5 5m0 0l-5 5m5-5H6"
-            stroke-width="2"
-            stroke-linejoin="round"
-            stroke-linecap="round"
+            d="M0 5h7"
+            class="transition opacity-0 group-hover:opacity-100"
+          ></path>
+          <path
+            d="M1 1l4 4-4 4"
+            class="transition group-hover:translate-x-0.75"
           ></path>
         </svg>
-        <span
-          class="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
-        ></span>
-      </span>
-    </a>
+      </a>
+    </div>
   </div>
 </section>

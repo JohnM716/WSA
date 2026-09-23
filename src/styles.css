@@ -32,7 +32,10 @@ html {
   position: relative;
   background: #1e1e1e;
   color: #fff;
-  border-radius: 50%;
+  /* FORMA PERSONALIZADA: Redondo en todas las esquinas excepto la superior izquierda */
+  border-radius: 9999px;
+  border-top-left-radius: 0;
+
   margin: 0 8px;
   width: 42px;
   height: 42px;
@@ -50,6 +53,7 @@ html {
 .wrapper .tooltip {
   position: absolute;
   top: 0;
+  left: 0; /* Alinea el inicio del tooltip con el borde izquierdo */
   font-size: 12px;
   background: #fff;
   color: #fff;
@@ -58,6 +62,7 @@ html {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   opacity: 0;
   pointer-events: none;
+  white-space: nowrap; /* Evita que el texto se parta en dos líneas */
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -68,13 +73,14 @@ html {
   width: 6px;
   background: #fff;
   bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
+  left: 6px; /* Desplaza la flechita hacia la izquierda para que coincida con la punta de la gota */
+  transform: rotate(45deg); /* Eliminamos el translate(-50%) para un control preciso */
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .wrapper .icon:hover .tooltip {
   top: -38px;
+  left: -2px; /* Ajuste fino opcional para centrar el cuerpo del mensaje respecto a la punta */
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -116,7 +122,6 @@ html {
   background: #3b5998;
   color: #fff;
 }
-
 
 /* LOGO Animación */
 .knob {

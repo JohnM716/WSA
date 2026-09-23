@@ -1,11 +1,11 @@
 import { Routes } from "@angular/router";
 import { StoreFrontLayoutComponent } from "./layouts/store-front-layout/store-front-layout.component";
 import { HomePageComponent } from "./pages/home-page/home-page.component";
-import { ProductPageComponent } from "./pages/product-page/product-page.component";
 import { NotFoundPageComponent } from "./pages/not-found-page/not-found-page.component";
 import { AutomatizacionPageComponent } from "./pages/automatizacion-page/automatizacion-page.component";
 import { TratamientoAguaPageComponent } from "./pages/tratamiento-Agua-page/tratamiento-Agua-page.component";
 import { PrivacidadPageComponent } from "./pages/privacidad-page/privacidad-page.component";
+import { ProductoPageComponent } from "./pages/producto-page/producto-page.component";
 
 
 export const storeFrontRoutes: Routes = [
@@ -30,8 +30,8 @@ export const storeFrontRoutes: Routes = [
         component: PrivacidadPageComponent,
       },
       {
-        path: 'product/:idSlug',
-        component: ProductPageComponent,
+        path: 'productos',
+        component: ProductoPageComponent,
       },
       {
         path: '**',
