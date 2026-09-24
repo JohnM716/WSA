@@ -1,3 +1,159 @@
-/* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: black --default;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* fuente */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/public/assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* footer redes sociales*/
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #1e1e1e;
+  color: #fff;
+  /* FORMA PERSONALIZADA: Redondo en todas las esquinas excepto la superior izquierda */
+  border-radius: 9999px;
+  border-top-left-radius: 0;
+
+  margin: 0 8px;
+  width: 42px;
+  height: 42px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  text-decoration: none;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  left: 0; /* Alinea el inicio del tooltip con el borde izquierdo */
+  font-size: 12px;
+  background: #fff;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap; /* Evita que el texto se parta en dos líneas */
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 6px;
+  width: 6px;
+  background: #fff;
+  bottom: -3px;
+  left: 6px; /* Desplaza la flechita hacia la izquierda para que coincida con la punta de la gota */
+  transform: rotate(45deg); /* Eliminamos el translate(-50%) para un control preciso */
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -38px;
+  left: -2px; /* Ajuste fino opcional para centrar el cuerpo del mensaje respecto a la punta */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* WhatsApp */
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+  background: #25d366;
+  color: #fff;
+}
+
+/* Instagram */
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aebe6 90%);
+  color: #fff;
+}
+
+/* LinkedIn */
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #0a66c2;
+  color: #fff;
+}
+
+/* Facebook */
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #3b5998;
+  color: #fff;
+}
+
+/* LOGO Animación */
+.knob {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animación al recargar */
+@keyframes slide-to-left {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-14px); }
+}
+
+@keyframes slide-to-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(14px); }
+}
+
+.knob-right {
+  animation: slide-to-left 1.2s ease-in-out 1;
+}
+
+.knob-mid {
+  animation: slide-to-right 1.2s ease-in-out 1;
+}
+
+/* hover o active */
+.group:hover .knob-right,
+.group:active .knob-right {
+  transform: translateX(-14px);
+}
+
+.group:hover .knob-mid,
+.group:active .knob-mid {
+  transform: translateX(14px);
+}
