@@ -63,7 +63,7 @@
           <!-- PRODUCTOS (Solo visible si está en Tratamiento de Agua o en Productos) -->
           @if (router.url.includes('/tratamientoAgua') || router.url.includes('/productos')) {
             <li class="relative">
-              <button routerLink="/productos" (click)="closeMenu()" class="relative font-medium text-base-content/90 hover:text-white transition-colors duration-300 group cursor-pointer">
+              <button routerLink="/productos" (click)="goHomeAndScrollTop();" class="relative font-medium text-base-content/90 hover:text-white transition-colors duration-300 group cursor-pointer">
                 Productos
                 <span
                   class="absolute bottom-0 left-1/2 w-0 h-0.5 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-active:w-full bg-[#0088ff]">
@@ -115,10 +115,22 @@
               </span>
             </button>
           </li>
-
           <li class="relative">
             <button (click)="goToSection('contacto')" class="relative font-medium text-base-content/90 hover:text-white transition-colors duration-300 group cursor-pointer">
               Contacto
+              <span
+                class="absolute bottom-0 left-1/2 w-0 h-0.5 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-active:w-full"
+                [class.bg-[#ff8d28]]="router.url.includes('/automatizacion')"
+                [class.bg-[#0088ff]]="router.url.includes('/tratamientoAgua') || router.url.includes('/productos')"
+                [class.bg-gradient-to-r]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')"
+                [class.from-orange-500]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')"
+                [class.to-blue-600]="!router.url.includes('/automatizacion') && !router.url.includes('/tratamientoAgua') && !router.url.includes('/productos')">
+              </span>
+            </button>
+          </li>
+          <li class="relative">
+            <button routerLink="/pqrs" (click)="goHomeAndScrollTop();" class="relative font-medium text-base-content/90 hover:text-white transition-colors duration-300 group cursor-pointer">
+              Pqrs
               <span
                 class="absolute bottom-0 left-1/2 w-0 h-0.5 transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full group-active:w-full"
                 [class.bg-[#ff8d28]]="router.url.includes('/automatizacion')"
@@ -140,7 +152,7 @@
         <!-- PRODUCTOS MOBILE (Solo visible si está en Tratamiento de Agua o en Productos) -->
         @if (router.url.includes('/tratamientoAgua') || router.url.includes('/productos')) {
           <li>
-            <button routerLink="/productos" (click)="closeMenu()" class="font-medium hover:text-[#0088ff] transition-colors text-left w-full cursor-pointer">
+            <button routerLink="/productos" (click)="goHomeAndScrollTop();" class="font-medium hover:text-[#0088ff] transition-colors text-left w-full cursor-pointer">
               Productos
             </button>
           </li>
@@ -166,6 +178,9 @@
         </li>
         <li>
           <button (click)="goToSection('contacto')" class="font-medium hover:text-white transition-colors text-left w-full cursor-pointer">Contacto</button>
+        </li>
+        <li>
+          <button routerLink="/pqrs" (click)="goHomeAndScrollTop();" class="font-medium hover:text-white transition-colors text-left w-full cursor-pointer">Pqrs</button>
         </li>
       </ul>
     </div>

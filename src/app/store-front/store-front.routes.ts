@@ -6,6 +6,7 @@ import { AutomatizacionPageComponent } from "./pages/automatizacion-page/automat
 import { TratamientoAguaPageComponent } from "./pages/tratamiento-Agua-page/tratamiento-Agua-page.component";
 import { PrivacidadPageComponent } from "./pages/privacidad-page/privacidad-page.component";
 import { ProductoPageComponent } from "./pages/producto-page/producto-page.component";
+import { PqrsPageComponent } from "./pages/pqrs-page/pqrs-page.component";
 
 
 export const storeFrontRoutes: Routes = [
@@ -32,6 +33,10 @@ export const storeFrontRoutes: Routes = [
       {
         path: 'productos',
         component: ProductoPageComponent,
+      },
+      {
+        path: 'pqrs',
+        component: PqrsPageComponent,
       },
       {
         path: '**',

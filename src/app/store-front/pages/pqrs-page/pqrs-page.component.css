@@ -1,0 +1,90 @@
+
+.group {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Checkbox*/
+/* Estilos del Checkbox Animado (Círculo -> Cuadrado con rotación y color azul) */
+.custom-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.4rem; /* Tamaño proporcional para que luzca bien */
+  user-select: none;
+}
+
+/* Crear el checkbox personalizado: Inicia como CÍRCULO */
+.custom-checkbox-container .checkmark {
+  --clr: #3b82f6; /* Azul brillante (Tailwind blue-500) */
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.2em;
+  width: 1.2em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%; /* Arranca totalmente redondo (círculo) */
+  transition: 300ms;
+}
+
+/* Cuando se hace clic, pasa a ser CUADRADO, toma el color azul y activa la animación */
+.custom-checkbox-container input:checked ~ .checkmark {
+  background-color: var(--clr);
+  border-color: var(--clr);
+  border-radius: .4rem; /* Se vuelve cuadrado con esquinas redondeadas */
+  animation: pulse-checkbox-wobble 500ms ease-in-out;
+}
+
+/* Indicador check (oculto por defecto) */
+.custom-checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Mostrar el check cuando está seleccionado */
+.custom-checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Posición y tamaño exacto del ícono check para que se vea perfectamente centrado y nítido */
+.custom-checkbox-container .checkmark:after {
+  left: 0.42em;
+  top: 0.18em;
+  width: 0.3em;
+  height: 0.6em;
+  border: solid #ffffff;
+  border-width: 0 0.16em 0.16em 0;
+  transform: rotate(45deg);
+}
+
+/* Animación exacta de tambaleo (wobble/pulse) que tenías originalmente */
+@keyframes pulse-checkbox-wobble {
+  0% {
+    box-shadow: 0 0 0 rgba(59, 130, 246, 0.5);
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(-20deg);
+  }
+
+  75% {
+    box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.3);
+  }
+
+  100% {
+    box-shadow: 0 0 0 12px rgba(59, 130, 246, 0);
+    transform: rotate(0deg);
+  }
+}

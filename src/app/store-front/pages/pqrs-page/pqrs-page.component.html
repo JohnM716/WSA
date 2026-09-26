@@ -1,0 +1,258 @@
+<div class="min-h-screen bg-base-100 text-base-content overflow-x-hidden">
+
+  <!-- SECCIÓN SUPERIOR: Banner corporativo ocupando TODO el ancho de la pantalla -->
+  <div class="relative w-screen left-1/2 -translate-x-1/2 h-112.5 md:h-125 flex items-center justify-center text-center bg-linear-to-b from-zinc-950 via-zinc-900 to-zinc-950 overflow-hidden px-4">
+
+    <!-- Elementos decorativos cubriendo todo el ancho -->
+    <div class="absolute inset-0 opacity-20 bg-[radial-linear(#ff8d28_1px,transparent_1px)] [background-size:24px_24px]"></div>
+    <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-200 h-87.5 bg-primary/10 blur-[140px] rounded-full pointer-events-none"></div>
+
+    <!-- Contenido del Banner (Centrado y con su propio espacio cómodo) -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 md:px-12 w-full space-y-4">
+      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow-md">
+        Peticiones, Quejas, Reclamos y <span class="text-[#ff8d28]">Sugerencias</span>
+      </h1>
+      <p class="text-base md:text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto drop-shadow">
+        Este es nuestro canal de atención para que puedas realizar tus Peticiones, Quejas, Reclamos y Sugerencias (PQRS) de forma ágil y efectiva. Nuestro equipo está listo para gestionar tus solicitudes y brindarte una respuesta clara y oportuna.
+      </p>
+    </div>
+  </div>
+
+  <!-- SECCIÓN DE CARDS (4 opciones con los efectos y la gota de agua exacta) -->
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Card 1: Sugerencia (Naranja) -->
+      <div class="bg-base-200 border border-white/5 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 group relative overflow-hidden shadow-[0_0_15px_rgba(255,141,40,0.15)] hover:shadow-[0_0_25px_rgba(255,141,40,0.35)] hover:border-[#ff8d28]/50">
+        <div class="space-y-3">
+          <!-- Icono en forma de gota Naranja -->
+          <div class="w-12 h-12 rounded-full rounded-tl-none bg-[#ff8d28] flex items-center justify-center text-gray-950 font-bold group-hover:-translate-y-1 group-hover:shadow-lg group-hover:shadow-[#ff8d28]/40 transition-all duration-300">
+            <svg class="w-6 h-6 text-gray-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold text-white transition-colors duration-300 group-hover:text-[#ff8d28]">Sugerencia</h4>
+          <p class="text-sm md:text-base text-base-content/80 leading-relaxed">
+            Propuesta o recomendación para mejorar el servicio o nuestros procesos operativos.
+          </p>
+        </div>
+        <!-- Barra Resplandeciente Inferior Naranja -->
+        <div class="h-2 w-full bg-linear-to-r from-[#ff8d28] to-amber-500 group-hover:blur-md blur-xl m-auto rounded transition-all absolute bottom-0 left-0 opacity-0 group-hover:opacity-100"></div>
+      </div>
+
+      <!-- Card 2: Petición (Azul) -->
+      <div class="bg-base-200 border border-white/5 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 group relative overflow-hidden shadow-[0_0_15px_rgba(59,130,246,0.15)] hover:shadow-[0_0_25px_rgba(59,130,246,0.35)] hover:border-blue-500/50">
+        <div class="space-y-3">
+          <!-- Icono en forma de gota Azul -->
+          <div class="w-12 h-12 rounded-full rounded-tl-none bg-blue-500 flex items-center justify-center text-gray-950 font-bold group-hover:-translate-y-1 group-hover:shadow-lg group-hover:shadow-blue-500/40 transition-all duration-300">
+            <svg class="w-6 h-6 text-gray-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold text-white transition-colors duration-300 group-hover:text-blue-500">Petición</h4>
+          <p class="text-sm md:text-base text-base-content/80 leading-relaxed">
+            Solicitud de información con respecto a un producto o servicio de la compañía.
+          </p>
+        </div>
+        <!-- Barra Resplandeciente Inferior Azul -->
+        <div class="h-2 w-full bg-linear-to-r from-blue-600 to-cyan-400 group-hover:blur-md blur-xl m-auto rounded transition-all absolute bottom-0 left-0 opacity-0 group-hover:opacity-100"></div>
+      </div>
+
+      <!-- Card 3: Quejas y Reclamos (Naranja) -->
+      <div class="bg-base-200 border border-white/5 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 group relative overflow-hidden shadow-[0_0_15px_rgba(255,141,40,0.15)] hover:shadow-[0_0_25px_rgba(255,141,40,0.35)] hover:border-[#ff8d28]/50">
+        <div class="space-y-3">
+          <!-- Icono en forma de gota Naranja -->
+          <div class="w-12 h-12 rounded-full rounded-tl-none bg-[#ff8d28] flex items-center justify-center text-gray-950 font-bold group-hover:-translate-y-1 group-hover:shadow-lg group-hover:shadow-[#ff8d28]/40 transition-all duration-300">
+            <svg class="w-6 h-6 text-gray-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold text-white transition-colors duration-300 group-hover:text-[#ff8d28]">Quejas y Reclamos</h4>
+          <p class="text-sm md:text-base text-base-content/80 leading-relaxed">
+            Inconformidad o incumplimiento con respecto a un producto, la atención o el servicio.
+          </p>
+        </div>
+        <!-- Barra Resplandeciente Inferior Naranja -->
+        <div class="h-2 w-full bg-linear-to-r from-[#ff8d28] to-amber-500 group-hover:blur-md blur-xl m-auto rounded transition-all absolute bottom-0 left-0 opacity-0 group-hover:opacity-100"></div>
+      </div>
+
+      <!-- Card 4: Felicitaciones (Azul) -->
+      <div class="bg-base-200 border border-white/5 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 group relative overflow-hidden shadow-[0_0_15px_rgba(59,130,246,0.15)] hover:shadow-[0_0_25px_rgba(59,130,246,0.35)] hover:border-blue-500/50">
+        <div class="space-y-3">
+          <!-- Icono en forma de gota Azul -->
+          <div class="w-12 h-12 rounded-full rounded-tl-none bg-blue-500 flex items-center justify-center text-gray-950 font-bold group-hover:-translate-y-1 group-hover:shadow-lg group-hover:shadow-blue-500/40 transition-all duration-300">
+            <svg class="w-6 h-6 text-gray-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.714 0 1.962-.803 3.655-2.243 5.096L5 14m9 4H8m0 0v-4m0 4H5m3 0h6"/>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold text-white transition-colors duration-300 group-hover:text-blue-500">Felicitaciones</h4>
+          <p class="text-sm md:text-base text-base-content/80 leading-relaxed">
+            Manifestación de satisfacción o reconocimiento hacia una persona, entidad o servicio.
+          </p>
+        </div>
+        <!-- Barra Resplandeciente Inferior Azul -->
+        <div class="h-2 w-full bg-linear-to-r from-blue-600 to-cyan-400 group-hover:blur-md blur-xl m-auto rounded transition-all absolute bottom-0 left-0 opacity-0 group-hover:opacity-100"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECCIÓN FORMULARIO -->
+  <div class="max-w-2xl mx-auto px-4 pb-20">
+    <div class="w-full bg-base-200 border border-white/10 rounded-2xl shadow-xl p-8 backdrop-blur-sm">
+
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold text-base-content">Formulario de Radicación PQRS</h2>
+        <!-- Badge con color naranja brillante -->
+        <span class="text-sm font-bold px-3.5 py-1.5 rounded-full bg-[#ff8d28]/20 text-[#ff8d28] border border-[#ff8d28]/60 shadow-sm">
+          Radicado N°: {{ radicadoActual }}
+        </span>
+      </div>
+
+      <!-- Formulario Reactivo -->
+      <form (submit)="enviarFormulario($event)" class="space-y-4">
+        <input type="hidden" name="radicado" [value]="radicadoActual">
+
+        <!-- Tipo de Solicitud -->
+        <div>
+          <label class="block text-sm font-medium text-base-content/80 mb-1">Tipo de Solicitud</label>
+          <select
+            [(ngModel)]="formData.tipo"
+            name="tipo"
+            required
+            class="w-full bg-base-100 text-base-content border border-white/10 rounded-md p-2.5 focus:outline-none focus:ring-1 focus:ring-primary transition"
+          >
+            <option value="" disabled selected>Seleccione...</option>
+            <option value="Peticiones y consultas">Peticiones y consultas</option>
+            <option value="Quejas y reclamos">Quejas y reclamos</option>
+            <option value="Sugerencias">Sugerencias</option>
+            <option value="Felicitaciones">Felicitaciones</option>
+          </select>
+        </div>
+
+        <!-- Nombre e Identificación -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input
+            type="text"
+            name="nombre"
+            [(ngModel)]="formData.nombre"
+            required
+            class="bg-base-100 text-base-content border border-white/10 rounded-md p-2.5 focus:outline-none focus:ring-1 focus:ring-primary transition w-full"
+            placeholder="Nombre Completo"
+          />
+          <input
+            type="text"
+            name="identificacion"
+            [(ngModel)]="formData.identificacion"
+            required
+            class="bg-base-100 text-base-content border border-white/10 rounded-md p-2.5 focus:outline-none focus:ring-1 focus:ring-primary transition w-full"
+            placeholder="Número de Identificación"
+          />
+        </div>
+
+        <!-- Tipo de Persona y NIT condicional -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-base-content/80 mb-1">Tipo de Persona</label>
+            <select
+              [(ngModel)]="formData.tipoPersona"
+              name="tipoPersona"
+              class="w-full bg-base-100 text-base-content border border-white/10 rounded-md p-2.5 focus:outline-none focus:ring-1 focus:ring-primary transition"
+            >
+              <option value="" disabled selected>Seleccione...</option>
+              <option value="Natural">Persona Natural</option>
+              <option value="Empresa">Empresa</option>
+            </select>
+          </div>
+
+          <div *ngIf="formData.tipoPersona === 'Empresa'">
+            <label class="block text-sm font-medium text-base-content/80 mb-1">NIT de la Empresa</label>
+            <input
+              type="text"
+              name="nit"
+              [(ngModel)]="formData.nit"
+              required
+              class="bg-base-100 text-base-content border border-white/10 rounded-md p-2.5 focus:outline-none focus:ring-1 focus:ring-primary transition w-full"
+              placeholder="Ej: 900.123.456-7"
+            />
+          </div>
+        </div>
+
+        <!-- Descripción de la solicitud -->
+        <div>
+          <label class="block text-sm font-medium text-base-content/80 mb-1">Descripción de la Solicitud</label>
+          <textarea
+            name="descripcion"
+            [(ngModel)]="formData.descripcion"
+            required
+            rows="4"
+            class="bg-base-100 text-base-content border border-white/10 rounded-md p-2.5 w-full focus:outline-none focus:ring-1 focus:ring-primary transition resize-none"
+            placeholder="Detalla claramente tu petición, queja, reclamo o sugerencia..."
+          ></textarea>
+        </div>
+
+        <!-- Checkbox Animado-->
+        <div class="flex items-start space-x-3 pt-2">
+          <label class="custom-checkbox-container shrink-0 -mt-1">
+            <input
+              type="checkbox"
+              name="aceptaDatos"
+              [(ngModel)]="formData.aceptaDatos"
+              required
+            >
+            <div class="checkmark"></div>
+          </label>
+          <label class="text-xs text-base-content/80 leading-relaxed cursor-pointer select-none">
+            Autorizo el tratamiento de mis datos de acuerdo con la
+            <a href="/privacidad" target="_blank" class="text-primary underline hover:text-primary-focus">Política de tratamiento de datos personales</a>.
+          </label>
+        </div>
+
+        <div class="bg-base-100/50 p-3 rounded-lg text-sm text-base-content/70 flex items-center gap-2 border border-white/5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-info shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Si requieres adjuntar soportes o evidencias adicionales para tu solicitud, puedes enviarlos directamente a nuestro WhatsApp corporativo indicando tu número de radicado.</span>
+        </div>
+
+        <!-- Botón Enviar con validación -->
+        <div class="pt-4">
+          <button
+            type="submit"
+            [disabled]="!formData.tipo || !formData.nombre || !formData.identificacion || !formData.descripcion || !formData.aceptaDatos || (formData.tipoPersona === 'Empresa' && !formData.nit)"
+            class="btn btn-primary w-full shadow-md text-white font-semibold cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            Enviar Solicitud (Radicado #{{ radicadoActual }})
+          </button>
+        </div>
+      </form>
+
+      <!-- Modal de éxito -->
+      <dialog id="modal_exito" class="modal">
+        <div class="modal-box bg-base-200 border border-white/10 text-center space-y-4 shadow-2xl">
+          <div class="flex justify-center">
+            <img
+              src="assets/logos/LogoBlancoNegroCompleto.png"
+              alt="WSA Logo"
+              class="h-12 object-contain"
+            />
+          </div>
+          <h3 class="text-2xl font-bold text-success">
+            ¡PQRS Radicada con Éxito!
+          </h3>
+          <p class="text-sm text-base-content/80">
+            Tu número de radicado asignado es <span class="font-bold text-primary">#{{ radicadoActual }}</span>.
+            Hemos enviado una copia de tu solicitud al correo institucional <span class="underline">atencionalcliente@wsacol.com</span>. Nuestro equipo se pondrá en contacto contigo pronto.
+          </p>
+          <div class="modal-action justify-center">
+            <form method="dialog">
+              <button (click)="reiniciarFormulario()" class="btn btn-primary btn-sm px-6">Aceptar</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+    </div>
+  </div>
+
+</div>
