@@ -152,7 +152,7 @@
         <!-- PRODUCTOS MOBILE (Solo visible si está en Tratamiento de Agua o en Productos) -->
         @if (router.url.includes('/tratamientoAgua') || router.url.includes('/productos')) {
           <li>
-            <button routerLink="/productos" (click)="goHomeAndScrollTop();" class="font-medium hover:text-[#0088ff] transition-colors text-left w-full cursor-pointer">
+            <button routerLink="/productos" (click)="goHomeAndScrollTop(); closeMenu()" class="font-medium hover:text-[#0088ff] transition-colors text-left w-full cursor-pointer">
               Productos
             </button>
           </li>
@@ -180,7 +180,7 @@
           <button (click)="goToSection('contacto')" class="font-medium hover:text-white transition-colors text-left w-full cursor-pointer">Contacto</button>
         </li>
         <li>
-          <button routerLink="/pqrs" (click)="goHomeAndScrollTop();" class="font-medium hover:text-white transition-colors text-left w-full cursor-pointer">Pqrs</button>
+          <button routerLink="/pqrs" (click)="goHomeAndScrollTop(); closeMenu()" class="font-medium hover:text-white transition-colors text-left w-full cursor-pointer">Pqrs</button>
         </li>
       </ul>
     </div>

@@ -29,22 +29,22 @@ export class ProductoPageComponent {
       titulo: 'Purificador de Agua Hogar',
       badge: 'DESTACADO',
       descripcion: 'Sistema de filtración residencial múltiple etapa para agua limpia y pura.',
-      imagen: 'assets/img/HogarAgua2.png',
-      linkImagen: 'https://wsacol.com/assets/img/HogarAgua2.png',
+      imagen: 'assets/img/productos/HogarAgua2.png',
+      linkImagen: 'https://wsacol.com/assets/img/productos/HogarAgua2.png',
     },
     {
       titulo: 'Filtro Ablandador de Agua',
       badge: 'NUEVO',
       descripcion: 'Elimina la dureza del agua protegiendo tuberías y electrodomésticos del hogar.',
-      imagen: 'assets/img/HogarAgua2.png',
-      linkImagen: 'https://wsacol.com/assets/img/HogarAgua2.png',
+      imagen: 'assets/img/productos/HogarAgua2.png',
+      linkImagen: 'https://wsacol.com/assets/img/productos/HogarAgua2.png',
     },
     {
       titulo: 'Sistema UV Desinfectante',
       badge: 'EFICIENTE',
       descripcion: 'Esterilización mediante luz ultravioleta libre de químicos para el agua del hogar.',
-      imagen: 'assets/img/HogarAgua2.png',
-      linkImagen: 'https://wsacol.com/assets/img/HogarAgua2.png',
+      imagen: 'assets/img/productos/HogarAgua2.png',
+      linkImagen: 'https://wsacol.com/assets/img/productos/HogarAgua2.png',
     },
   ];
 

@@ -55,7 +55,7 @@ export class PqrsPageComponent {
     };
 
     try {
-      const response = await fetch('https://formspree.io/f/xvkolqwk', {
+      const response = await fetch('https://formspree.io/f/xwlpnyln', {
         method: 'POST',
         body: JSON.stringify(datosEnvio),
         headers: {
