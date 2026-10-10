@@ -1,0 +1,67 @@
+<div class="container mx-auto px-4 py-16 flex flex-col items-center justify-center min-h-[70vh] text-center">
+
+  <!-- Botón de Regresar personalizado -->
+  <div class="w-full max-w-3xl flex justify-start mb-8">
+    <button
+      (click)="regresar()"
+      class="bg-base-200 text-base-content text-center w-48 rounded-2xl h-14 relative font-semibold group border border-white/10 hover:border-blue-500/50 cursor-pointer shadow-lg overflow-hidden flex items-center"
+      type="button"
+    >
+      <div
+        class="bg-[#0088ff] rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-1 group-hover:w-46 z-10 duration-500 shadow-md"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1024 1024"
+          height="25px"
+          width="25px"
+        >
+          <path
+            d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+            fill="#ffffff"
+          ></path>
+          <path
+            d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+            fill="#ffffff"
+          ></path>
+        </svg>
+      </div>
+      <p class="w-full text-center pl-6 transition-colors duration-300 group-hover:text-white font-bold tracking-wide">Regresar</p>
+    </button>
+  </div>
+
+  <!-- Título principal centrado -->
+  <h1 class="text-3xl md:text-5xl font-extrabold uppercase tracking-wider text-base-content mb-4">
+    {{ tituloProducto }}
+  </h1>
+  <div class="w-32 h-1 bg-[#0088ff] mb-8 rounded-full shadow-[0_0_15px_#0088ff]"></div>
+
+  <!-- Contenedor con resplandor y bordes iluminados -->
+  <div class="relative w-full max-w-3xl group">
+
+    <!-- EFECTO DE RESPLANDOR (GLOW) DETRÁS DE LA IMAGEN -->
+    <div class="absolute -inset-1 bg-linear-to-r from-[#0088ff] via-blue-400 to-indigo-600 rounded-3xl blur-xl opacity-50 group-hover:opacity-80 transition duration-1000 group-hover:duration-200 animate-pulse pointer-events-none"></div>
+
+    <!-- Caja principal de la imagen -->
+    <div class="relative w-full p-4 rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(0,136,255,0.25)] bg-base-200/90 backdrop-blur-md border border-blue-500/40 flex items-center justify-center">
+      <img
+        [src]="imagenProducto"
+        [alt]="tituloProducto"
+        class="max-h-112.5 w-auto object-contain transition-transform duration-700 hover:scale-105"
+      />
+    </div>
+  </div>
+
+  <!-- Subtítulo de etapas -->
+  @if (caracteristicaEtapas) {
+    <p class="text-sm md:text-base font-bold text-blue-500 uppercase tracking-widest mt-6">
+      {{ caracteristicaEtapas }}
+    </p>
+  }
+
+  <!-- Descripción detallada justificada -->
+  <p class="max-w-2xl text-base md:text-lg text-base-content/80 leading-relaxed text-justify mt-4">
+    {{ descripcionProducto }}
+  </p>
+
+</div>

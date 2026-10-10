@@ -7,6 +7,10 @@ import { TratamientoAguaPageComponent } from "./pages/tratamiento-Agua-page/trat
 import { PrivacidadPageComponent } from "./pages/privacidad-page/privacidad-page.component";
 import { ProductoPageComponent } from "./pages/producto-page/producto-page.component";
 import { PqrsPageComponent } from "./pages/pqrs-page/pqrs-page.component";
+import { OsmosisInversaPageComponent } from "./pages/producto-page/osmosis-inversa-page/osmosis-inversa-page.component";
+import { MicrofiltracionPageComponent } from "./pages/producto-page/microfiltracion-page/microfiltracion-page.component";
+import { UltrafiltracionPageComponent } from "./pages/producto-page/ultrafiltracion-page/ultrafiltracion-page.component";
+import { ProductoOIComponent } from "./pages/producto-page/osmosis-inversa-page/producto-OI/producto-OI.component";
 
 
 export const storeFrontRoutes: Routes = [
@@ -33,6 +37,22 @@ export const storeFrontRoutes: Routes = [
       {
         path: 'productos',
         component: ProductoPageComponent,
+      },
+      {
+        path: 'productos/osmosis-inversa',
+        component: OsmosisInversaPageComponent
+      },
+      {
+        path: 'productos/osmosis-inversa/producto-OI',
+        component: ProductoOIComponent
+      },
+      {
+        path: 'productos/microfiltracion',
+        component:MicrofiltracionPageComponent
+      },
+      {
+        path: 'productos/ultrafiltracion',
+        component: UltrafiltracionPageComponent
       },
       {
         path: 'pqrs',
