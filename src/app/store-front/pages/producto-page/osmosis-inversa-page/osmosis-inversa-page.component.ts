@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Router } from '@angular/router'; // <-- Importar Router
+import { Router } from '@angular/router';
 
 export interface IconoCaracteristica {
   icono: 'casa' | 'gota' | 'filtro' | 'edificio' | 'usuarios' | 'uv';
@@ -36,8 +36,8 @@ export class OsmosisInversaPageComponent {
       titulo: 'RO Residencial 280 GPD',
       badge: 'NUEVO',
       descripcion: 'Sistema compacto de ósmosis inversa ideal para hogares. Remueve sales, metales pesados, cloro y otros contaminantes, entregando agua de alta pureza y excelente sabor.',
-      imagen: 'assets/img/productos/RO_residencial_280_GPD.png',
-      linkImagen: 'https://wsacol.com/assets/img/productos/RO_residencial_280_GPD.png',
+      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_280_GPD.png',
+      linkImagen: 'https://wsacol.com/assets/img/productos/productosOsmosis/RO_residencial_280_GPD.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },
         { texto: '280 GPD (1.06 m³/día)', icono: 'gota' },
@@ -48,8 +48,8 @@ export class OsmosisInversaPageComponent {
       titulo: 'RO Residencial 600 GPD',
       badge: 'NUEVO',
       descripcion: 'Equipo de ósmosis inversa de mayor capacidad, ideal para viviendas grandes o consumos altos. Incluye sistema de control básico y filtración multietapa.',
-      imagen: 'assets/img/productos/RO_residencial_600_GPD.png',
-      linkImagen: 'https://wsacol.com/assets/img/productos/RO_residencial_600_GPD.png',
+      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_600_GPD.png',
+      linkImagen: 'https://wsacol.com/assets/img/productos/productosOsmosis/RO_residencial_600_GPD.png',
       caracteristicas: [
         { texto: 'Viviendas grandes', icono: 'edificio' },
         { texto: '600 GPD (2.27 m³/día)', icono: 'gota' },
@@ -60,8 +60,8 @@ export class OsmosisInversaPageComponent {
       titulo: 'RO Residencial 1200 GPD',
       badge: 'NUEVO',
       descripcion: 'Sistema de ósmosis inversa de alta capacidad, diseñado para hogares grandes, pequeñas comunidades o aplicaciones especiales. Incluye desinfección por luz ultravioleta.',
-      imagen: 'assets/img/productos/RO_residencial_1200_GPD_UV.png',
-      linkImagen: 'https://wsacol.com/assets/img/productos/RO_residencial_1200_GPD_UV.png',
+      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_1200_GPD_UV.png',
+      linkImagen: 'https://wsacol.com/assets/img/productos/productosOsmosis/RO_residencial_1200_GPD_UV.png',
       caracteristicas: [
         { texto: 'Hogares grandes y uso especial', icono: 'usuarios' },
         { texto: '1200 GPD (4.54 m³/día)', icono: 'gota' },
@@ -69,15 +69,15 @@ export class OsmosisInversaPageComponent {
       ]
     },
     {
-      titulo: 'RO Residencial 280 GPD LC',
+      titulo: 'RO Residencial 100 GPD',
       badge: 'NUEVO',
       descripcion: 'Sistema de ósmosis inversa compacto con configuración mejorada de filtración (LC), ideal para hogares. Proporciona agua segura, libre de sales y con excelente sabor.',
-      imagen: 'assets/img/productos/RO_residencial_280_GPD_LC.png',
-      linkImagen: 'https://wsacol.com/assets/img/productos/RO_residencial_280_GPD_LC.png',
+      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_280_GPD_LC.png',
+      linkImagen: 'https://wsacol.com/assets/img/productos/productosOsmosis/RO_residencial_280_GPD_LC.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },
-        { texto: '280 GPD (1.06 m³/día)', icono: 'gota' },
-        { texto: '6 etapas de filtración', icono: 'filtro' }
+        { texto: '100 GPD (1.06 m³/día)', icono: 'gota' },
+        { texto: '5 etapas de filtración', icono: 'filtro' }
       ]
     }
   ];
@@ -95,8 +95,6 @@ export class OsmosisInversaPageComponent {
       queryParams: {
         titulo: producto.titulo,
         imagen: producto.imagen,
-        descripcion: producto.descripcion,
-        etapas: producto.caracteristicas[2]?.texto
       }
     });
   }

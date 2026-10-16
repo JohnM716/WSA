@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Location } from '@angular/common'; // <-- Importar Location
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-producto-oi',
@@ -12,12 +12,9 @@ import { Location } from '@angular/common'; // <-- Importar Location
 export class ProductoOIComponent implements OnInit {
   public tituloProducto: string = '';
   public imagenProducto: string = '';
-  public descripcionProducto: string = '';
-  public caracteristicaEtapas: string = '';
 
   constructor(
     private route: ActivatedRoute,
-    private location: Location,
     private router: Router
   ) {}
 
@@ -25,8 +22,6 @@ export class ProductoOIComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
       this.tituloProducto = params['titulo'] || 'Equipo de Ósmosis Inversa';
       this.imagenProducto = params['imagen'] || '';
-      this.descripcionProducto = params['descripcion'] || '';
-      this.caracteristicaEtapas = params['etapas'] || '';
     });
   }
 

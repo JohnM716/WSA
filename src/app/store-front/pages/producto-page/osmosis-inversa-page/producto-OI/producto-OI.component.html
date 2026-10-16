@@ -37,8 +37,7 @@
   <div class="w-32 h-1 bg-[#0088ff] mb-8 rounded-full shadow-[0_0_15px_#0088ff]"></div>
 
   <!-- Contenedor con resplandor y bordes iluminados -->
-  <div class="relative w-full max-w-3xl group">
-
+  <div class="relative w-full max-w-3xl group mb-12">
     <!-- EFECTO DE RESPLANDOR (GLOW) DETRÁS DE LA IMAGEN -->
     <div class="absolute -inset-1 bg-linear-to-r from-[#0088ff] via-blue-400 to-indigo-600 rounded-3xl blur-xl opacity-50 group-hover:opacity-80 transition duration-1000 group-hover:duration-200 animate-pulse pointer-events-none"></div>
 
@@ -52,16 +51,514 @@
     </div>
   </div>
 
-  <!-- Subtítulo de etapas -->
-  @if (caracteristicaEtapas) {
-    <p class="text-sm md:text-base font-bold text-blue-500 uppercase tracking-widest mt-6">
-      {{ caracteristicaEtapas }}
-    </p>
-  }
+  <!-- ========================================================= -->
+  <!-- BLOQUE DE DESCRIPCIÓN: RO Residencial 280 GPD -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'RO Residencial 280 GPD'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">SISTEMA RO OSMOSIS INVERSA HIFLUX 280 GALONES POR DÍA</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">CON PANTALLA LCD MICRO CONTROLADO</p>
+    </div>
 
-  <!-- Descripción detallada justificada -->
-  <p class="max-w-2xl text-base md:text-lg text-base-content/80 leading-relaxed text-justify mt-4">
-    {{ descripcionProducto }}
-  </p>
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+      <p><strong class="text-white">Referencia:</strong> RO Hiflux - 280 Galones día de 6 Etapas:</p>
+      <p class="text-sm mt-1 text-base-content/70">(Polipropileno PP + Carbón Granular CAG + Carbón Bloque CTO + RO + T33 Carbón cascara de coco + Luz UV 6w)</p>
+    </div>
 
+    <div class="space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS:</h3>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">1.</span>
+        <p><strong class="text-white">POLIPROPILENO - PP (RETIENE SEDIMENTOS):</strong> La membrana de polipropileno o sedimentos actúa como una barrera que remueve los sólidos y partículas suspendidas en el agua, atrapando lodo, polvo, óxido y arena que afectan el sabor y apariencia del agua, a la vez que también protege las otras etapas de filtración de atascos y obstrucciones prematuras. <span class="text-blue-300 font-medium">Reemplace cada 6 meses.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">2.</span>
+        <p><strong class="text-white">Carbón activado granular GAC (Retiene Cloro y Productos Químicos):</strong> Es la segunda etapa de filtración de agua, la membrana granular esta rellena de carbón activado, en esta etapa el agua entra en contacto directo con el carbón por un tiempo prolongado eliminando químicos orgánicos presentes en el agua como el cloro, benceno, pesticidas, herbicidas, trihalometanos compuestos, radón, disolventes y cientos de químicos que se encuentran en el agua del grifo. <span class="text-blue-300 font-medium">Reemplace cada 6 meses.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">3.</span>
+        <p><strong class="text-white">CARBÓN ACTIVADO BLOQUE - CTO (MEJORA COLOR, SABOR Y OLOR):</strong> La membrana de carbón está elaborada con carbón compacto, por la estructura única de sus poros es usada para la absorción de químicos, cloro y compuestos orgánicos volátiles, mejorando los aspectos estéticos del agua, elimina el mal olor, mejora la turbiedad mejora el sabor del agua, además que retiene igualmente sedimentos y otras partículas sólidas. <span class="text-blue-300 font-medium">Reemplace cada 6 meses.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">4.</span>
+        <p><strong class="text-white">MEMBRANA HIFLUX - ÓSMOSIS HIFLUX:</strong> La membrana RO de ósmosis HIFLUX desmineraliza el agua, elimina casi todos los contaminantes inorgánicos del agua, como radio, plomo, hierro, materia orgánica, plaguicidas, quistes, bacterias y virus que se encuentran suspendidos en el agua, pero son tan microscópicos que no se ven a simple vista. <span class="text-blue-300 font-medium">Reemplace cada 3, 6 o 12 meses dependiendo de la calidad de agua de entrada.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">5.</span>
+        <p><strong class="text-white">Membrana carbón coco T33:</strong> Es la quinta etapa de filtración, la membrana de Carbón activado de cáscara de coco ajusta el sabor del agua, eliminando malos olores y sabores. Se utiliza principalmente para el filtrado posterior. Es adecuado para purificadores de agua en el hogar y filtros de osmosis inversa. <span class="text-blue-300 font-medium">Reemplace cada 12 meses.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">6.</span>
+        <p><strong class="text-white">ETAPA ULTRAVIOLETA -UV (ELIMINA VIRUS - BACTERIAS):</strong> Acción germicida: Radiación UV, destruye el material genético de microorganismos. Alcance: Reducción del 99.99% en bacterias, virus, esporas y Algas. Ofrece una desinfección del agua instantánea, segura y efectiva. Una opción ambientalmente adecuada, no cambia las propiedades del agua y no tiene efectos negativos. Ofreciendo el mejor costo – beneficio. <span class="text-blue-300 font-medium">Reemplace el tubo UV cada 12 meses.</span></p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 pt-6">
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">CARACTERÍSTICAS FISICAS FILTRO RO:</h4>
+        <ul class="list-disc list-outside pl-5 space-y-1 text-base-content/80">
+          <li><strong class="text-white/90">Medidas en cm:</strong> 38 de ancho x 18 x 45 de alto.</li>
+          <li><strong class="text-white/90">Peso en Kilos:</strong> 17 Kilos</li>
+          <li><strong class="text-white/90">Incluye:</strong> Los accesorios propios para su instalación</li>
+        </ul>
+        <p class="text-sm text-blue-300 pt-2 font-medium">Esta unidad no necesita pre tratamiento con hipoclorito, ya que la membrana de Osmosis Inversa hace esta función de eliminación de todo tipo de material orgánico.</p>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">Requerimiento para la instalación:</h4>
+        <ul class="list-disc list-outside pl-5 space-y-1 text-base-content/80">
+          <li>1 punto Hidráulico de agua potable.</li>
+          <li>1 punto para desagüe.</li>
+          <li>1 punto eléctrico 110 Vac.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-red-950/20 p-6 rounded-2xl border border-red-500/20 text-justify">
+      <p><strong class="text-red-300">FLUJO DE DESCARTE O CONCENTRADO:</strong> <span class="text-base-content/90">Este flujo de agua retira todos los elementos retenidos por la membrana RO y debe estar entre 60% y 100% del flujo permeado de salida.</span></p>
+      <p class="text-sm text-red-200/80 mt-2 font-medium">(Es necesario que el sistema haga la función de descarte para su óptimo funcionamiento, si se reduce o se cierra el descarte, la membrana de osmosis se colmata rápidamente y se daña).</p>
+    </div>
+
+    <div class="pt-6 space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">ESPECIFICACIONES TÉCNICAS:</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4 text-sm bg-base-200 p-6 rounded-2xl border border-white/5">
+        <p><strong class="text-white/90">Capacidad Producción:</strong> 280 GPD</p>
+        <p><strong class="text-white/90">Producción litros:</strong> 1.064 L/día (44 L/h)</p>
+        <p><strong class="text-white/90">Consumo:</strong> 60W</p>
+        <p><strong class="text-white/90">Tipo de Membrana:</strong> Seco. 1812</p>
+        <p><strong class="text-white/90">Contenedor:</strong> ROH-10 (Para 1812)</p>
+        <p><strong class="text-white/90">Voltaje/Frecuencia:</strong> 120/60Hz. Input: 110W</p>
+        <p><strong class="text-white/90">Auto-limpieza:</strong> Automático</p>
+        <p><strong class="text-white/90">Recuperación agua:</strong> 92% - 99%</p>
+        <p><strong class="text-white/90">Prefiltros 10":</strong> PP 5 micras, CTO y GAC</p>
+        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting</p>
+        <p><strong class="text-white/90">Rechazo membranas:</strong> 96%</p>
+        <p><strong class="text-white/90">Temperatura Agua:</strong> 5 a 45 °C</p>
+        <p><strong class="text-white/90">Presión entrada:</strong> 14.5 - 43 PSI</p>
+        <p><strong class="text-white/90">Presión operación RO:</strong> 70 -100 psi</p>
+        <p><strong class="text-white/90">Bombas presión RO:</strong> 1 (Diafragma 24VDC/80 PSI)</p>
+        <p><strong class="text-white/90">Tanque Presión:</strong> Metálico 3 Gal</p>
+        <p><strong class="text-white/90">Tanque air charge:</strong> 5 a 7 PSI</p>
+        <p><strong class="text-white/90">Etapa UV / Tubo:</strong> 6W / 2 pines x lado</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 pt-6">
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">Características del agua a la entrada:</h4>
+        <ul class="list-disc list-outside pl-5 space-y-2 text-base-content/80 text-sm">
+          <li><strong class="text-white/90">Tipo de agua:</strong> Agua pre tratada. Estándar potable Municipal.</li>
+          <li><strong class="text-white/90">TDS (Sólidos Disueltos):</strong> Menor 300 PPM. (Superior requiere Pretratamiento). Agua libre de hierro y sílice.</li>
+          <li><strong class="text-white/90">Cloro:</strong> Menor 0.2 PPM. Nivel normal requerido. <span class="text-blue-300">(Exceso daña membrana, ausencia facilita contaminación).</span></li>
+          <li><strong class="text-white/90">Presión:</strong> 0.1 -0.3 MPA</li>
+        </ul>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3 flex flex-col justify-center items-center text-center">
+        <h4 class="font-bold text-white text-lg">Características del agua de salida:</h4>
+        <p class="text-4xl font-extrabold text-blue-400">0 - 20 <span class="text-2xl font-medium text-blue-200">ppp</span></p>
+        <p class="text-sm font-semibold text-white/70 tracking-widest uppercase">TDS Min/Max</p>
+      </div>
+    </div>
+
+    <div class="pt-6 space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">DISPLAY de Control: Unidad de control LCD</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Medidor de TDS</p>
+          <p class="text-xs text-base-content/70 mt-1">Indica la calidad del Agua</p>
+        </div>
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Barra de tiempo</p>
+          <p class="text-xs text-base-content/70 mt-1">Uso para cambio membranas (6,7,8,18,36 m)</p>
+        </div>
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Indicadores</p>
+          <p class="text-xs text-base-content/70 mt-1">Temperatura, Potencia, Autolavado</p>
+        </div>
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Indicador Bomba</p>
+          <p class="text-xs text-base-content/70 mt-1">Funcionamiento de la bomba</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- BLOQUE DE DESCRIPCIÓN: RO Residencial 600 GPD -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'RO Residencial 600 GPD'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">SISTEMA RO OSMOSIS INVERSA HIFLUX 600 GALONES POR DÍA</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">CON PANTALLA LCD MICRO CONTROLADO</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+      <p><strong class="text-white">Referencia:</strong> RO Hiflux - 600G de 6 Etapas:</p>
+      <p class="text-sm mt-1 text-base-content/70">(Polipropileno PP + Carbón Granular CAG + Carbón Bloque CTO + RO + T33 Carbón cascara de coco + Luz UV 6w)</p>
+    </div>
+
+    <div class="space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS:</h3>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">1.</span>
+        <p><strong class="text-white">Polipropileno PP (Retiene Sedimentos):</strong> Es la primera etapa de filtración de agua, la membrana de polipropileno o sedimentos actúa como una barrera que remueve los sólidos y partículas suspendidas en el agua, atrapando lodo, polvo, óxido y arena que afectan el sabor y apariencia del agua, a la vez que también protege las otras etapas de filtración de atascos y obstrucciones prematuras. <span class="text-blue-300 font-medium">REEMPLACE CADA 6 MESES.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">2.</span>
+        <p><strong class="text-white">Carbón activado granular GAC (Retiene Cloro y Productos Químicos):</strong> Es la segunda etapa de filtración de agua, la membrana granular esta rellena de carbón activado, en esta etapa el agua entra en contacto directo con el carbón por un tiempo prolongado eliminando químicos orgánicos presentes en el agua como el cloro, benceno, pesticidas, herbicidas, trihalometanos compuestos, radón, disolventes y cientos de químicos que se encuentran en el agua del grifo. <span class="text-blue-300 font-medium">REEMPLACE CADA 6 MESES.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">3.</span>
+        <p><strong class="text-white">Carbón activado Bloque CTO (Mejora Color, Sabor y Olor):</strong> Es la tercera etapa de filtración de agua, la membrana de carbón está elaborada con carbón compacto, por la estructura única de sus poros es usada para la absorción de químicos, cloro y compuestos orgánicos volátiles, mejorando los aspectos estéticos del agua, elimina el mal olor, mejora la turbiedad mejora el sabor del agua, además que retiene igualmente sedimentos y otras partículas sólidas. <span class="text-blue-300 font-medium">REEMPLACE CADA 6 MESES.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">4.</span>
+        <p><strong class="text-white">Membrana RO HIFLUX:</strong> Es la cuarta etapa de filtración, la membrana RO de ósmosis inversa desmineraliza el agua, elimina gran cantidad de los contaminantes inorgánicos del agua, como radio, plomo, hierro, materia orgánica, plaguicidas, quistes, bacterias y virus que se encuentran suspendidos en el agua, pero son tan microscópicos que no se ven a simple vista. <span class="text-blue-300 font-medium">REEMPLACE CADA 12 MESES.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">5.</span>
+        <p><strong class="text-white">Cartucho T33 carbón cascara de coco:</strong> Ajusta el sabor del agua, eliminando malos olores y sabores. Se utiliza principalmente para el filtrado posterior. Es adecuado para purificadores de agua en el hogar y filtros de osmosis inversa.</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">6.</span>
+        <p><strong class="text-white">Ultravioleta 6w -UV (Elimina Virus- Bacterias):</strong> Es la quinta etapa de filtración, la luz UV ofrece una desinfección del agua instantánea, segura, efectiva, es una opción ambientalmente adecuada, no cambia las propiedades del agua y no tiene efectos negativos. Ofreciendo el mejor costo – beneficio y está comprobada como una de las mejores formas de desinfección del agua. <span class="text-blue-300 font-medium">REEMPLACE EL TUBO CADA 12 MESES.</span></p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 pt-6">
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">CARACTERÍSTICAS FÍSICAS:</h4>
+        <ul class="list-disc list-outside pl-5 space-y-1 text-base-content/80">
+          <li><strong class="text-white/90">Medidas en cm:</strong> 40 de ancho x 24 x 60 de alto.</li>
+          <li><strong class="text-white/90">Peso en Kilos:</strong> 15</li>
+          <li><strong class="text-white/90">Incluye:</strong> Los accesorios propios para su instalación</li>
+        </ul>
+        <p class="text-sm text-blue-300 pt-2 font-medium">Esta Unidad cumple con todos los estándar de Calidad y de Seguridad</p>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">Gran flujo sin Tanque de Presión</h4>
+        <ul class="list-disc list-outside pl-5 space-y-1 text-base-content/80">
+          <li><strong>Bombas de presión:</strong> 1 (Tipo diafragma 24VDC / 80 PSI)</li>
+          <li><strong>Conectores:</strong> Quick Fitting (acople rápido)</li>
+          <li><strong>Autolavado Membrana RO:</strong> Automático</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-red-950/20 p-6 rounded-2xl border border-red-500/20 text-justify">
+      <p><strong class="text-red-300">FLUJO DE DESCARTE O CONCENTRADO:</strong> <span class="text-base-content/90">Este flujo retira los sólidos retenidos por la membrana RO y debe estar entre el 60% y 100% del flujo permeado de salida.</span></p>
+    </div>
+
+    <div class="pt-6 space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">ESPECIFICACIONES TÉCNICAS:</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4 text-sm bg-base-200 p-6 rounded-2xl border border-white/5">
+        <p><strong class="text-white/90">Capacidad Producción:</strong> 600 GPD</p>
+        <p><strong class="text-white/90">Producción litros:</strong> 2.280 L/día (95 L/h)</p>
+        <p><strong class="text-white/90">Consumo:</strong> 150W</p>
+        <p><strong class="text-white/90">Velocidad de flujo:</strong> 600 GPD / 24 horas</p>
+        <p><strong class="text-white/90">Tipo de Membrana:</strong> Seco. 3012</p>
+        <p><strong class="text-white/90">Contenedor / Carcasa:</strong> ROH-BB. 122-20</p>
+        <p><strong class="text-white/90">Voltaje/Frecuencia:</strong> 120/60Hz. Input: 110W</p>
+        <p><strong class="text-white/90">Auto-limpieza:</strong> Automático</p>
+        <p><strong class="text-white/90">Recuperación agua:</strong> 92% - 99%</p>
+        <p><strong class="text-white/90">Prefiltros 10":</strong> PP 5 micras, CTO y GAC</p>
+        <p><strong class="text-white/90">Rechazo membranas:</strong> 96%</p>
+        <p><strong class="text-white/90">Presión operación RO:</strong> 70 -100 psi</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 pt-6">
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">Características del agua a la entrada:</h4>
+        <ul class="list-disc list-outside pl-5 space-y-2 text-base-content/80 text-sm">
+          <li><strong class="text-white/90">Tipo de agua:</strong> Agua pre tratada</li>
+          <li><strong class="text-white/90">Total Sólidos Disueltos (TDS):</strong> Menor 800 PPM</li>
+          <li><strong class="text-white/90">Cloro:</strong> Menor 0.2 PPM</li>
+          <li><strong class="text-white/90">Máxima Temperatura:</strong> 5°C – 45 ° C</li>
+          <li><strong class="text-white/90">Presión de entrada:</strong> 14.5 - 43 PSI</li>
+        </ul>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3 flex flex-col justify-center items-center text-center">
+        <h4 class="font-bold text-white text-lg">Características del agua de salida:</h4>
+        <p class="text-4xl font-extrabold text-blue-400">0 - 20 <span class="text-2xl font-medium text-blue-200">ppp</span></p>
+        <p class="text-sm font-semibold text-white/70 tracking-widest uppercase">TDS Min/Max</p>
+      </div>
+    </div>
+
+    <div class="pt-6 space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">DISPLAY de Control: Unidad de control LCD</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Medidor de TDS</p>
+          <p class="text-xs text-base-content/70 mt-1">Indica la calidad del Agua</p>
+        </div>
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Barra de tiempo</p>
+          <p class="text-xs text-base-content/70 mt-1">Uso para cambio membranas (6,7,8,18,36 m)</p>
+        </div>
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Indicadores</p>
+          <p class="text-xs text-base-content/70 mt-1">Temperatura, Potencia, Autolavado</p>
+        </div>
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Indicador Bomba</p>
+          <p class="text-xs text-base-content/70 mt-1">Funcionamiento de la bomba</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- BLOQUE DE DESCRIPCIÓN: RO Residencial 1200 GPD -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'RO Residencial 1200 GPD'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">RO HIFLUX 1200 DE ALTA PRODUCCIÓN</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">AGUA PARA CONSUMO HUMANO - (RO: ÓSMOSIS INVERSA / GPD: GALONES X DÍA)</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+      <p><strong class="text-white">Referencia:</strong> RO Hiflux - 1200G de 5 Etapas:</p>
+      <p class="text-sm mt-1 text-base-content/70">(Polipropileno PP + Carbón Granular CAG + Carbón Bloque CTO + RO HIFLUX) + UV 25w</p>
+    </div>
+
+    <div class="space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS:</h3>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">1.</span>
+        <p><strong class="text-white">Polipropileno PP (Retiene Sedimentos):</strong> Es la primera etapa de filtración de agua, la membrana de polipropileno o sedimentos actúa como una barrera que remueve los sólidos y partículas suspendidas en el agua, atrapando lodo, polvo, óxido y arena que afectan el sabor y apariencia del agua, a la vez que también protege las otras etapas de filtración de atascos y obstrucciones prematuras. <span class="text-blue-300 font-medium">REEMPLACE CADA 6 MESES.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">2.</span>
+        <p><strong class="text-white">Carbón activado granular GAC (Retiene Cloro y Productos Químicos):</strong> Es la segunda etapa de filtración de agua, la membrana granular esta rellena de carbón activado, en esta etapa el agua entra en contacto directo con el carbón por un tiempo prolongado eliminando químicos orgánicos presentes en el agua como el cloro, benceno, pesticidas, herbicidas, trihalometanos compuestos, radón, disolventes y cientos de químicos que se encuentran en el agua del grifo. <span class="text-blue-300 font-medium">REEMPLACE CADA 6 MESES.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">3.</span>
+        <p><strong class="text-white">Carbón activado Bloque CTO (Mejora Color, Sabor y Olor):</strong> Es la tercera etapa de filtración de agua, la membrana de carbón está elaborada con carbón compacto, por la estructura única de sus poros es usada para la absorción de químicos, cloro y compuestos orgánicos volátiles, mejorando los aspectos estéticos del agua, elimina el mal olor, mejora la turbiedad mejora el sabor del agua, además que retiene igualmente sedimentos y otras partículas sólidas. <span class="text-blue-300 font-medium">REEMPLACE CADA 6 MESES.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">4.</span>
+        <p><strong class="text-white">Membrana RO HIFLUX:</strong> Es la cuarta etapa de filtración, la membrana RO de ósmosis inversa desmineraliza el agua, elimina gran cantidad de los contaminantes inorgánicos del agua, como radio, plomo, hierro, materia orgánica, plaguicidas, quistes, bacterias y virus que se encuentran suspendidos en el agua, pero son tan microscópicos que no se ven a simple vista. <span class="text-blue-300 font-medium">REEMPLACE CADA 12 MESES.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">5.</span>
+        <p><strong class="text-white">ETAPA UV 25W:</strong> Acción germicida para una desinfección total y segura del agua.</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 pt-6">
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">CARACTERÍSTICAS FÍSICAS:</h4>
+        <ul class="list-disc list-outside pl-5 space-y-1 text-base-content/80">
+          <li><strong class="text-white/90">Estructura:</strong> En acero inoxidable</li>
+          <li><strong class="text-white/90">Medidas en cm:</strong> 58 de ancho x 37 profundidad x 79 de alto.</li>
+          <li><strong class="text-white/90">Peso en Kilos:</strong> 30</li>
+          <li><strong class="text-white/90">Incluye:</strong> Los accesorios propios para su instalación</li>
+        </ul>
+        <p class="text-sm text-blue-300 pt-2 font-medium">Cumple con todos los estándares de Calidad y de Seguridad.</p>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">Alto Rendimiento</h4>
+        <ul class="list-disc list-outside pl-5 space-y-1 text-base-content/80">
+          <li><strong>Gran flujo sin Tanque de Presión.</strong></li>
+          <li><strong>Bombas de presión:</strong> 2 (Tipo diafragma 24VDC / 80 PSI)</li>
+          <li><strong>Conectores:</strong> Quick Fitting (acople rápido)</li>
+          <li><strong>Autolavado Membrana RO:</strong> Automático</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-red-950/20 p-6 rounded-2xl border border-red-500/20 text-justify">
+      <p><strong class="text-red-300">FLUJO DE DESCARTE O CONCENTRADO:</strong> <span class="text-base-content/90">Este flujo retira todos los sólidos retenidos por la membrana RO y debe estar entre 60% y 100% del flujo permeado de salida.</span></p>
+    </div>
+
+    <div class="pt-6 space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">ESPECIFICACIONES TÉCNICAS:</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4 text-sm bg-base-200 p-6 rounded-2xl border border-white/5">
+        <p><strong class="text-white/90">Capacidad Producción:</strong> 1.200 GPD</p>
+        <p><strong class="text-white/90">Producción litros:</strong> 4.560 L/día (190 L/h)</p>
+        <p><strong class="text-white/90">Consumo:</strong> 190W</p>
+        <p><strong class="text-white/90">Velocidad de flujo:</strong> 1.200 GPD / 24 horas</p>
+        <p><strong class="text-white/90">Tipo de Membrana:</strong> Seco. 3012 Hiflux</p>
+        <p><strong class="text-white/90">Contenedor / Carcasa:</strong> ROH-BB. 122-20</p>
+        <p><strong class="text-white/90">Voltaje/Frecuencia:</strong> 120/60Hz. Input: 110W</p>
+        <p><strong class="text-white/90">Auto-limpieza:</strong> Automático</p>
+        <p><strong class="text-white/90">Recuperación agua:</strong> 92% - 99%</p>
+        <p><strong class="text-white/90">Prefiltros 20":</strong> PP 5 micras, CTO y GAC</p>
+        <p><strong class="text-white/90">Rechazo membranas:</strong> 96%</p>
+        <p><strong class="text-white/90">Presión operación RO:</strong> 70 -100 psi</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 pt-6">
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">Características del agua a la entrada:</h4>
+        <ul class="list-disc list-outside pl-5 space-y-2 text-base-content/80 text-sm">
+          <li><strong class="text-white/90">Tipo de agua:</strong> Agua pre tratada</li>
+          <li><strong class="text-white/90">Total Sólidos Disueltos (TDS):</strong> Menor 800 PPM</li>
+          <li><strong class="text-white/90">Cloro:</strong> Menor 0.2 PPM</li>
+          <li><strong class="text-white/90">Temperatura Agua:</strong> 5 a 45 °C</li>
+          <li><strong class="text-white/90">Presión de entrada:</strong> 14.5 - 43 PSI</li>
+        </ul>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3 flex flex-col justify-center items-center text-center">
+        <h4 class="font-bold text-white text-lg">Características del agua de salida:</h4>
+        <p class="text-4xl font-extrabold text-blue-400">0 - 20 <span class="text-2xl font-medium text-blue-200">ppp</span></p>
+        <p class="text-sm font-semibold text-white/70 tracking-widest uppercase">TDS Min/Max</p>
+      </div>
+    </div>
+
+    <div class="pt-6 space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">DISPLAY de Control: Unidad de control LCD</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Medidor de TDS</p>
+          <p class="text-xs text-base-content/70 mt-1">Indica la calidad del Agua</p>
+        </div>
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Barra de tiempo</p>
+          <p class="text-xs text-base-content/70 mt-1">Uso para cambio membranas (6,7,8,18,36 m)</p>
+        </div>
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Indicadores</p>
+          <p class="text-xs text-base-content/70 mt-1">Temperatura, Potencia, Autolavado</p>
+        </div>
+        <div class="bg-base-200 p-4 rounded-xl border border-white/5">
+          <p class="text-blue-400 font-bold">Indicador Bomba</p>
+          <p class="text-xs text-base-content/70 mt-1">Funcionamiento de la bomba</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- BLOQUE DE DESCRIPCIÓN: RO Residencial 100 GPD (Puriplus 100 GPD) -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'RO Residencial 100 GPD'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">FILTRO OSMOSIS INVERSA 100 GALONES DÍA 5 ETAPAS</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">PURIPLUS - Ref: 565</p>
+    </div>
+
+    <div class="space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS:</h3>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">1.</span>
+        <p><strong class="text-white">POLIPROPILENO - PP (RETIENE SEDIMENTOS):</strong> La membrana de polipropileno o sedimentos actúa como una barrera que remueve los sólidos y partículas suspendidas en el agua, atrapando lodo, polvo, óxido y arena que afectan el sabor y apariencia del agua, a la vez que también protege las otras etapas de filtración de atascos y obstrucciones prematuras. <span class="text-blue-300 font-medium">Reemplace cada 6 meses.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">2.</span>
+        <p><strong class="text-white">Carbón activado granular GAC (Retiene Cloro y Productos Químicos):</strong> Es la segunda etapa de filtración de agua, la membrana granular esta rellena de carbón activado, en esta etapa el agua entra en contacto directo con el carbón por un tiempo prolongado eliminando químicos orgánicos presentes en el agua como el cloro, benceno, pesticidas, herbicidas, trihalometanos compuestos, radón, disolventes y cientos de químicos que se encuentran en el agua del grifo. <span class="text-blue-300 font-medium">Reemplace cada 6 meses.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">3.</span>
+        <p><strong class="text-white">CARBÓN ACTIVADO BLOQUE - CTO (MEJORA COLOR, SABOR Y OLOR):</strong> La membrana de carbón está elaborada con carbón compacto, por la estructura única de sus poros es usada para la absorción de químicos, cloro y compuestos orgánicos volátiles, mejorando los aspectos estéticos del agua, elimina el mal olor, mejora la turbiedad mejora el sabor del agua, además que retiene igualmente sedimentos y otras partículas sólidas. <span class="text-blue-300 font-medium">Reemplace cada 6 meses.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">4.</span>
+        <p><strong class="text-white">MEMBRANA RO - ÓSMOSIS INVERSA:</strong> La membrana RO de ósmosis inversa desmineraliza el agua, elimina casi todos los contaminantes inorgánicos del agua, como radio, plomo, hierro, materia orgánica, plaguicidas, quistes, bacterias y virus que se encuentran suspendidos en el agua, pero son tan microscópicos que no se ven a simple vista. <span class="text-blue-300 font-medium">Reemplace cada 3, 6 o 12 meses dependiendo de la calidad de agua de entrada.</span></p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">5.</span>
+        <p><strong class="text-white">Membrana carbón coco T33:</strong> Es la quinta etapa de filtración, la membrana de Carbón activado de cáscara de coco ajusta el sabor del agua, eliminando malos olores y sabores. Se utiliza principalmente para el filtrado posterior. Es adecuado para purificadores de agua en el hogar y filtros de osmosis inversa. <span class="text-blue-300 font-medium">Reemplace cada 12 meses.</span></p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 pt-6">
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">CARACTERÍSTICAS FISICAS FILTRO RO:</h4>
+        <ul class="list-disc list-outside pl-5 space-y-1 text-base-content/80">
+          <li><strong class="text-white/90">Medidas en cm:</strong> 38 de ancho x 18 x 45 de alto.</li>
+          <li><strong class="text-white/90">Peso en Kilos:</strong> 17 Kilos</li>
+          <li><strong class="text-white/90">Incluye:</strong> Los accesorios propios para su instalación</li>
+        </ul>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">Requerimiento para la instalación:</h4>
+        <ul class="list-disc list-outside pl-5 space-y-1 text-base-content/80">
+          <li>1 punto Hidráulico de agua potable.</li>
+          <li>1 punto para desagüe.</li>
+          <li>1 punto eléctrico 110 Vac.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-red-950/20 p-6 rounded-2xl border border-red-500/20 text-justify">
+      <p><strong class="text-red-300">FLUJO DE DESCARTE O CONCENTRADO:</strong> <span class="text-base-content/90">Este flujo de agua retira todos los elementos retenidos por la membrana RO y debe estar entre 60% y 100% del flujo permeado de salida.</span></p>
+      <p class="text-sm text-red-200/80 mt-2 font-medium">(Es necesario que el sistema haga la función de descarte para su óptimo funcionamiento, si se reduce o se cierra el descarte, la membrana de osmosis se colmata rápidamente y se daña).</p>
+    </div>
+
+    <div class="pt-6 space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">ESPECIFICACIONES TÉCNICAS:</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4 text-sm bg-base-200 p-6 rounded-2xl border border-white/5">
+        <p><strong class="text-white/90">Capacidad Producción:</strong> 100 GPD</p>
+        <p><strong class="text-white/90">Producción litros:</strong> 380 L/día (15 L/h)</p>
+        <p><strong class="text-white/90">Consumo:</strong> 60W</p>
+        <p><strong class="text-white/90">Tipo de Membrana:</strong> Seco. 1812 Tech USA</p>
+        <p><strong class="text-white/90">Contenedor:</strong> 1812</p>
+        <p><strong class="text-white/90">Voltaje/Frecuencia:</strong> 120/60Hz. Input: 110W</p>
+        <p><strong class="text-white/90">Auto-limpieza:</strong> Automático</p>
+        <p><strong class="text-white/90">Recuperación agua:</strong> 92% - 99%</p>
+        <p><strong class="text-white/90">Pre-filtros 10":</strong> PP 5 micras, GAC y CTO</p>
+        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting (QF)</p>
+        <p><strong class="text-white/90">Rechazo membranas:</strong> 98%</p>
+        <p><strong class="text-white/90">Temperatura Agua:</strong> 5 a 45 °C</p>
+        <p><strong class="text-white/90">Presión entrada:</strong> 14.5 - 43 PSI</p>
+        <p><strong class="text-white/90">Presión operación RO:</strong> 50 -100 psi</p>
+        <p><strong class="text-white/90">Máxima Temperatura:</strong> 50 °C</p>
+        <p><strong class="text-white/90">Bombas presión RO:</strong> 1 (Diafragma 24VDC / 80 PSI)</p>
+        <p><strong class="text-white/90">Tanque Presión:</strong> Metálico 3 Gal</p>
+        <p><strong class="text-white/90">Presión carga aire:</strong> 5 a 7 PSI</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 pt-6">
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="font-bold text-white text-lg">Características del agua a la entrada:</h4>
+        <ul class="list-disc list-outside pl-5 space-y-2 text-base-content/80 text-sm">
+          <li><strong class="text-white/90">Tipo de agua:</strong> Agua pre tratada. Estándar potable Municipal.</li>
+          <li><strong class="text-white/90">TDS (Sólidos Disueltos):</strong> Menor 300 PPM. (Superior requiere Pretratamiento). Agua libre de hierro y sílice.</li>
+          <li><strong class="text-white/90">Cloro:</strong> Menor 0.2 PPM. Nivel normal requerido. <span class="text-blue-300">(Exceso daña membrana, ausencia facilita contaminación).</span></li>
+          <li><strong class="text-white/90">Presión:</strong> 0.1 -0.3 MPA</li>
+        </ul>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3 flex flex-col justify-center items-center text-center">
+        <h4 class="font-bold text-white text-lg">Características del agua de salida:</h4>
+        <p class="text-4xl font-extrabold text-blue-400">0 - 20 <span class="text-2xl font-medium text-blue-200">ppp</span></p>
+        <p class="text-sm font-semibold text-white/70 tracking-widest uppercase">TDS Min/Max</p>
+      </div>
+    </div>
+  </div>
 </div>
