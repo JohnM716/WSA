@@ -91,12 +91,13 @@ export class OsmosisInversaPageComponent {
   // ver el producto
   public verDetalleProducto(producto: ProductoOsmosis): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    this.router.navigate(['/productos/osmosis-inversa/producto-OI'], {
-      queryParams: {
-        titulo: producto.titulo,
-        imagen: producto.imagen,
-      }
-    });
+    // Guardamos el producto seleccionado en sessionStorage
+    sessionStorage.setItem('productoSeleccionado', JSON.stringify({
+      titulo: producto.titulo,
+      imagen: producto.imagen
+    }));
+    // Navegamos directamente sin parámetros en la URL
+    this.router.navigate(['/productos/osmosis-inversa/producto-OI']);
   }
 
   public getWhatsAppUrl(producto: ProductoOsmosis): string {

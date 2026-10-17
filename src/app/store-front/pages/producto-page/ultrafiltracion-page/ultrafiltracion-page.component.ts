@@ -87,15 +87,16 @@ public readonly telefonoWhatsApp: string = '573116852785';
   }
 
   // ver el producto
-  public verDetalleProducto(producto: ProductoUltrafiltracion): void {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    this.router.navigate(['/productos/ultrafiltracion/producto-U'], {
-      queryParams: {
+    public verDetalleProducto(producto: ProductoUltrafiltracion): void {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Guardamos el producto seleccionado en sessionStorage
+      sessionStorage.setItem('productoSeleccionado', JSON.stringify({
         titulo: producto.titulo,
-        imagen: producto.imagen,
-      }
-    });
-  }
+        imagen: producto.imagen
+      }));
+      // Navegamos directamente sin parámetros en la URL
+      this.router.navigate(['/productos/ultrafiltracion/producto-U']);
+    }
 
   public getWhatsAppUrl(producto: ProductoUltrafiltracion): string {
     const mensaje = `Hola! Me interesa cotizar el equipo de Ultrafiltración: ${producto.titulo}. Ver imagen: ${producto.linkImagen}`;

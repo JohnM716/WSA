@@ -12,6 +12,7 @@ import { Location } from '@angular/common';
 export class ProductoOIComponent implements OnInit {
   public tituloProducto: string = '';
   public imagenProducto: string = '';
+  public readonly telefonoWhatsApp: string = '573116852785';
 
   constructor(
     private route: ActivatedRoute,
@@ -19,13 +20,24 @@ export class ProductoOIComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.route.queryParams.subscribe(params => {
-      this.tituloProducto = params['titulo'] || 'Equipo de Ósmosis Inversa';
-      this.imagenProducto = params['imagen'] || '';
-    });
+    const dataGuardada = sessionStorage.getItem('productoSeleccionado');
+
+    if (dataGuardada) {
+      const producto = JSON.parse(dataGuardada);
+      this.tituloProducto = producto.titulo;
+      this.imagenProducto = producto.imagen;
+    } else {
+      this.router.navigate(['/404']);
+    }
   }
 
   public regresar(): void {
     this.router.navigate(['/productos/osmosis-inversa']);
+  }
+
+  public getWhatsAppUrl(): string {
+    const urlPagina = window.location.href;
+    const mensaje = `Hola! Me interesa cotizar el equipo de ósmosis: ${this.tituloProducto}.\nVer en la web: ${urlPagina}`;
+    return `https://wa.me/${this.telefonoWhatsApp}?text=${encodeURIComponent(mensaje)}`;
   }
 }

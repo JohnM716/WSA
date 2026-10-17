@@ -12,6 +12,7 @@ import { MicrofiltracionPageComponent } from "./pages/producto-page/microfiltrac
 import { UltrafiltracionPageComponent } from "./pages/producto-page/ultrafiltracion-page/ultrafiltracion-page.component";
 import { ProductoOIComponent } from "./pages/producto-page/osmosis-inversa-page/producto-OI/producto-OI.component";
 import { ProductoUComponent } from "./pages/producto-page/ultrafiltracion-page/producto-U/producto-U.component";
+import { ProductoMComponent } from "./pages/producto-page/microfiltracion-page/producto-M/producto-M.component";
 
 
 export const storeFrontRoutes: Routes = [
@@ -52,6 +53,10 @@ export const storeFrontRoutes: Routes = [
         component:MicrofiltracionPageComponent
       },
       {
+        path: 'productos/microfiltracion/producto-M',
+        component: ProductoMComponent
+      },
+      {
         path: 'productos/ultrafiltracion',
         component: UltrafiltracionPageComponent
       },
@@ -62,6 +67,10 @@ export const storeFrontRoutes: Routes = [
       {
         path: 'pqrs',
         component: PqrsPageComponent,
+      },
+      {
+        path: '404',
+        component: NotFoundPageComponent
       },
       {
         path: '**',
