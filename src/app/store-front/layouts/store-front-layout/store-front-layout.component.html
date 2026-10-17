@@ -1,10 +1,12 @@
-<div class="min-h-screen flex flex-col justify-between">
+<div class="min-h-screen flex flex-col justify-between bg-base-100">
   <!-- NAVBAR -->
-   <front-navbar></front-navbar>
+  <front-navbar></front-navbar>
 
-  <main class="grow flex flex-col justify-center container mx-auto px-4 pt-20 pb-8">
+  <!-- Agregamos pt-20 o pt-24 aquí para separar todas las vistas del navbar de forma global -->
+  <main class="grow flex flex-col pt-20 md:pt-24">
     <router-outlet></router-outlet>
   </main>
+
   <!-- FOOTER -->
-   <front-footer></front-footer>
+  <front-footer></front-footer>
 </div>

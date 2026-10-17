@@ -1,19 +1,21 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
-// Interfaz para tipar cada producto
 export interface Producto {
   titulo: string;
   badge?: string;
   descripcion: string;
   imagen: string;
   linkImagen: string;
+  route: string;
+  actionText?: string;
 }
 
 @Component({
   selector: 'app-product-page',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './producto-page.component.html',
   styleUrl: './producto-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -21,47 +23,41 @@ export interface Producto {
 export class ProductoPageComponent {
   private router = inject(Router);
 
-  public readonly telefonoWhatsApp: string = '573116852785';
-
-  // Arreglo de productos accesible por el HTML
   public readonly productos: Producto[] = [
     {
-      titulo: 'Purificador de Agua Hogar',
+      titulo: 'TECNOLOGÍA de Ósmosis Inversa',
       badge: 'DESTACADO',
-      descripcion: 'Sistema de filtración residencial múltiple etapa para agua limpia y pura.',
-      imagen: 'assets/img/HogarAgua2.png',
-      linkImagen: 'https://wsacol.com/assets/img/HogarAgua2.png',
+      descripcion: 'La ósmosis inversa emplea una membrana semipermeable de alta capacidad de separación, capaz de reducir sales disueltas, metales, microorganismos y diversas sustancias presentes en el agua. Es una de las tecnologías más utilizadas para producir agua de alta pureza en aplicaciones residenciales, especialmente para consumo directo y preparación de alimentos.',
+      imagen: 'assets/img/osmosisGeneral.png',
+      linkImagen: 'https://wsacol.com/assets/img/productos/HogarAgua2.png',
+      route: '/productos/osmosis-inversa',
+      actionText: 'Ver productos',
     },
     {
-      titulo: 'Filtro Ablandador de Agua',
+      titulo: 'TECNOLOGÍA de Microfiltración',
       badge: 'NUEVO',
-      descripcion: 'Elimina la dureza del agua protegiendo tuberías y electrodomésticos del hogar.',
-      imagen: 'assets/img/HogarAgua2.png',
-      linkImagen: 'https://wsacol.com/assets/img/HogarAgua2.png',
+      descripcion: 'La microfiltración utiliza membranas o medios filtrantes con poros muy pequeños que permiten retener sedimentos, partículas, sólidos suspendidos y algunas bacterias. Es una alternativa ideal como etapa de filtración inicial para mejorar la claridad y apariencia del agua, además de proteger las etapas posteriores del sistema.',
+      imagen: 'assets/img/microfiltracionGeneral.png',
+      linkImagen: 'https://wsacol.com/assets/img/productos/HogarAgua2.png',
+      route: '/productos/microfiltracion',
+      actionText: 'Ver productos',
     },
     {
-      titulo: 'Sistema UV Desinfectante',
+      titulo: 'TECNOLOGÍA de Ultrafiltración',
       badge: 'EFICIENTE',
-      descripcion: 'Esterilización mediante luz ultravioleta libre de químicos para el agua del hogar.',
-      imagen: 'assets/img/HogarAgua2.png',
-      linkImagen: 'https://wsacol.com/assets/img/HogarAgua2.png',
+      descripcion: 'La ultrafiltración utiliza membranas con poros aún más pequeños que los de la microfiltración. Permite reducir de manera significativa partículas, coloides, turbidez, bacterias y otros microorganismos, conservando gran parte de los minerales naturalmente presentes en el agua. Es una tecnología utilizada para obtener agua de alta calidad sin necesidad de eliminar completamente las sales disueltas.',
+      imagen: 'assets/img/ultrafiltracionGeneral.png',
+      linkImagen: 'https://wsacol.com/assets/img/productos/HogarAgua2.png',
+      route: '/productos/ultrafiltracion',
+      actionText: 'Ver productos',
     },
   ];
 
-  // Método auxiliar para construir el enlace a WhatsApp limpiando caracteres
-  public getWhatsAppUrl(producto: Producto): string {
-    const mensaje = `Hola! Me interesa cotizar el producto: ${producto.titulo}. Ver imagen: ${producto.linkImagen}`;
-    return `https://wa.me/${this.telefonoWhatsApp}?text=${encodeURIComponent(mensaje)}`;
-  }
-
-  public goToSection(sectionId: string): void {
-    this.router.navigate(['/tratamientoAgua']).then(() => {
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 100);
-    });
+  // Maneja la navegación interna al hacer clic en la tarjeta
+  public handleCardClick(producto: Producto, event: Event): void {
+    event.preventDefault();
+    if (producto.route) {
+      this.router.navigate([producto.route]);
+    }
   }
 }

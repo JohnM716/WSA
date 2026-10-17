@@ -6,6 +6,13 @@ import { AutomatizacionPageComponent } from "./pages/automatizacion-page/automat
 import { TratamientoAguaPageComponent } from "./pages/tratamiento-Agua-page/tratamiento-Agua-page.component";
 import { PrivacidadPageComponent } from "./pages/privacidad-page/privacidad-page.component";
 import { ProductoPageComponent } from "./pages/producto-page/producto-page.component";
+import { PqrsPageComponent } from "./pages/pqrs-page/pqrs-page.component";
+import { OsmosisInversaPageComponent } from "./pages/producto-page/osmosis-inversa-page/osmosis-inversa-page.component";
+import { MicrofiltracionPageComponent } from "./pages/producto-page/microfiltracion-page/microfiltracion-page.component";
+import { UltrafiltracionPageComponent } from "./pages/producto-page/ultrafiltracion-page/ultrafiltracion-page.component";
+import { ProductoOIComponent } from "./pages/producto-page/osmosis-inversa-page/producto-OI/producto-OI.component";
+import { ProductoUComponent } from "./pages/producto-page/ultrafiltracion-page/producto-U/producto-U.component";
+import { ProductoMComponent } from "./pages/producto-page/microfiltracion-page/producto-M/producto-M.component";
 
 
 export const storeFrontRoutes: Routes = [
@@ -32,6 +39,38 @@ export const storeFrontRoutes: Routes = [
       {
         path: 'productos',
         component: ProductoPageComponent,
+      },
+      {
+        path: 'productos/osmosis-inversa',
+        component: OsmosisInversaPageComponent
+      },
+      {
+        path: 'productos/osmosis-inversa/producto-OI',
+        component: ProductoOIComponent
+      },
+      {
+        path: 'productos/microfiltracion',
+        component:MicrofiltracionPageComponent
+      },
+      {
+        path: 'productos/microfiltracion/producto-M',
+        component: ProductoMComponent
+      },
+      {
+        path: 'productos/ultrafiltracion',
+        component: UltrafiltracionPageComponent
+      },
+      {
+        path: 'productos/ultrafiltracion/producto-U',
+        component: ProductoUComponent
+      },
+      {
+        path: 'pqrs',
+        component: PqrsPageComponent,
+      },
+      {
+        path: '404',
+        component: NotFoundPageComponent
       },
       {
         path: '**',

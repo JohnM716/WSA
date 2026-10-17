@@ -1,0 +1,302 @@
+<div class="container mx-auto px-4 py-16 flex flex-col items-center justify-center min-h-[70vh] text-center">
+
+  <!-- Barra superior con Botones de Regresar y Cotizar -->
+  <div class="w-full max-w-3xl flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
+
+    <!-- Botón de Regresar -->
+    <button
+      (click)="regresar()"
+      class="bg-base-200 text-base-content text-center w-48 rounded-2xl h-14 relative font-semibold group border border-white/10 hover:border-blue-500/50 cursor-pointer shadow-lg overflow-hidden flex items-center"
+      type="button"
+    >
+      <div
+        class="bg-[#0088ff] rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-1 group-hover:w-46 z-10 duration-500 shadow-md"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1024 1024"
+          height="25px"
+          width="25px"
+        >
+          <path
+            d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+            fill="#ffffff"
+          ></path>
+          <path
+            d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+            fill="#ffffff"
+          ></path>
+        </svg>
+      </div>
+      <p class="w-full text-center pl-6 transition-colors duration-300 group-hover:text-white font-bold tracking-wide">Regresar</p>
+    </button>
+
+    <!-- Botón de Cotizar por WhatsApp -->
+    <a
+      [href]="getWhatsAppUrl()"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bg-[#0088ff] hover:bg-blue-600 text-white font-bold px-6 h-14 rounded-2xl flex items-center justify-center gap-3 shadow-lg shadow-[#0088ff]/30 hover:shadow-[#0088ff]/60 hover:scale-105 transition-all duration-300 cursor-pointer w-full sm:w-auto"
+    >
+      <span>Cotizar por WhatsApp</span>
+      <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Título principal centrado -->
+  <h1 class="text-3xl md:text-5xl font-extrabold uppercase tracking-wider text-base-content mb-4">
+    {{ tituloProducto }}
+  </h1>
+  <div class="w-32 h-1 bg-[#0088ff] mb-8 rounded-full shadow-[0_0_15px_#0088ff]"></div>
+
+  <!-- Contenedor con resplandor y bordes iluminados -->
+  <div class="relative w-full max-w-3xl group mb-12">
+    <!-- EFECTO DE RESPLANDOR (GLOW) DETRÁS DE LA IMAGEN -->
+    <div class="absolute -inset-1 bg-linear-to-r from-[#0088ff] via-blue-400 to-indigo-600 rounded-3xl blur-xl opacity-50 group-hover:opacity-80 transition duration-1000 group-hover:duration-200 animate-pulse pointer-events-none"></div>
+
+    <!-- Caja principal de la imagen -->
+    <div class="relative w-full p-4 rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(0,136,255,0.25)] bg-base-200/90 backdrop-blur-md border border-blue-500/40 flex items-center justify-center">
+      <img
+        [src]="imagenProducto"
+        [alt]="tituloProducto"
+        class="max-h-112.5 w-auto object-contain transition-transform duration-700 hover:scale-105"
+      />
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- OPCIÓN 1: PURIFICADOR CON MEMBRANA DE ULTRAFILTRACIÓN (80 LPH - UV) -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'Purificador con Membrana de Ultrafiltracion' || tituloProducto === 'UF 5 ETAPAS - UV'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">SISTEMA DE ULTRAFILTRACIÓN Y DESINFECCIÓN UV</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">Referencia: UF 5 ETAPAS - UV</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+      <p><strong class="text-white">Producción en litros:</strong> 80 LPH - Litros por hora.</p>
+      <p class="text-sm mt-1 text-base-content/70">5 ETAPAS: PP 5micras + GAC + CTO + UF + Luz uv 6w</p>
+    </div>
+
+    <div class="space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS:</h3>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">1.</span>
+        <p><strong class="text-white">Filtración Física (PP 5 micras):</strong> Cartucho PP Polipropileno 5 micras (Retiene Sedimentos).</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">2.</span>
+        <p><strong class="text-white">GAC Carbón activado granular:</strong> Retiene Cloro y Productos Químicos.</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">3.</span>
+        <p><strong class="text-white">Carbón Activado bloque CTO:</strong> Mejora Color, Sabor y Olor.</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">4.</span>
+        <p><strong class="text-white">Ultrafiltración (Etapa UF):</strong> Retención por debajo de 0.1 micra (retiene microorganismos de hasta 0.01 µm como bacterias y hongos).</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">5.</span>
+        <p><strong class="text-white">Luz ultravioleta 6W:</strong> Acción germicida para eliminación de microorganismos.</p>
+      </div>
+    </div>
+
+    <div class="pt-6 space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">ESPECIFICACIONES TÉCNICAS:</h3>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4 text-sm bg-base-200 p-6 rounded-2xl border border-white/5">
+        <p><strong class="text-white/90">Capacidad Producción:</strong> 21 GPH - Galones por Hora</p>
+        <p><strong class="text-white/90">Velocidad Máx. Flujo:</strong> 80 LPH</p>
+        <p><strong class="text-white/90">Soporte:</strong> Metálico</p>
+        <p><strong class="text-white/90">Contenedor / Carcasa:</strong> 3 unidades. Estándar 10 pulgadas – en polipropileno</p>
+        <p><strong class="text-white/90">Membranas / Prefiltros:</strong> PP 5 micras, CTO y GAC</p>
+        <p><strong class="text-white/90">Medida Cartuchos:</strong> 10” x 2.5” - estándar. 25 cm alto</p>
+        <p><strong class="text-white/90">Porta Membrana UF:</strong> Carcasa ROH-10 (Material polipropileno)</p>
+        <p><strong class="text-white/90">Membrana UF:</strong> UF-10C Retención por debajo de 0.1 micra</p>
+        <p><strong class="text-white/90">Lámpara UV:</strong> Luz UV 6W de acción germicida</p>
+        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting (acople rápido)</p>
+        <p><strong class="text-white/90">Conexión:</strong> ¼ pulgada</p>
+        <p><strong class="text-white/90">Temperatura Agua:</strong> 4 a 44 grados centígrados (Máxima: 45 ° C)</p>
+        <p><strong class="text-white/90">Presión Entrada:</strong> (Mínima/máximo) 20 - 45 PSI</p>
+        <p class="col-span-2 md:col-span-3 text-blue-400 font-bold"><strong class="text-white/90">Salida de Agua:</strong> Grifo independiente, cuello cisne</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- OPCIÓN 2: FILTRO ULTRAFILTRACIÓN 5 ETAPAS 160 LITROS POR HORA -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'FILTRO ULTRAFILTRACIÓN 5 ETAPAS 160 LITROS POR HORA'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">FILTRO ULTRAFILTRACIÓN 5 ETAPAS 160 LITROS POR HORA</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">Referencia: UF 5 ETAPAS</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
+      <p><strong class="text-white">ULTRAFILTRACIÓN:</strong> Membrana de poro muy pequeño (por debajo de 0,1 micra), para eliminar sólidos en suspensión (Ofrece buen manejo de la turbiedad) y microorganismos.</p>
+      <p class="text-sm text-base-content/70">Reduce del agua coloides, algas, quistes, bacterias coliformes, virus, materiales orgánicos de peso molecular elevado.</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+      <p><strong class="text-white">Producción en litros:</strong> 160 LPH - Litros por hora.</p>
+      <p class="text-sm mt-1 text-base-content/70">5 ETAPAS: PP 5micras + GAC + CTO + 2 UF</p>
+    </div>
+
+    <div class="space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS:</h3>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">1.</span>
+        <p><strong class="text-white">Filtración Física:</strong> Cartucho PP Polipropileno 5 micras (Retiene Sedimentos).</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">2.</span>
+        <p><strong class="text-white">GAC Carbón activado granular:</strong> Retiene Cloro y Productos Químicos.</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">3.</span>
+        <p><strong class="text-white">Carbón Activado bloque CTO:</strong> Mejora Color, Sabor y Olor.</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">4.</span>
+        <p><strong class="text-white">Ultrafiltración (2 Etapas UF):</strong> Retención por debajo de 0.1 micra (retiene microorganismos de hasta 0.01 µm como bacterias y hongos).</p>
+      </div>
+    </div>
+
+    <div class="pt-6 space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">ESPECIFICACIONES TÉCNICAS:</h3>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4 text-sm bg-base-200 p-6 rounded-2xl border border-white/5">
+        <p><strong class="text-white/90">Capacidad Producción:</strong> 42 GPH - Galones por Hora</p>
+        <p><strong class="text-white/90">Velocidad Máx. Flujo:</strong> 160 LPH</p>
+        <p><strong class="text-white/90">Soporte:</strong> Metálico</p>
+        <p><strong class="text-white/90">Contenedor / Carcasa:</strong> 3 unidades. Estándar 10 pulgadas – en polipropileno</p>
+        <p><strong class="text-white/90">Membranas / Prefiltros:</strong> PP 5 micras, CTO y GAC</p>
+        <p><strong class="text-white/90">Medida Cartuchos:</strong> 10” x 2.5” - estándar. 25 cm alto</p>
+        <p><strong class="text-white/90">Porta Membrana UF:</strong> Carcasa ROH-10 (Material polipropileno)</p>
+        <p><strong class="text-white/90">Membrana UF:</strong> UF-10C Retención por debajo de 0.1 micra</p>
+        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting (acople rápido)</p>
+        <p><strong class="text-white/90">Conexión:</strong> 3/8 pulgada</p>
+        <p><strong class="text-white/90">Temperatura Agua:</strong> 4 a 44 grados centígrados (Máxima: 45 ° C)</p>
+        <p><strong class="text-white/90">Presión Entrada:</strong> (Mínima/máximo) 25 - 45 PSI</p>
+        <p class="col-span-2 md:col-span-3 text-blue-400 font-bold"><strong class="text-white/90">Salida de Agua:</strong> Grifo independiente, cuello cisne</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- OPCIÓN 3: FILTRO ULTRAFILTRACIÓN 6 ETAPAS ULTRAVIOLETA 80 LPH -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'FILTRO ULTRAFILTRACIÓN 6 ETAPAS ULTRAVIOLETA 80 LITROS POR HORA'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">FILTRO ULTRAFILTRACIÓN 6 ETAPAS ULTRAVIOLETA 80 LITROS POR HORA</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">Referencia: UF 6 ETAPAS - UV</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
+      <p><strong class="text-white">LA FILTRACIÓN DE AGUA CON ULTRAFILTRACIÓN</strong> consiste en el tratamiento del agua con una membrana de poro muy pequeño (por debajo de 0,1 micra), que elimina sólidos en suspensión (turbidez) y microorganismos.</p>
+      <p class="text-sm text-base-content/70">Reduce del agua coloides, algas, quistes, bacterias coliformes, virus, materiales orgánicos de peso molecular elevado. Ofrece un excelente manejo de la turbiedad y con la etapa Ultravioleta garantiza 100% de manejo de contaminación microbiológica.</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+      <p><strong class="text-white">Producción en litros:</strong> 80 LPH - Litros por hora.</p>
+      <p class="text-sm mt-1 text-base-content/70">6 ETAPAS: PP 5micras + GAC + CTO + UF + Posfiltro carbón coco + UV 6w.</p>
+    </div>
+
+    <div class="space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS:</h3>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">1.</span>
+        <p><strong class="text-white">Filtración Física:</strong> Cartucho PP Polipropileno 5 micras (Retiene Sedimentos).</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">2.</span>
+        <p><strong class="text-white">GAC Carbón activado granular:</strong> Retiene Cloro y Productos Químicos.</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">3.</span>
+        <p><strong class="text-white">Carbón Activado bloque CTO:</strong> Mejora Color, Sabor y Olor.</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">4.</span>
+        <p><strong class="text-white">Ultrafiltración (Etapa UF):</strong> Retención por debajo de 0.1 micra (retiene microorganismos de hasta 0.01 µm).</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">5.</span>
+        <p><strong class="text-white">Posfiltro:</strong> Carbón coco in line (aporta minerales).</p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">6.</span>
+        <p><strong class="text-white">Luz Ultravioleta 6W:</strong> Garantiza 100% de manejo de contaminación microbiológica.</p>
+      </div>
+    </div>
+
+    <div class="pt-6 space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">ESPECIFICACIONES TÉCNICAS:</h3>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4 text-sm bg-base-200 p-6 rounded-2xl border border-white/5">
+        <p><strong class="text-white/90">Capacidad Producción:</strong> 21 GPH - Galones por Hora</p>
+        <p><strong class="text-white/90">Velocidad Máx. Flujo:</strong> 80 LPH</p>
+        <p><strong class="text-white/90">Soporte:</strong> Metálico</p>
+        <p><strong class="text-white/90">Contenedor / Carcasa:</strong> 3 unidades. Estándar 10 pulgadas – en polipropileno</p>
+        <p><strong class="text-white/90">Membranas / Prefiltros:</strong> PP 5 micras, CTO y GAC</p>
+        <p><strong class="text-white/90">Medida Cartuchos:</strong> 10” x 2.5” - estándar. 25 cm alto</p>
+        <p><strong class="text-white/90">Porta Membrana UF:</strong> Carcasa ROH-10 (Material polipropileno)</p>
+        <p><strong class="text-white/90">Membrana UF:</strong> UF-10C Retención por debajo de 0.1 micra</p>
+        <p><strong class="text-white/90">Posfiltro:</strong> Carbón coco in line</p>
+        <p><strong class="text-white/90">Lámpara UV:</strong> Luz UV 6W de acción germicida</p>
+        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting (acople rápido)</p>
+        <p><strong class="text-white/90">Conexión:</strong> ¼ pulgada</p>
+        <p><strong class="text-white/90">Temperatura Agua:</strong> 4 a 44 grados centígrados (Máxima: 45 ° C)</p>
+        <p><strong class="text-white/90">Presión Entrada:</strong> (Mínima/máximo) 20 - 45 PSI</p>
+        <p class="col-span-2 md:col-span-3 text-blue-400 font-bold"><strong class="text-white/90">Salida de Agua:</strong> Grifo independiente, cuello cisne</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- OPCIÓN 4: COMPONENTES DE FILTRACIÓN Y ACCESORIOS -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'Componentes de Filtración y Accesorios' || tituloProducto === 'Filtro de ultrafiltración para tratamiento de agua'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">FILTRO DE ULTRAFILTRACIÓN PARA TRATAMIENTO DE AGUA</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">TECNOLOGÍA DE MEMBRANAS DE FIBRA HUECA</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-4">
+      <p>
+        El filtro de ultrafiltración utiliza una tecnología avanzada de <strong class="text-white">membranas de fibra hueca</strong> que permite retener sólidos suspendidos, partículas finas, coloides y microorganismos, contribuyendo a mejorar la claridad y la calidad del agua.
+      </p>
+      <p>
+        Su estructura interna está compuesta por cientos de fibras con poros microscópicos que actúan como una barrera física, permitiendo el paso del agua mientras retienen gran parte de las impurezas.
+      </p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+      <p>
+        Es una solución eficiente para aplicaciones residenciales, comerciales e industriales, ideal como etapa de tratamiento previo a otros procesos de purificación o como parte de un sistema integral de tratamiento de agua. Ofrece una filtración de alta precisión, sin necesidad de utilizar productos químicos para realizar la separación física de contaminantes.
+      </p>
+    </div>
+  </div>
+
+</div>

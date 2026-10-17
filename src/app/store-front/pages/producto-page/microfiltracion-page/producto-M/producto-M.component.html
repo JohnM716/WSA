@@ -1,0 +1,318 @@
+<div class="container mx-auto px-4 py-16 flex flex-col items-center justify-center min-h-[70vh] text-center">
+
+  <!-- Barra superior con Botones de Regresar y Cotizar -->
+  <div class="w-full max-w-3xl flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
+
+    <!-- Botón de Regresar -->
+    <button
+      (click)="regresar()"
+      class="bg-base-200 text-base-content text-center w-48 rounded-2xl h-14 relative font-semibold group border border-white/10 hover:border-blue-500/50 cursor-pointer shadow-lg overflow-hidden flex items-center"
+      type="button"
+    >
+      <div
+        class="bg-[#0088ff] rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-1 group-hover:w-46 z-10 duration-500 shadow-md"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1024 1024"
+          height="25px"
+          width="25px"
+        >
+          <path
+            d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+            fill="#ffffff"
+          ></path>
+          <path
+            d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+            fill="#ffffff"
+          ></path>
+        </svg>
+      </div>
+      <p class="w-full text-center pl-6 transition-colors duration-300 group-hover:text-white font-bold tracking-wide">Regresar</p>
+    </button>
+
+    <!-- Botón de Cotizar por WhatsApp -->
+    <a
+      [href]="getWhatsAppUrl()"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bg-[#0088ff] hover:bg-blue-600 text-white font-bold px-6 h-14 rounded-2xl flex items-center justify-center gap-3 shadow-lg shadow-[#0088ff]/30 hover:shadow-[#0088ff]/60 hover:scale-105 transition-all duration-300 cursor-pointer w-full sm:w-auto"
+    >
+      <span>Cotizar por WhatsApp</span>
+      <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Título principal centrado -->
+  <h1 class="text-3xl md:text-5xl font-extrabold uppercase tracking-wider text-base-content mb-4">
+    {{ tituloProducto }}
+  </h1>
+  <div class="w-32 h-1 bg-[#0088ff] mb-8 rounded-full shadow-[0_0_15px_#0088ff]"></div>
+
+  <!-- Contenedor con resplandor y bordes iluminados -->
+  <div class="relative w-full max-w-3xl group mb-12">
+    <!-- EFECTO DE RESPLANDOR (GLOW) DETRÁS DE LA IMAGEN -->
+    <div class="absolute -inset-1 bg-linear-to-r from-[#0088ff] via-blue-400 to-indigo-600 rounded-3xl blur-xl opacity-50 group-hover:opacity-80 transition duration-1000 group-hover:duration-200 animate-pulse pointer-events-none"></div>
+
+    <!-- Caja principal de la imagen -->
+    <div class="relative w-full p-4 rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(0,136,255,0.25)] bg-base-200/90 backdrop-blur-md border border-blue-500/40 flex items-center justify-center">
+      <img
+        [src]="imagenProducto"
+        [alt]="tituloProducto"
+        class="max-h-112.5 w-auto object-contain transition-transform duration-700 hover:scale-105"
+      />
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- OPCIÓN 1: FILTRO DE AGUA 4 ETAPAS CON LUZ ULTRAVIOLETA -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'FILTRO DE AGUA 4 ETAPAS CON LUZ ULTRAVIOLETA'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">FILTRO DE AGUA 4 ETAPAS CON LUZ ULTRAVIOLETA</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">Referencia: US4-UV</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
+      <p>
+        Ofrece agua de buena calidad. Retiene sólidos disueltos suspendidos y microorganismos. Ofrece muy buen manejo de la turbiedad, olor, sabor y su etapa de Ultravioleta garantiza <strong class="text-white">100% de manejo de contaminación microbiológica</strong>.
+      </p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+      <p><strong class="text-white">4 ETAPAS:</strong> Polipropileno / Sedimentos + Carbón granular / Cloro y productos químicos + Carbón bloque / Color, olor, sabor + Luz UV 6W / Acción germicida.</p>
+    </div>
+
+    <div class="space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS Y PROCESO DE FILTRACIÓN:</h3>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">1.</span>
+        <p>
+          <strong class="text-white">PP - Filtro Polipropileno 5 micras (Retiene Sedimentos):</strong>
+          La membrana de polipropileno actúa como una barrera que remueve los sólidos y partículas suspendidas en el agua, atrapando lodo, polvo, óxido y arena que afectan el sabor y apariencia del agua, protegiendo las etapas posteriores contra obstrucciones prematuras.
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">2.</span>
+        <p>
+          <strong class="text-white">GAC - Carbón Activado Granular (Retiene Cloro y Productos Químicos):</strong>
+          Contenedor relleno de carbón activado granular diseñado para la absorción intensiva de cloro residual, pesticidas y compuestos orgánicos disueltos.
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">3.</span>
+        <p>
+          <strong class="text-white">CTO - Carbón Activado Bloque (Mejora Color, Olor y Sabor):</strong>
+          Carbón extruido en bloque de alta densidad que perfecciona las cualidades organolépticas del agua, retirando sabores desagradables y sedimentos finos restantes.
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">4.</span>
+        <p>
+          <strong class="text-white">UV 6W - Lámpara Ultravioleta (Acción Germicida):</strong>
+          Desinfección instantánea sin químicos que elimina virus y bacterias al alterar su estructura de ADN, garantizando agua segura para consumo.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- OPCIÓN 2: FILTRO DE 5 ETAPAS CON LUZ ULTRAVIOLETA Y T33 CÁSCARA DE COCO -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'FILTRO DE 5 ETAPAS CON LUZ ULTRAVIOLETA Y CARTUCHO T33 CARBON CASCARA DE COCO'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">FILTRO DE 5 ETAPAS CON LUZ ULTRAVIOLETA Y CARTUCHO T33 CARBÓN CÁSCARA DE COCO</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">Referencia: US4-UV / 5E</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
+      <p>
+        Ofrece agua de buena calidad. Retiene sólidos disueltos suspendidos y microorganismos. Ofrece muy buen manejo de la turbiedad, olor, sabor y su etapa de Ultravioleta garantiza <strong class="text-white">100% de manejo de contaminación microbiológica</strong>.
+      </p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+      <p><strong class="text-white">5 ETAPAS:</strong> Polipropileno / Sedimentos + Carbón granular / Cloro y productos químicos + Carbón bloque / Color, olor, sabor + Luz UV 6W / Acción germicida + T33 Cáscara de Coco (Ajusta y perfecciona el sabor del agua).</p>
+    </div>
+
+    <div class="space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS Y PROCESO DE FILTRACIÓN:</h3>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">1.</span>
+        <p>
+          <strong class="text-white">PP - Filtro Polipropileno 5 micras (Retiene Sedimentos):</strong>
+          Actúa como barrera primaria removiendo lodo, polvo, óxido y arena, protegiendo todo el sistema de atascamientos.
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">2.</span>
+        <p>
+          <strong class="text-white">GAC - Carbón Activado Granular (Retiene Cloro y Químicos):</strong>
+          Absorbe el cloro libre, pesticidas y compuestos químicos que alteran la frescura del agua.
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">3.</span>
+        <p>
+          <strong class="text-white">CTO - Carbón Activado Bloque (Color, Olor y Sabor):</strong>
+          Filtro compacto de carbón que elimina olores residuales y micropartículas sólidas.
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">4.</span>
+        <p>
+          <strong class="text-white">UV 6W - Lámpara Ultravioleta (Desinfección Microbiológica):</strong>
+          Acción germicida continua que neutraliza bacterias, virus y microorganismos en tiempo real.
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">5.</span>
+        <p>
+          <strong class="text-white">T33 - Cartucho Posfiltro Carbón Cáscara de Coco:</strong>
+          Etapa pulidora final que refina el sabor, aporta frescura y neutraliza cualquier vestigio organoléptico antes de la salida al grifo.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- OPCIÓN 3: FILTRO PURIFICADOR ALCALINIZADOR DE AGUA ULTRAVIOLETA DE 4 ETAPAS -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'FILTRO PURIFICADOR ALCALINIZADOR DE AGUA ULTRAVIOLETA DE 4 ETAPAS'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">FILTRO PURIFICADOR ALCALINIZADOR DE AGUA ULTRAVIOLETA DE 4 ETAPAS</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">SOLUCIÓN URBANA CON BALANCE DE pH</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
+      <p>
+        Ofrece agua de excelente calidad. Retiene sólidos disueltos suspendidos y microorganismos. Maneja eficazmente la turbiedad, olor y sabor, mientras su etapa Ultravioleta garantiza <strong class="text-white">100% de eliminación microbiológica</strong>. Este modelo está especialmente diseñado para el mercado urbano con agua pretratada que presenta índices medianos de contaminación.
+      </p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+      <p><strong class="text-white">4 ETAPAS DE FILTRACIÓN:</strong> PP (Polipropileno 5 micras) + CTO (Color, Sabor y Olor) + ALK Alcalinizador (Balancea pH) + UV (Desinfección Germicida UV 6W).</p>
+    </div>
+
+    <div class="space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">DESCRIPCIÓN DE ETAPAS:</h3>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">1.</span>
+        <p>
+          <strong class="text-white">PP - Filtro Polipropileno 5 micras (Retiene Sedimentos):</strong>
+          Remueve partículas suspendidas, lodo, polvo, óxido y arena, protegiendo los demás componentes de obstrucciones.
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">2.</span>
+        <p>
+          <strong class="text-white">CTO - Carbón Activado Bloque (Mejora Color, Sabor y Olor):</strong>
+          Estructura de poros compactos ideal para la absorción de cloro, químicos y compuestos orgánicos volátiles, mejorando el aspecto estético y el sabor.
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">3.</span>
+        <p>
+          <strong class="text-white">ALK - Cartucho Alcalinizador:</strong>
+          Alcaliniza el agua elevando el pH entre 1 y 2 puntos (logrando un pH neutro/alcalino de 8 a 9), promoviendo mayor bienestar y salud.
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <span class="font-bold text-blue-500 text-lg">4.</span>
+        <p>
+          <strong class="text-white">UV 6W - Lámpara Ultravioleta (Elimina Virus y Bacterias):</strong>
+          Desinfección instantánea y segura sin alterar las propiedades organolépticas ni dejar residuos químicos.
+        </p>
+      </div>
+    </div>
+
+    <!-- Especificaciones Técnicas y Parámetros -->
+    <div class="pt-6 space-y-5">
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">ESPECIFICACIONES TÉCNICAS:</h3>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4 text-sm bg-base-200 p-6 rounded-2xl border border-white/5">
+        <p><strong class="text-white/90">Capacidad Producción:</strong> 30 GPH (120 Litros/Hora)</p>
+        <p><strong class="text-white/90">Velocidad Máx. Flujo:</strong> 120 LPH</p>
+        <p><strong class="text-white/90">Soporte:</strong> Metálico</p>
+        <p><strong class="text-white/90">Carcasas:</strong> 2 unidades estándar 10"</p>
+        <p><strong class="text-white/90">Prefiltros:</strong> PP 5 micras y CTO</p>
+        <p><strong class="text-white/90">Medida Cartuchos:</strong> 10” estándar (25 cm)</p>
+        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting (Acople rápido)</p>
+        <p><strong class="text-white/90">Temperatura Agua:</strong> 5 °C a 45 °C (Máx. 50 °C)</p>
+        <p><strong class="text-white/90">Presión Entrada:</strong> 15 - 43 PSI (Mínima/Máxima)</p>
+        <p class="col-span-2 md:col-span-3 text-blue-400 font-bold"><strong class="text-white/90">Salida de Agua:</strong> Grifo independiente cuello de cisne.</p>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="text-md font-bold text-white">Requerimientos del Agua de Entrada:</h4>
+        <ul class="text-sm space-y-1 text-base-content/80 list-disc list-inside">
+          <li><strong>Tipo de agua:</strong> Pretratada con medianos índices de contaminación.</li>
+          <li><strong>Sólidos Disueltos Totales (TDS):</strong> Menor a 800 PPM.</li>
+          <li><strong>Cloro libre:</strong> Menor a 0.2 PPM.</li>
+        </ul>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+        <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
+          <h4 class="text-md font-bold text-blue-400">Consumo Etapa Ultravioleta:</h4>
+          <p><strong>Potencia Lámpara:</strong> 6 Watts</p>
+          <p><strong>Alimentación:</strong> 110 - 117V (Balastro) / 60 Hz</p>
+          <p><strong>Voltaje Lámpara:</strong> 42 Voltios</p>
+          <p><strong>Consumo Corriente:</strong> 0.16 Amperios</p>
+        </div>
+
+        <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
+          <h4 class="text-md font-bold text-blue-400">Cartucho Alcalinizador (ALK):</h4>
+          <p><strong>Incremento de pH:</strong> +1 a +2 puntos (alcanza pH 8 a 9)</p>
+          <p><strong>Flujo de trabajo:</strong> 0.75 GPM (2.8 LPM)</p>
+          <p><strong>Vida Útil:</strong> 2.000 Litros o 1 año</p>
+          <p><strong>Medidas:</strong> 2” x 10.5” con conexión Quick Fitting ¼"</p>
+        </div>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 text-sm space-y-2">
+        <h4 class="text-md font-bold text-white">Características Físicas e Incluidos:</h4>
+        <p><strong>Dimensiones:</strong> 38 cm alto x 30 cm ancho x 15 cm profundidad | <strong>Peso:</strong> 5 Kg</p>
+        <p class="text-base-content/70"><strong>Incluye:</strong> Llave plástica para carcasas, válvula de entrada y kit completo de acoples para instalación.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- OPCIÓN 4: MICROFILTRO DE POLIPROPILENO TERMOFUNDIDO -->
+  <!-- ========================================================= -->
+  <div *ngIf="tituloProducto === 'Microfiltro de polipropileno termofundido'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">MICROFILTRO DE POLIPROPILENO TERMOFUNDIDO</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">RETENCIÓN DE SEDIMENTOS Y PROTECCIÓN DE EQUIPOS</p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-4">
+      <p>
+        Cartucho de filtración fabricado en <strong class="text-white">polipropileno mediante un proceso de unión térmica de fibras</strong>, que forma una estructura porosa uniforme capaz de retener eficazmente sedimentos, arena, óxido y partículas suspendidas.
+      </p>
+      <p>
+        Su filtración en profundidad proporciona una excelente capacidad de retención de sólidos, prolongando la vida útil de los equipos y protegiendo las membranas instaladas en las etapas posteriores del tratamiento de agua.
+      </p>
+    </div>
+  </div>
+
+</div>
