@@ -94,7 +94,8 @@ export class OsmosisInversaPageComponent {
     // Guardamos el producto seleccionado en sessionStorage
     sessionStorage.setItem('productoSeleccionado', JSON.stringify({
       titulo: producto.titulo,
-      imagen: producto.imagen
+      imagen: producto.imagen,
+      linkImagen: producto.linkImagen
     }));
     // Navegamos directamente sin parámetros en la URL
     this.router.navigate(['/productos/osmosis-inversa/producto-OI']);
