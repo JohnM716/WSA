@@ -93,7 +93,8 @@ export class MicrofiltracionPageComponent {
   // Guardamos el producto seleccionado en sessionStorage
   sessionStorage.setItem('productoSeleccionado', JSON.stringify({
     titulo: producto.titulo,
-    imagen: producto.imagen
+    imagen: producto.imagen,
+    linkImagen: producto.linkImagen
   }));
 
   // Navegamos directamente sin parámetros en la URL

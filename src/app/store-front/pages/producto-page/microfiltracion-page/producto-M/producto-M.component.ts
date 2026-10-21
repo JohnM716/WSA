@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class ProductoMComponent implements OnInit {
   public tituloProducto: string = '';
   public imagenProducto: string = '';
+  public linkImagenProducto: string = '';
   public readonly telefonoWhatsApp: string = '573116852785';
 
   constructor(private router: Router) {}
@@ -23,6 +24,7 @@ export class ProductoMComponent implements OnInit {
       const producto = JSON.parse(dataGuardada);
       this.tituloProducto = producto.titulo;
       this.imagenProducto = producto.imagen;
+      this.linkImagenProducto = producto.linkImagen;
     } else {
       this.router.navigate(['/404']);
     }
@@ -33,8 +35,8 @@ export class ProductoMComponent implements OnInit {
   }
 
   public getWhatsAppUrl(): string {
-    const urlPagina = window.location.href;
-    const mensaje = `Hola! Me interesa cotizar el equipo de Microfiltración: ${this.tituloProducto}.\nVer en la web: ${urlPagina}`;
+    // const urlPagina = window.location.href;
+    const mensaje = `Hola! Me interesa cotizar el equipo de Microfiltración: ${this.tituloProducto}.\nVer en la web: ${this.linkImagenProducto}`;
     return `https://wa.me/${this.telefonoWhatsApp}?text=${encodeURIComponent(mensaje)}`;
   }
 }
