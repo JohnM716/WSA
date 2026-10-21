@@ -31,11 +31,11 @@ public readonly telefonoWhatsApp: string = '573116852785';
 
   public readonly productosUltrafiltracion: ProductoUltrafiltracion[] = [
     {
-      titulo: 'Purificador con Membrana de Ultrafiltracion',
+      titulo: 'FILTRO ULTRAFILTRACIÓN 4 ETAPAS 80 LITROS POR HORA',
       badge: 'NUEVO',
       descripcion: 'TEXTO',
       imagen: 'assets/img/productos/productosUltrafiltracion/Purificador_membrana_ultrafiltracion.png',
-      linkImagen: 'https://wsacol.com/assets/img/productos/productosUltrafiltracion/RO_residencial_280_GPD.png',
+      linkImagen: 'https://wsacol.com/assets/img/productos/productosUltrafiltracion/Purificador_membrana_ultrafiltracion.png',
       // caracteristicas: [
       //   { texto: 'Hogar y apartamentos', icono: 'casa' },
       //   { texto: '280 GPD (1.06 m³/día)', icono: 'gota' },
