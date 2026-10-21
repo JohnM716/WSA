@@ -70,66 +70,102 @@
   </div>
 
   <!-- ========================================================= -->
-  <!-- OPCIÓN 1: PURIFICADOR CON MEMBRANA DE ULTRAFILTRACIÓN (80 LPH - UV) -->
+  <!-- OPCIÓN 1: FILTRO ULTRAFILTRACIÓN 4 ETAPAS 80 LITROS POR HORA -->
   <!-- ========================================================= -->
-  <div *ngIf="tituloProducto === 'Purificador con Membrana de Ultrafiltracion' || tituloProducto === 'UF 5 ETAPAS - UV'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+  <div *ngIf="tituloProducto === 'FILTRO ULTRAFILTRACIÓN 4 ETAPAS 80 LITROS POR HORA' || tituloProducto === 'UF 4 ETAPAS'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
     <div class="text-center">
-      <h2 class="text-2xl font-bold text-white">SISTEMA DE ULTRAFILTRACIÓN Y DESINFECCIÓN UV</h2>
-      <p class="text-xl font-semibold text-blue-400 mt-2">Referencia: UF 5 ETAPAS - UV</p>
+      <h2 class="text-2xl font-bold text-white uppercase">FILTRO ULTRAFILTRACIÓN 4 ETAPAS 80 LITROS POR HORA</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">Referencia: UF 4 ETAPAS</p>
     </div>
 
-    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+      <p>
+        <strong class="text-white">ULTRAFILTRACIÓN:</strong> Membrana de poro muy pequeño (por debajo de 0,1 micra), diseñada para eliminar sólidos en suspensión (ofrece muy buen manejo de la turbiedad) y microorganismos.
+      </p>
+      <p class="text-sm text-base-content/80">
+        Reduce del agua coloides, algas, quistes, bacterias coliformes, virus y materiales orgánicos de peso molecular elevado.
+      </p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
       <p><strong class="text-white">Producción en litros:</strong> 80 LPH - Litros por hora.</p>
-      <p class="text-sm mt-1 text-base-content/70">5 ETAPAS: PP 5micras + GAC + CTO + UF + Luz uv 6w</p>
+      <p><strong class="text-white">4 ETAPAS:</strong> PP 5 micras + GAC + CTO + UF</p>
+      <p class="text-xs text-base-content/70">
+        Filtración física (PP) + Filtración química (GAC y CTO) + Ultrafiltración (UF por debajo de 0.1 micra).
+      </p>
     </div>
 
     <div class="space-y-5">
-      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS:</h3>
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS Y PROCESO DE FILTRACIÓN:</h3>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">1.</span>
-        <p><strong class="text-white">Filtración Física (PP 5 micras):</strong> Cartucho PP Polipropileno 5 micras (Retiene Sedimentos).</p>
+        <p>
+          <strong class="text-white">Filtración Física (PP 5 micras):</strong>
+          Cartucho Polipropileno de 5 micras que actúa como primera barrera reteniendo sedimentos, arena, lodo y partículas en suspensión.
+        </p>
       </div>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">2.</span>
-        <p><strong class="text-white">GAC Carbón activado granular:</strong> Retiene Cloro y Productos Químicos.</p>
+        <p>
+          <strong class="text-white">GAC - Carbón Activado Granular:</strong>
+          Filtro químico diseñado para la retención intensiva de cloro residual, pesticidas y compuestos químicos que afectan el agua.
+        </p>
       </div>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">3.</span>
-        <p><strong class="text-white">Carbón Activado bloque CTO:</strong> Mejora Color, Sabor y Olor.</p>
+        <p>
+          <strong class="text-white">CTO - Carbón Activado Bloque:</strong>
+          Carbón extruido compacto que perfecciona los aspectos estéticos del agua, eliminando mal olor, reduciendo la turbiedad y mejorando notablemente el sabor.
+        </p>
       </div>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">4.</span>
-        <p><strong class="text-white">Ultrafiltración (Etapa UF):</strong> Retención por debajo de 0.1 micra (retiene microorganismos de hasta 0.01 µm como bacterias y hongos).</p>
-      </div>
-
-      <div class="flex gap-4">
-        <span class="font-bold text-blue-500 text-lg">5.</span>
-        <p><strong class="text-white">Luz ultravioleta 6W:</strong> Acción germicida para eliminación de microorganismos.</p>
+        <p>
+          <strong class="text-white">Ultrafiltración (Etapa UF - Membrana UF-10C):</strong>
+          Retención de partículas por debajo de 0.1 micra. Atrapa microorganismos de hasta 0.01 µm como bacterias y hongos sin necesidad de químicos.
+        </p>
       </div>
     </div>
 
-    <div class="pt-6 space-y-5">
+    <!-- ESPECIFICACIONES TÉCNICAS -->
+    <div class="pt-2 space-y-5">
       <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">ESPECIFICACIONES TÉCNICAS:</h3>
 
       <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4 text-sm bg-base-200 p-6 rounded-2xl border border-white/5">
-        <p><strong class="text-white/90">Capacidad Producción:</strong> 21 GPH - Galones por Hora</p>
+        <p><strong class="text-white/90">Capacidad Producción:</strong> 21 GPH (Galones por Hora)</p>
         <p><strong class="text-white/90">Velocidad Máx. Flujo:</strong> 80 LPH</p>
         <p><strong class="text-white/90">Soporte:</strong> Metálico</p>
-        <p><strong class="text-white/90">Contenedor / Carcasa:</strong> 3 unidades. Estándar 10 pulgadas – en polipropileno</p>
+        <p><strong class="text-white/90">Carcasas / Contenedores:</strong> 3 unidades estándar 10" en polipropileno</p>
         <p><strong class="text-white/90">Membranas / Prefiltros:</strong> PP 5 micras, CTO y GAC</p>
-        <p><strong class="text-white/90">Medida Cartuchos:</strong> 10” x 2.5” - estándar. 25 cm alto</p>
-        <p><strong class="text-white/90">Porta Membrana UF:</strong> Carcasa ROH-10 (Material polipropileno)</p>
-        <p><strong class="text-white/90">Membrana UF:</strong> UF-10C Retención por debajo de 0.1 micra</p>
-        <p><strong class="text-white/90">Lámpara UV:</strong> Luz UV 6W de acción germicida</p>
-        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting (acople rápido)</p>
-        <p><strong class="text-white/90">Conexión:</strong> ¼ pulgada</p>
-        <p><strong class="text-white/90">Temperatura Agua:</strong> 4 a 44 grados centígrados (Máxima: 45 ° C)</p>
-        <p><strong class="text-white/90">Presión Entrada:</strong> (Mínima/máximo) 20 - 45 PSI</p>
-        <p class="col-span-2 md:col-span-3 text-blue-400 font-bold"><strong class="text-white/90">Salida de Agua:</strong> Grifo independiente, cuello cisne</p>
+        <p><strong class="text-white/90">Medida Cartuchos:</strong> 10” x 2.5” estándar (25 cm alto)</p>
+        <p><strong class="text-white/90">Porta Membrana UF:</strong> Carcasa ROH-10 (Polipropileno)</p>
+        <p><strong class="text-white/90">Membrana UF:</strong> UF-10C (Retención &lt; 0.1 micra / hasta 0.01 µm)</p>
+        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting (Acople rápido)</p>
+        <p><strong class="text-white/90">Conexión:</strong> ¼ de pulgada</p>
+        <p><strong class="text-white/90">Temperatura Agua:</strong> 4 °C a 44 °C (Máxima 45 °C)</p>
+        <p><strong class="text-white/90">Presión Entrada:</strong> 20 - 45 PSI (Mínima / Máxima)</p>
+        <p class="col-span-2 md:col-span-3 text-blue-400 font-bold"><strong class="text-white/90">Salida de Agua:</strong> Grifo independiente cuello de cisne.</p>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="text-md font-bold text-white">Requerimientos del Agua de Entrada:</h4>
+        <ul class="text-sm space-y-1 text-base-content/80 list-disc list-inside">
+          <li><strong>Tipo de agua:</strong> Agua pretratada con medianos índices de contaminación.</li>
+          <li><strong>Total de Sólidos Disueltos (TDS):</strong> Menor a 800 PPM.</li>
+          <li><strong>Cloro libre:</strong> Menor a 0.2 PPM.</li>
+        </ul>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 text-sm space-y-2">
+        <h4 class="text-md font-bold text-white">Características Físicas e Incluidos:</h4>
+        <p><strong>Dimensiones:</strong> 40 cm alto x 36 cm ancho x 15 cm profundidad</p>
+        <p><strong>Peso:</strong> 6 Kg</p>
+        <p class="text-base-content/80"><strong>Incluye:</strong> Llave plástica para abrir carcasas, llave de entrada y todos los accesorios necesarios para su instalación.</p>
+        <p class="text-blue-400 font-bold text-xs pt-1">✅ Cumple con todos los estándares de Calidad y de Seguridad.</p>
       </div>
     </div>
   </div>
@@ -137,139 +173,219 @@
   <!-- ========================================================= -->
   <!-- OPCIÓN 2: FILTRO ULTRAFILTRACIÓN 5 ETAPAS 160 LITROS POR HORA -->
   <!-- ========================================================= -->
-  <div *ngIf="tituloProducto === 'FILTRO ULTRAFILTRACIÓN 5 ETAPAS 160 LITROS POR HORA'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+  <div *ngIf="tituloProducto === 'FILTRO ULTRAFILTRACIÓN 5 ETAPAS 160 LITROS POR HORA' || tituloProducto === 'UF 5 ETAPAS'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
     <div class="text-center">
-      <h2 class="text-2xl font-bold text-white">FILTRO ULTRAFILTRACIÓN 5 ETAPAS 160 LITROS POR HORA</h2>
+      <h2 class="text-2xl font-bold text-white uppercase">FILTRO ULTRAFILTRACIÓN 5 ETAPAS 160 LITROS POR HORA</h2>
       <p class="text-xl font-semibold text-blue-400 mt-2">Referencia: UF 5 ETAPAS</p>
     </div>
 
-    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
-      <p><strong class="text-white">ULTRAFILTRACIÓN:</strong> Membrana de poro muy pequeño (por debajo de 0,1 micra), para eliminar sólidos en suspensión (Ofrece buen manejo de la turbiedad) y microorganismos.</p>
-      <p class="text-sm text-base-content/70">Reduce del agua coloides, algas, quistes, bacterias coliformes, virus, materiales orgánicos de peso molecular elevado.</p>
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+      <p>
+        <strong class="text-white">ULTRAFILTRACIÓN:</strong> Membrana de poro muy pequeño (por debajo de 0,1 micra), para eliminar sólidos en suspensión (ofrece muy buen manejo de la turbiedad) y microorganismos.
+      </p>
+      <p class="text-sm text-base-content/80">
+        Reduce del agua coloides, algas, quistes, bacterias coliformes, virus y materiales orgánicos de peso molecular elevado.
+      </p>
     </div>
 
-    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
       <p><strong class="text-white">Producción en litros:</strong> 160 LPH - Litros por hora.</p>
-      <p class="text-sm mt-1 text-base-content/70">5 ETAPAS: PP 5micras + GAC + CTO + 2 UF</p>
+      <p><strong class="text-white">5 ETAPAS:</strong> PP 5 micras + GAC + CTO + 2 UF</p>
+      <p class="text-xs text-base-content/70">
+        Filtración física (PP 5 micras) + Filtración química (GAC y CTO) + Ultrafiltración (2 Etapas UF por debajo de 0.1 micra).
+      </p>
     </div>
 
     <div class="space-y-5">
-      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS:</h3>
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS Y PROCESO DE FILTRACIÓN:</h3>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">1.</span>
-        <p><strong class="text-white">Filtración Física:</strong> Cartucho PP Polipropileno 5 micras (Retiene Sedimentos).</p>
+        <p>
+          <strong class="text-white">Filtración Física (PP 5 micras):</strong>
+          Cartucho Polipropileno 5 micras que actúa como primera barrera reteniendo sedimentos, arena, lodo y partículas sólidas en suspensión.
+        </p>
       </div>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">2.</span>
-        <p><strong class="text-white">GAC Carbón activado granular:</strong> Retiene Cloro y Productos Químicos.</p>
+        <p>
+          <strong class="text-white">GAC - Carbón Activado Granular:</strong>
+          Retiene eficazmente el cloro libre, pesticidas, herbicidas y productos químicos presentes en el agua.
+        </p>
       </div>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">3.</span>
-        <p><strong class="text-white">Carbón Activado bloque CTO:</strong> Mejora Color, Sabor y Olor.</p>
+        <p>
+          <strong class="text-white">CTO - Carbón Activado Bloque:</strong>
+          Carbón compacto que perfecciona la calidad estética del agua: mejora el color, sabor y olor, además de filtrar sedimentos finos restantes.
+        </p>
       </div>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">4.</span>
-        <p><strong class="text-white">Ultrafiltración (2 Etapas UF):</strong> Retención por debajo de 0.1 micra (retiene microorganismos de hasta 0.01 µm como bacterias y hongos).</p>
+        <p>
+          <strong class="text-white">Ultrafiltración (2 Etapas UF - Membranas UF-10C):</strong>
+          Doble sistema de ultrafiltración con retención por debajo de 0.1 micra. Atrapa microorganismos de hasta 0.01 µm como bacterias y hongos a un alto flujo de trabajo (160 LPH).
+        </p>
       </div>
     </div>
 
-    <div class="pt-6 space-y-5">
+    <!-- ESPECIFICACIONES TÉCNICAS -->
+    <div class="pt-2 space-y-5">
       <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">ESPECIFICACIONES TÉCNICAS:</h3>
 
       <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4 text-sm bg-base-200 p-6 rounded-2xl border border-white/5">
-        <p><strong class="text-white/90">Capacidad Producción:</strong> 42 GPH - Galones por Hora</p>
+        <p><strong class="text-white/90">Capacidad Producción:</strong> 42 GPH (Galones por Hora)</p>
         <p><strong class="text-white/90">Velocidad Máx. Flujo:</strong> 160 LPH</p>
         <p><strong class="text-white/90">Soporte:</strong> Metálico</p>
-        <p><strong class="text-white/90">Contenedor / Carcasa:</strong> 3 unidades. Estándar 10 pulgadas – en polipropileno</p>
+        <p><strong class="text-white/90">Carcasas / Contenedores:</strong> 3 unidades estándar 10" en polipropileno</p>
         <p><strong class="text-white/90">Membranas / Prefiltros:</strong> PP 5 micras, CTO y GAC</p>
-        <p><strong class="text-white/90">Medida Cartuchos:</strong> 10” x 2.5” - estándar. 25 cm alto</p>
-        <p><strong class="text-white/90">Porta Membrana UF:</strong> Carcasa ROH-10 (Material polipropileno)</p>
-        <p><strong class="text-white/90">Membrana UF:</strong> UF-10C Retención por debajo de 0.1 micra</p>
-        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting (acople rápido)</p>
-        <p><strong class="text-white/90">Conexión:</strong> 3/8 pulgada</p>
-        <p><strong class="text-white/90">Temperatura Agua:</strong> 4 a 44 grados centígrados (Máxima: 45 ° C)</p>
-        <p><strong class="text-white/90">Presión Entrada:</strong> (Mínima/máximo) 25 - 45 PSI</p>
-        <p class="col-span-2 md:col-span-3 text-blue-400 font-bold"><strong class="text-white/90">Salida de Agua:</strong> Grifo independiente, cuello cisne</p>
+        <p><strong class="text-white/90">Medida Cartuchos:</strong> 10” x 2.5” estándar (25 cm alto)</p>
+        <p><strong class="text-white/90">Porta Membrana UF:</strong> Carcasa ROH-10 (Polipropileno)</p>
+        <p><strong class="text-white/90">Membrana UF:</strong> UF-10C (Retención &lt; 0.1 micra / hasta 0.01 µm)</p>
+        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting (Acople rápido)</p>
+        <p><strong class="text-white/90">Conexión:</strong> 3/8 de pulgada</p>
+        <p><strong class="text-white/90">Temperatura Agua:</strong> 4 °C a 44 °C (Máxima 45 °C)</p>
+        <p><strong class="text-white/90">Presión Entrada:</strong> 25 - 45 PSI (Mínima / Máxima)</p>
+        <p class="col-span-2 md:col-span-3 text-blue-400 font-bold"><strong class="text-white/90">Salida de Agua:</strong> Grifo independiente cuello de cisne.</p>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="text-md font-bold text-white">Requerimientos del Agua de Entrada:</h4>
+        <ul class="text-sm space-y-1 text-base-content/80 list-disc list-inside">
+          <li><strong>Tipo de agua:</strong> Agua pretratada con medianos índices de contaminación.</li>
+          <li><strong>Total de Sólidos Disueltos (TDS):</strong> Menor a 800 PPM.</li>
+          <li><strong>Cloro libre:</strong> Menor a 0.2 PPM.</li>
+        </ul>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 text-sm space-y-2">
+        <h4 class="text-md font-bold text-white">Características Físicas e Incluidos:</h4>
+        <p><strong>Dimensiones:</strong> 40 cm alto x 36 cm ancho x 15 cm profundidad</p>
+        <p><strong>Peso:</strong> 6.5 Kg</p>
+        <p class="text-base-content/80"><strong>Incluye:</strong> Llave plástica para abrir las carcasas, llave de entrada y todos los accesorios propios para su instalación.</p>
+        <p class="text-blue-400 font-bold text-xs pt-1">✅ Cumple con todos los estándares de Calidad y de Seguridad.</p>
       </div>
     </div>
   </div>
 
   <!-- ========================================================= -->
-  <!-- OPCIÓN 3: FILTRO ULTRAFILTRACIÓN 6 ETAPAS ULTRAVIOLETA 80 LPH -->
+  <!-- OPCIÓN 3: FILTRO ULTRAFILTRACIÓN 6 ETAPAS ULTRAVIOLETA 80 LITROS POR HORA -->
   <!-- ========================================================= -->
-  <div *ngIf="tituloProducto === 'FILTRO ULTRAFILTRACIÓN 6 ETAPAS ULTRAVIOLETA 80 LITROS POR HORA'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+  <div *ngIf="tituloProducto === 'FILTRO ULTRAFILTRACIÓN 6 ETAPAS ULTRAVIOLETA 80 LITROS POR HORA' || tituloProducto === 'UF 6 ETAPAS - UV'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
     <div class="text-center">
-      <h2 class="text-2xl font-bold text-white">FILTRO ULTRAFILTRACIÓN 6 ETAPAS ULTRAVIOLETA 80 LITROS POR HORA</h2>
+      <h2 class="text-2xl font-bold text-white uppercase">FILTRO ULTRAFILTRACIÓN 6 ETAPAS ULTRAVIOLETA 80 LITROS POR HORA</h2>
       <p class="text-xl font-semibold text-blue-400 mt-2">Referencia: UF 6 ETAPAS - UV</p>
     </div>
 
-    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
-      <p><strong class="text-white">LA FILTRACIÓN DE AGUA CON ULTRAFILTRACIÓN</strong> consiste en el tratamiento del agua con una membrana de poro muy pequeño (por debajo de 0,1 micra), que elimina sólidos en suspensión (turbidez) y microorganismos.</p>
-      <p class="text-sm text-base-content/70">Reduce del agua coloides, algas, quistes, bacterias coliformes, virus, materiales orgánicos de peso molecular elevado. Ofrece un excelente manejo de la turbiedad y con la etapa Ultravioleta garantiza 100% de manejo de contaminación microbiológica.</p>
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+      <p>
+        <strong class="text-white">LA FILTRACIÓN DE AGUA CON ULTRAFILTRACIÓN</strong> consiste en el tratamiento del agua con una membrana de poro muy pequeño (por debajo de 0,1 micra), que elimina sólidos en suspensión (turbidez) y microorganismos.
+      </p>
+      <p class="text-sm text-base-content/80">
+        Reduce del agua coloides, algas, quistes, bacterias coliformes, virus y materiales orgánicos de peso molecular elevado. Ofrece un excelente manejo de la turbiedad y con la etapa Ultravioleta garantiza <strong class="text-white">100% de manejo de contaminación microbiológica</strong>.
+      </p>
     </div>
 
-    <div class="bg-base-200 p-6 rounded-2xl border border-white/5">
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-2">
       <p><strong class="text-white">Producción en litros:</strong> 80 LPH - Litros por hora.</p>
-      <p class="text-sm mt-1 text-base-content/70">6 ETAPAS: PP 5micras + GAC + CTO + UF + Posfiltro carbón coco + UV 6w.</p>
+      <p><strong class="text-white">6 ETAPAS:</strong> PP 5 micras + GAC + CTO + UF + Posfiltro carbón coco + UV 6W</p>
+      <p class="text-xs text-base-content/70">
+        Filtración física (PP) + Filtración química (GAC y CTO) + Ultrafiltración (UF &lt; 0.1 µm) + Posfiltro pulidor (Carbón coco in line) + Filtración orgánica germicida (Luz UV 6W).
+      </p>
     </div>
 
     <div class="space-y-5">
-      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS:</h3>
+      <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2">ETAPAS Y PROCESO DE FILTRACIÓN:</h3>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">1.</span>
-        <p><strong class="text-white">Filtración Física:</strong> Cartucho PP Polipropileno 5 micras (Retiene Sedimentos).</p>
+        <p>
+          <strong class="text-white">Filtración Física (PP 5 micras):</strong>
+          Cartucho Polipropileno 5 micras que actúa como primera barrera reteniendo sedimentos, arena, lodo y partículas sólidas en suspensión.
+        </p>
       </div>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">2.</span>
-        <p><strong class="text-white">GAC Carbón activado granular:</strong> Retiene Cloro y Productos Químicos.</p>
+        <p>
+          <strong class="text-white">GAC - Carbón Activado Granular:</strong>
+          Retiene eficazmente el cloro libre, pesticidas, herbicidas y compuestos químicos presentes en el agua.
+        </p>
       </div>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">3.</span>
-        <p><strong class="text-white">Carbón Activado bloque CTO:</strong> Mejora Color, Sabor y Olor.</p>
+        <p>
+          <strong class="text-white">CTO - Carbón Activado Bloque:</strong>
+          Carbón compacto que perfecciona los aspectos estéticos del agua: mejora color, sabor y olor, reteniendo micropartículas restantes.
+        </p>
       </div>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">4.</span>
-        <p><strong class="text-white">Ultrafiltración (Etapa UF):</strong> Retención por debajo de 0.1 micra (retiene microorganismos de hasta 0.01 µm).</p>
+        <p>
+          <strong class="text-white">Ultrafiltración (Etapa UF - Membrana UF-10C):</strong>
+          Retención de partículas por debajo de 0.1 micra. Atrapa microorganismos de hasta 0.01 µm como bacterias y hongos sin necesidad de químicos.
+        </p>
       </div>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">5.</span>
-        <p><strong class="text-white">Posfiltro:</strong> Carbón coco in line (aporta minerales).</p>
+        <p>
+          <strong class="text-white">Posfiltro Carbón Cáscara de Coco:</strong>
+          Cartucho posfiltro in-line que refina el sabor, aporta frescura y estabiliza el agua antes de la salida al grifo.
+        </p>
       </div>
 
       <div class="flex gap-4">
         <span class="font-bold text-blue-500 text-lg">6.</span>
-        <p><strong class="text-white">Luz Ultravioleta 6W:</strong> Garantiza 100% de manejo de contaminación microbiológica.</p>
+        <p>
+          <strong class="text-white">UV 6W - Lámpara Ultravioleta (Desinfección Germicida):</strong>
+          Luz ultravioleta de acción germicida que elimina bacterias, virus y microorganismos, garantizando un 100% de desinfección microbiológica.
+        </p>
       </div>
     </div>
 
-    <div class="pt-6 space-y-5">
+    <!-- ESPECIFICACIONES TÉCNICAS -->
+    <div class="pt-2 space-y-5">
       <h3 class="text-xl font-bold text-white border-b border-[#0088ff]/30 pb-2 text-center">ESPECIFICACIONES TÉCNICAS:</h3>
 
       <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4 text-sm bg-base-200 p-6 rounded-2xl border border-white/5">
-        <p><strong class="text-white/90">Capacidad Producción:</strong> 21 GPH - Galones por Hora</p>
+        <p><strong class="text-white/90">Capacidad Producción:</strong> 21 GPH (Galones por Hora)</p>
         <p><strong class="text-white/90">Velocidad Máx. Flujo:</strong> 80 LPH</p>
         <p><strong class="text-white/90">Soporte:</strong> Metálico</p>
-        <p><strong class="text-white/90">Contenedor / Carcasa:</strong> 3 unidades. Estándar 10 pulgadas – en polipropileno</p>
+        <p><strong class="text-white/90">Carcasas / Contenedores:</strong> 3 unidades estándar 10" en polipropileno</p>
         <p><strong class="text-white/90">Membranas / Prefiltros:</strong> PP 5 micras, CTO y GAC</p>
-        <p><strong class="text-white/90">Medida Cartuchos:</strong> 10” x 2.5” - estándar. 25 cm alto</p>
-        <p><strong class="text-white/90">Porta Membrana UF:</strong> Carcasa ROH-10 (Material polipropileno)</p>
-        <p><strong class="text-white/90">Membrana UF:</strong> UF-10C Retención por debajo de 0.1 micra</p>
-        <p><strong class="text-white/90">Posfiltro:</strong> Carbón coco in line</p>
+        <p><strong class="text-white/90">Medida Cartuchos:</strong> 10” x 2.5” estándar (25 cm alto)</p>
+        <p><strong class="text-white/90">Porta Membrana UF:</strong> Carcasa ROH-10 (Polipropileno)</p>
+        <p><strong class="text-white/90">Membrana UF:</strong> UF-10C (Retención &lt; 0.1 micra)</p>
+        <p><strong class="text-white/90">Posfiltro:</strong> Carbón cáscara de coco in-line</p>
         <p><strong class="text-white/90">Lámpara UV:</strong> Luz UV 6W de acción germicida</p>
-        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting (acople rápido)</p>
-        <p><strong class="text-white/90">Conexión:</strong> ¼ pulgada</p>
-        <p><strong class="text-white/90">Temperatura Agua:</strong> 4 a 44 grados centígrados (Máxima: 45 ° C)</p>
-        <p><strong class="text-white/90">Presión Entrada:</strong> (Mínima/máximo) 20 - 45 PSI</p>
-        <p class="col-span-2 md:col-span-3 text-blue-400 font-bold"><strong class="text-white/90">Salida de Agua:</strong> Grifo independiente, cuello cisne</p>
+        <p><strong class="text-white/90">Conectores:</strong> Quick Fitting (Acople rápido)</p>
+        <p><strong class="text-white/90">Conexión:</strong> ¼ de pulgada</p>
+        <p><strong class="text-white/90">Temperatura Agua:</strong> 4 °C a 44 °C (Máxima 45 °C)</p>
+        <p><strong class="text-white/90">Presión Entrada:</strong> 20 - 45 PSI (Mínima / Máxima)</p>
+        <p class="col-span-2 md:col-span-3 text-blue-400 font-bold"><strong class="text-white/90">Salida de Agua:</strong> Grifo independiente cuello de cisne.</p>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
+        <h4 class="text-md font-bold text-white">Requerimientos del Agua de Entrada:</h4>
+        <ul class="text-sm space-y-1 text-base-content/80 list-disc list-inside">
+          <li><strong>Tipo de agua:</strong> Agua pretratada con medianos índices de contaminación.</li>
+          <li><strong>Total de Sólidos Disueltos (TDS):</strong> Menor a 800 PPM.</li>
+          <li><strong>Cloro libre:</strong> Menor a 0.2 PPM.</li>
+        </ul>
+      </div>
+
+      <div class="bg-base-200 p-6 rounded-2xl border border-white/5 text-sm space-y-2">
+        <h4 class="text-md font-bold text-white">Características Físicas e Incluidos:</h4>
+        <p><strong>Dimensiones:</strong> 40 cm alto x 36 cm ancho x 15 cm profundidad</p>
+        <p><strong>Peso:</strong> 6.5 Kg</p>
+        <p class="text-base-content/80"><strong>Incluye:</strong> Llave plástica para abrir las carcasas, llave de entrada y todos los accesorios necesarios para su instalación.</p>
+        <p class="text-blue-400 font-bold text-xs pt-1">✅ Cumple con todos los estándares de Calidad y de Seguridad.</p>
       </div>
     </div>
   </div>
@@ -277,24 +393,31 @@
   <!-- ========================================================= -->
   <!-- OPCIÓN 4: COMPONENTES DE FILTRACIÓN Y ACCESORIOS -->
   <!-- ========================================================= -->
-  <div *ngIf="tituloProducto === 'Componentes de Filtración y Accesorios' || tituloProducto === 'Filtro de ultrafiltración para tratamiento de agua'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
+  <div *ngIf="tituloProducto === 'Componentes de filtración y accesorios' || tituloProducto === 'Componentes de Filtración y Accesorios'" class="max-w-4xl text-justify text-base-content/90 space-y-8 leading-relaxed">
     <div class="text-center">
-      <h2 class="text-2xl font-bold text-white">FILTRO DE ULTRAFILTRACIÓN PARA TRATAMIENTO DE AGUA</h2>
-      <p class="text-xl font-semibold text-blue-400 mt-2">TECNOLOGÍA DE MEMBRANAS DE FIBRA HUECA</p>
+      <h2 class="text-2xl font-bold text-white uppercase">COMPONENTES DE FILTRACIÓN Y ACCESORIOS</h2>
+      <p class="text-xl font-semibold text-blue-400 mt-2">PORTAFOLIO INTEGRAL DE REPUESTOS Y CONSUMIBLES</p>
     </div>
 
     <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-4">
       <p>
-        El filtro de ultrafiltración utiliza una tecnología avanzada de <strong class="text-white">membranas de fibra hueca</strong> que permite retener sólidos suspendidos, partículas finas, coloides y microorganismos, contribuyendo a mejorar la claridad y la calidad del agua.
+        En <strong class="text-white">WSA</strong> ofrecemos un portafolio integral de repuestos, consumibles y accesorios para sistemas de tratamiento y purificación de agua, incluyendo microfiltración, ultrafiltración, ósmosis inversa, filtración convencional y otras tecnologías.
       </p>
       <p>
-        Su estructura interna está compuesta por cientos de fibras con poros microscópicos que actúan como una barrera física, permitiendo el paso del agua mientras retienen gran parte de las impurezas.
+        Disponemos de cartuchos filtrantes, membranas, portamembranas, carcasas, conexiones, tuberías, válvulas, fuentes de alimentación y demás componentes necesarios para el funcionamiento, mantenimiento y optimización de tus sistemas.
       </p>
     </div>
 
-    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 space-y-3">
-      <p>
-        Es una solución eficiente para aplicaciones residenciales, comerciales e industriales, ideal como etapa de tratamiento previo a otros procesos de purificación o como parte de un sistema integral de tratamiento de agua. Ofrece una filtración de alta precisión, sin necesidad de utilizar productos químicos para realizar la separación física de contaminantes.
+    <div class="bg-base-200/80 p-6 rounded-2xl border border-blue-500/30 space-y-3">
+      <h3 class="text-xl font-bold text-blue-400 border-b border-blue-500/20 pb-2">NUESTRO COMPROMISO:</h3>
+      <p class="text-sm text-base-content/90">
+        Nuestro objetivo es ayudarte a encontrar los repuestos adecuados para cada aplicación, garantizando total compatibilidad con los equipos y facilitando el mantenimiento preventivo y correctivo de tus instalaciones.
+      </p>
+    </div>
+
+    <div class="bg-base-200 p-6 rounded-2xl border border-white/5 text-center">
+      <p class="text-lg font-bold text-white">
+        WSA: todos los componentes que necesitas para mantener tus sistemas de tratamiento de agua funcionando de manera confiable y eficiente.
       </p>
     </div>
   </div>
