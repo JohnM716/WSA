@@ -14,7 +14,7 @@ export interface ProductoUltrafiltracion {
   descripcion: string;
   imagen: string;
   linkImagen: string;
-  // caracteristicas: IconoCaracteristica[];
+  caracteristicas: IconoCaracteristica[];
 }
 
 @Component({
@@ -33,50 +33,46 @@ public readonly telefonoWhatsApp: string = '573116852785';
     {
       titulo: 'FILTRO ULTRAFILTRACIÓN 4 ETAPAS 80 LITROS POR HORA',
       badge: 'NUEVO',
-      descripcion: 'TEXTO',
+      descripcion: 'Membrana de poro muy pequeño (por debajo de 0,1 micra), diseñada para eliminar sólidos en suspensión (ofrece muy buen manejo de la turbiedad) y microorganismos.',
       imagen: 'assets/img/productos/productosUltrafiltracion/Purificador_membrana_ultrafiltracion.png',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosUltrafiltracion/Purificador_membrana_ultrafiltracion.png',
-      // caracteristicas: [
-      //   { texto: 'Hogar y apartamentos', icono: 'casa' },
-      //   { texto: '280 GPD (1.06 m³/día)', icono: 'gota' },
-      //   { texto: '5 etapas de filtración', icono: 'filtro' }
-      // ]
+      caracteristicas: [
+        { texto: 'Hogar y apartamentos', icono: 'casa' },
+        { texto: '4 etapas de filtración', icono: 'filtro' }
+      ]
     },
     {
       titulo: 'FILTRO ULTRAFILTRACIÓN 5 ETAPAS 160 LITROS POR HORA',
       badge: 'NUEVO',
-      descripcion: 'TEXTO',
+      descripcion: 'Membrana de poro muy pequeño (por debajo de 0,1 micra), para eliminar sólidos en suspensión (ofrece muy buen manejo de la turbiedad) y microorganismos.',
       imagen: 'assets/img/productos/productosUltrafiltracion/Sistema_Filtracion_Agua_160_LD.png',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosUltrafiltracion/Sistema_Filtracion_Agua_160_LD.png',
-      // caracteristicas: [
-      //   { texto: 'Viviendas grandes', icono: 'edificio' },
-      //   { texto: '600 GPD (2.27 m³/día)', icono: 'gota' },
-      //   { texto: '6 etapas de filtración', icono: 'filtro' }
-      // ]
+      caracteristicas: [
+        { texto: 'Hogar y apartamentos', icono: 'casa' },
+        { texto: '5 etapas de filtración', icono: 'filtro' }
+      ]
     },
     {
       titulo: 'FILTRO ULTRAFILTRACIÓN 6 ETAPAS ULTRAVIOLETA 80 LITROS POR HORA',
       badge: 'NUEVO',
-      descripcion: 'TEXTO',
+      descripcion: 'La filtración de agua con ultrafiltración consiste en el tratamiento del agua con una membrana de poro muy pequeño (por debajo de 0,1 micra), que elimina sólidos en suspensión (turbidez) y microorganismos.',
       imagen: 'assets/img/productos/productosUltrafiltracion/Sistema_Purificacion_Agua_UF_UV.png',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosUltrafiltracion/Sistema_Purificacion_Agua_UF_UV.png',
-      // caracteristicas: [
-      //   { texto: 'Hogares grandes y uso especial', icono: 'usuarios' },
-      //   { texto: '1200 GPD (4.54 m³/día)', icono: 'gota' },
-      //   { texto: 'Desinfección UV integrada', icono: 'uv' }
-      // ]
+      caracteristicas: [
+        { texto: 'Hogar y apartamentos', icono: 'casa' },
+        { texto: '6 etapas de filtración', icono: 'filtro' }
+      ]
     },
     {
       titulo: 'Componentes de Filtración y Accesorios',
       badge: 'NUEVO',
-      descripcion: 'TEXTO',
+      descripcion: 'En WSA ofrecemos un portafolio integral de repuestos, consumibles y accesorios para sistemas de tratamiento y purificación de agua, incluyendo microfiltración, ultrafiltración, ósmosis inversa, filtración convencional y otras tecnologías.',
       imagen: 'assets/img/productos/productosUltrafiltracion/Componentes_Filtracion_Accesorios.png',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosUltrafiltracion/Componentes_Filtracion_Accesorios.png',
-      // caracteristicas: [
-      //   { texto: 'Hogar y apartamentos', icono: 'casa' },
-      //   { texto: '100 GPD (1.06 m³/día)', icono: 'gota' },
-      //   { texto: '5 etapas de filtración', icono: 'filtro' }
-      // ]
+      caracteristicas: [
+        { texto: 'Hogar y apartamentos', icono: 'casa' },
+        // { texto: '5 etapas de filtración', icono: 'filtro' }
+      ]
     }
   ];
 
