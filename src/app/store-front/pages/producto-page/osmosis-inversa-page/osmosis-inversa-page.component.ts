@@ -97,7 +97,6 @@ export class OsmosisInversaPageComponent {
       imagen: producto.imagen,
       linkImagen: producto.linkImagen
     }));
-    // Navegamos directamente sin parámetros en la URL
     this.router.navigate(['/productos/osmosis-inversa/producto-OI']);
   }
 
