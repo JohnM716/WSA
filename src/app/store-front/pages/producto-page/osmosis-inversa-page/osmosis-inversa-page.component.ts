@@ -36,7 +36,7 @@ export class OsmosisInversaPageComponent {
       titulo: 'RO Residencial 280 GPD',
       badge: 'NUEVO',
       descripcion: 'Sistema compacto de ósmosis inversa ideal para hogares. Remueve sales, metales pesados, cloro y otros contaminantes, entregando agua de alta pureza y excelente sabor.',
-      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_280_GPD.png',
+      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_280_GPD.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosOsmosis/RO_residencial_280_GPD.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },
@@ -48,7 +48,7 @@ export class OsmosisInversaPageComponent {
       titulo: 'RO Residencial 600 GPD',
       badge: 'NUEVO',
       descripcion: 'Equipo de ósmosis inversa de mayor capacidad, ideal para viviendas grandes o consumos altos. Incluye sistema de control básico y filtración multietapa.',
-      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_600_GPD.png',
+      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_600_GPD.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosOsmosis/RO_residencial_600_GPD.png',
       caracteristicas: [
         { texto: 'Viviendas grandes', icono: 'edificio' },
@@ -60,7 +60,7 @@ export class OsmosisInversaPageComponent {
       titulo: 'RO Residencial 1200 GPD',
       badge: 'NUEVO',
       descripcion: 'Sistema de ósmosis inversa de alta capacidad, diseñado para hogares grandes, pequeñas comunidades o aplicaciones especiales. Incluye desinfección por luz ultravioleta.',
-      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_1200_GPD_UV.png',
+      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_1200_GPD_UV.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosOsmosis/RO_residencial_1200_GPD_UV.png',
       caracteristicas: [
         { texto: 'Hogares grandes y uso especial', icono: 'usuarios' },
@@ -72,7 +72,7 @@ export class OsmosisInversaPageComponent {
       titulo: 'RO Residencial 100 GPD',
       badge: 'NUEVO',
       descripcion: 'Sistema de ósmosis inversa compacto con configuración mejorada de filtración (LC), ideal para hogares. Proporciona agua segura, libre de sales y con excelente sabor.',
-      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_280_GPD_LC.png',
+      imagen: 'assets/img/productos/productosOsmosis/RO_residencial_280_GPD_LC.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosOsmosis/RO_residencial_280_GPD_LC.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },

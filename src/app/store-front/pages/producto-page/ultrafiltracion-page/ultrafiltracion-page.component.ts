@@ -34,7 +34,7 @@ public readonly telefonoWhatsApp: string = '573116852785';
       titulo: 'FILTRO ULTRAFILTRACIÓN 4 ETAPAS 80 LITROS POR HORA',
       badge: 'NUEVO',
       descripcion: 'Membrana de poro muy pequeño (por debajo de 0,1 micra), diseñada para eliminar sólidos en suspensión (ofrece muy buen manejo de la turbiedad) y microorganismos.',
-      imagen: 'assets/img/productos/productosUltrafiltracion/Purificador_membrana_ultrafiltracion.png',
+      imagen: 'assets/img/productos/productosUltrafiltracion/Purificador_membrana_ultrafiltracion.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosUltrafiltracion/Purificador_membrana_ultrafiltracion.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },
@@ -45,7 +45,7 @@ public readonly telefonoWhatsApp: string = '573116852785';
       titulo: 'FILTRO ULTRAFILTRACIÓN 5 ETAPAS 160 LITROS POR HORA',
       badge: 'NUEVO',
       descripcion: 'Membrana de poro muy pequeño (por debajo de 0,1 micra), para eliminar sólidos en suspensión (ofrece muy buen manejo de la turbiedad) y microorganismos.',
-      imagen: 'assets/img/productos/productosUltrafiltracion/Sistema_Filtracion_Agua_160_LD.png',
+      imagen: 'assets/img/productos/productosUltrafiltracion/Sistema_Filtracion_Agua_160_LD.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosUltrafiltracion/Sistema_Filtracion_Agua_160_LD.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },
@@ -56,7 +56,7 @@ public readonly telefonoWhatsApp: string = '573116852785';
       titulo: 'FILTRO ULTRAFILTRACIÓN 6 ETAPAS ULTRAVIOLETA 80 LITROS POR HORA',
       badge: 'NUEVO',
       descripcion: 'La filtración de agua con ultrafiltración consiste en el tratamiento del agua con una membrana de poro muy pequeño (por debajo de 0,1 micra), que elimina sólidos en suspensión (turbidez) y microorganismos.',
-      imagen: 'assets/img/productos/productosUltrafiltracion/Sistema_Purificacion_Agua_UF_UV.png',
+      imagen: 'assets/img/productos/productosUltrafiltracion/Sistema_Purificacion_Agua_UF_UV.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosUltrafiltracion/Sistema_Purificacion_Agua_UF_UV.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },
@@ -67,7 +67,7 @@ public readonly telefonoWhatsApp: string = '573116852785';
       titulo: 'Componentes de Filtración y Accesorios',
       badge: 'NUEVO',
       descripcion: 'En WSA ofrecemos un portafolio integral de repuestos, consumibles y accesorios para sistemas de tratamiento y purificación de agua, incluyendo microfiltración, ultrafiltración, ósmosis inversa, filtración convencional y otras tecnologías.',
-      imagen: 'assets/img/productos/productosUltrafiltracion/Componentes_Filtracion_Accesorios.png',
+      imagen: 'assets/img/productos/productosUltrafiltracion/Componentes_Filtracion_Accesorios.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosUltrafiltracion/Componentes_Filtracion_Accesorios.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },

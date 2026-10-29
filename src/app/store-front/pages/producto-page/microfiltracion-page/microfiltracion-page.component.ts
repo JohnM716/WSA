@@ -34,7 +34,7 @@ export class MicrofiltracionPageComponent {
       titulo: 'FILTRO DE AGUA 4 ETAPAS CON LUZ ULTRAVIOLETA',
       badge: 'NUEVO',
       descripcion: 'Ofrece agua de buena calidad. Retiene sólidos disueltos suspendidos y microorganismos. Ofrece muy buen manejo de la turbiedad, olor, sabor y su etapa de Ultravioleta garantiza 100% de manejo de contaminación microbiológica.',
-      imagen: 'assets/img/productos/productosMicrofiltracion/Kit_microfiltro_UV_accesorios.png',
+      imagen: 'assets/img/productos/productosMicrofiltracion/Kit_microfiltro_UV_accesorios.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosMicrofiltracion/Kit_microfiltro_UV_accesorios.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },
@@ -45,7 +45,7 @@ export class MicrofiltracionPageComponent {
       titulo: 'FILTRO DE AGUA 4 ETAPAS CON LUZ ULTRAVIOLETA Y CARTUCHO T33 CARBÓN CÁSCARA DE COCO',
       badge: 'NUEVO',
       descripcion: 'Ofrece agua de buena calidad. Retiene sólidos disueltos suspendidos y microorganismos. Ofrece muy buen manejo de la turbiedad, olor, sabor y su etapa de Ultravioleta garantiza 100% de manejo de contaminación microbiológica.',
-      imagen: 'assets/img/productos/productosMicrofiltracion/Sistema_microfiltracion_UV_y_GAC.png',
+      imagen: 'assets/img/productos/productosMicrofiltracion/Sistema_microfiltracion_UV_y_GAC.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosMicrofiltracion/Sistema_microfiltracion_UV_y_GAC.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },
@@ -56,7 +56,7 @@ export class MicrofiltracionPageComponent {
       titulo: 'FILTRO PURIFICADOR ALCALINIZADOR DE AGUA ULTRAVIOLETA DE 4 ETAPAS',
       badge: 'NUEVO',
       descripcion: 'Ofrece agua de buena calidad. Retiene sólidos disueltos suspendidos y microorganismos. Ofrece muy buen manejo de la turbiedad, olor, sabor y su etapa de Ultravioleta garantiza 100% de manejo de contaminación microbiológica. Este modelo está especialmente diseñado para dar solución al mercado urbano con agua pretratada con medianos índices de contaminación.',
-      imagen: 'assets/img/productos/productosMicrofiltracion/Kit_Filtración_Agua_4_etapas_+_UV.png',
+      imagen: 'assets/img/productos/productosMicrofiltracion/Kit_Filtración_Agua_4_etapas_+_UV.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosMicrofiltracion/Kit_Filtración_Agua_4_etapas_+_UV.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },
@@ -67,7 +67,7 @@ export class MicrofiltracionPageComponent {
       titulo: 'Microfiltro de polipropileno termofundido',
       badge: 'NUEVO',
       descripcion: 'Los microfiltros de polipropileno termofundido están diseñados para la retención de partículas sólidas en suspensión, sedimentos, arena, óxido y otras impurezas presentes en el agua. Su estructura de fibras entrelazadas permite realizar una filtración mecánica eficiente, contribuyendo a mejorar la calidad del agua y a proteger los equipos instalados aguas abajo.',
-      imagen: 'assets/img/productos/productosMicrofiltracion/Diagrama_técnico_filtro_microfibras.png',
+      imagen: 'assets/img/productos/productosMicrofiltracion/Diagrama_técnico_filtro_microfibras.webp',
       linkImagen: 'https://wsacol.com/assets/img/productos/productosMicrofiltracion/Diagrama_técnico_filtro_microfibras.png',
       caracteristicas: [
         { texto: 'Hogar y apartamentos', icono: 'casa' },
